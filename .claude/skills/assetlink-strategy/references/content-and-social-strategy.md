@@ -1,72 +1,102 @@
 # Content & Social Strategy
 
-This is the strategy layer only. Asset production goes to `assetlink-content-studio`, and SEO/blog execution goes to `assetlink-seo-organic`.
+The current plan is **Content Strategy v1 (Sep 29, 2026)**, built on positioning v3. The full internal version is the private page listed in the repo's `CLAUDE.md`. This file is the working summary. It's the strategy layer only: asset production goes to `assetlink-content-studio`, and SEO/blog execution goes to `assetlink-seo-organic`.
 
-## Principles (drawn from Kitces, Russell, Sammons)
+## The strategy on one table
 
-- **Earn attention with substance.** This audience reads Kitces, WealthManagement.com, InvestmentNews, AdvisorHub, and Financial Planning. Content has to be as useful as that to earn the scroll-stop. (Kitces)
-- **Consistency beats virality.** A predictable cadence on the right channel compounds. (Russell)
-- **People follow people.** On LinkedIn, founder/exec and practitioner voices outperform brand pages; the company page amplifies them. (Sammons)
-- **Market data is AssetLink's unfair content advantage.** Aggregated, anonymized views of the 390K-advisor / 8.7K-firm dataset (e.g. credential mix by state, firm size distribution, compensation benchmarks) make original content competitors can't copy. Show *what* the market looks like, never *how* it's assembled. Don't make predictive claims unless the Product Reality doc lists them as live.
-- **Fix "under-known" first.** Devon's Future Proof 2026 brief says AssetLink loses on brand familiarity ("I didn't know what AssetLink did"). Early content has to make it obvious *what AssetLink is and what it outputs*.
-- **Show the output.** The kill sheet says to lead with the output, not the search bar. Content should do the same: a sample AI-drafted outreach, a profile teardown, a mandate → shortlist walkthrough.
-- **Weight by revenue priority.** Roughly 50% recruiter, 20% RIA aggregator (education only), 30% asset manager / wholesaler.
+| | |
+|---|---|
+| **Job of content** | Make AssetLink known for **the first call**, and turn that into recruiter demos |
+| **Primary audience** | Recruiting leaders (the beachhead) |
+| **Core story** | Everyone has the same data and the same alerts. The first good call wins. The five-tab stitch slows you down |
+| **What's ours** | Aggregated views of the 390K-advisor / 8.7K-firm dataset, and real AssetLink output on screen |
+| **Call to action** | "Bring a live mandate" |
 
-## Channel mix (hypothesis, validate against pipeline data)
+## Objectives
+
+1. **Fix "under-known."** Future Proof 2026 buyers said "I didn't know what AssetLink did."
+2. **Own "the first call."**
+3. **Create recruiter demand.**
+4. **Arm sales** with proof and stories.
+
+## Audience weighting (launch phase, Oct–Dec 2026)
+
+| Persona | Share | Role |
+|---|---|---|
+| Recruiters | ~70% | Beachhead. Recruiter content every week |
+| Asset managers / wholesalers | ~15% | Meeting prep, territory focus. Complement framing |
+| RIA aggregators | ~15% | Education only |
+
+Rebalance once the next segments' features ship. Map pieces to awareness stages (Eugene Schwartz): most of the market is unaware or problem-aware, so the first 60 days lean on point of view and problem content.
+
+## Pillars
+
+| Pillar | Purpose | Share |
+|---|---|---|
+| **1. The First Call** (point of view) | Teach the problem, own the idea | 20% |
+| **2. State of the Advisor Universe** (market data) | Original data and press coverage | 30% |
+| **3. The Recruiter's Desk** (playbooks) | Practical how-to that shows AssetLink output | 25% |
+| **4. Proof and product** (output) | *Mandate Teardown*, annotated drafts, outcome stories [PROOF NEEDED] | 15% |
+| **5. Reading the Record** (education) | BrokerCheck, IAPD and ADV literacy. Safe for aggregators | 10% |
+
+**Data rules for Pillar 2:** aggregated counts and shares only. Never name an advisor or firm, never describe how the data is assembled, no compensation or GDC figures until confirmed live, and no predictions about who will move or sell.
+
+## Signature series
+
+| Series | Format and cadence | Positioning job |
+|---|---|---|
+| ***The First Call*** | Weekly email newsletter, under 400 words | The owned idea in the inbox |
+| ***State of the Advisor Universe*** | Monthly data report (PDF + carousel), quarterly press deep-dive | Data authority, press, backlinks |
+| ***Mandate Teardown*** | Video or carousel every two weeks: mandate → shortlist → record → drafted message | A demo inside a post |
+| ***Reading the Record*** | Monthly long-form post | Authority with all three personas |
+
+Teardowns use composite or anonymized profiles, never a real advisor's name, face or contact details. Label drafts as AI-written and reviewed by a person.
+
+## Channels
 
 | Channel | Role | Priority |
 |---|---|---|
-| **LinkedIn (exec + company)** | Primary. Where recruiters, distribution leaders, and wholesalers live | ★★★ |
-| **Email newsletter** | Owned audience. Weekly or biweekly market/intel digest | ★★★ |
-| **Trade press / PR** | Credibility. Data-driven stories pitched to AdvisorHub, InvestmentNews, WealthManagement.com, Financial Planning | ★★ |
-| **Industry events** (e.g. T3, Schwab IMPACT, Future Proof, Money Management Institute, recruiting forums; verify current calendar) | High-intent meetings, speaking slots | ★★ |
-| **Webinars / live** | Category education, with partner co-hosting | ★ |
-| **Blog/SEO** | Long-tail capture (hand off to `assetlink-seo-organic`) | ★ |
-| **Paid LinkedIn** | Account-based retargeting of ICP accounts only | ★ (later) |
+| Founder / exec LinkedIn | Main voice | ★★★ |
+| *The First Call* newsletter | Owned audience and nurture | ★★★ |
+| Sales enablement | One-pagers, pilot offer, internal battlecards | ★★★ |
+| Company page | Amplify exec posts, carousels, the report | ★★ |
+| Trade press (AdvisorHub, InvestmentNews, WealthManagement.com, Financial Planning, ThinkAdvisor) | Credibility via the data report | ★★ |
+| Events (recruiting forums, T3, Schwab IMPACT, Future Proof; verify dates) | Meetings, speaking, live teardowns | ★★ |
+| Website + SEO | "Advisor recruiting data," "how to recruit financial advisors," "BrokerCheck research" | ★ |
+| Paid LinkedIn | Retarget engaged ICP accounts | Month 3+ |
 
-## Content pillars
+Competitor comparison pages ("X alternative") are on hold: public copy doesn't name competitors. Revisit once outcome proof exists.
 
-| Pillar | Purpose | Example angles | Share of calendar |
-|---|---|---|---|
-| **1. Category education: "timing is the edge"** | Define decision intelligence vs. database (map vs. GPS) | "Map vs. GPS: directory data vs. relationship intelligence"; "The half-life of an advisor list"; "The five-tab recruiting stack" | ~25% |
-| **2. Market data reports** | Original, aggregated views of the dataset (never methodology, never predictive claims) | Monthly "state of the advisor universe" snapshot; CFP density by metro; compensation/GDC benchmark notes; firm-size distribution | ~30% |
-| **3. Persona playbooks** | Practical how-to for each persona, with AssetLink output shown | Recruiter "mandate to first message in 10 minutes"; reading a BrokerCheck disclosure; wholesaler territory prioritization | ~25% |
-| **4. Proof & product** | Outcomes and **live** features only | Sample AI-drafted outreach; profile teardown; case studies ([PROOF NEEDED], no customer names without approval). Features ship publicly only after they're live in the Product Reality doc | ~15% |
-| **5. POV / culture** | Founder perspective, industry commentary | Reactions to big industry moves and reports | ~5% |
+## Formats and cadence
 
-RIA aggregator content belongs only in Pillars 1, 2, and 5. [DECISION]
+- **LinkedIn mix:** text + one chart or screenshot 40% · carousel 30% · short video 20% · poll 10%.
+- **Cadence:** founder/exec 3 posts a week per voice · company page 3–4 a week · newsletter weekly · data report monthly · teardown every two weeks · *Reading the Record* monthly.
+- **Repurposing:** each monthly report becomes about 8 pieces (carousel, 3 chart posts, newsletter lead, press pitch, founder take, sales one-pager).
 
-**Roadmap-aware sequencing:** plan content series for upcoming features using the internal roadmap, but never publish them before launch.
+## 90-day launch shape
 
-## Format allocation (LinkedIn, starting hypothesis)
+1. **Days 1–30, plant the flag:** founder launch post, newsletter #1, report #1, teardown #1, a *Five Tabs* post.
+2. **Days 31–60, prove the method:** playbook series, teardowns #2–3, *Reading the Record* #1, first press pitch, sales one-pager.
+3. **Days 61–90, prove the outcome:** first customer story (only if proof is approved), report #3 + press deep-dive, a live teardown session, start paid retargeting.
 
-- Text + single chart/data visual: 40%
-- Carousels (playbooks, market recaps): 30%
-- Short video (exec POV, 30–90s): 20%
-- Polls / conversation starters: 10%
+**Prerequisite:** the website hero is updated to the v3 positioning, with claims that aren't live removed.
 
-## Cadence (starting point)
+## Guardrails
 
-- Exec personal LinkedIn: 3×/week per active voice
-- Company page: 3–4×/week (reshares + originals)
-- Newsletter: weekly market/intel digest, or biweekly if capacity is tight
-- Market data report: monthly, with a quarterly deep-dive for PR
-
-## Calendar architecture
-
-Build a monthly grid: **week × pillar × persona × channel × format**. Rules:
-
-- Every week touches at least 2 personas (recruiter every week) and at least 3 pillars.
-- The monthly report (Pillar 2) spins into 6–10 derivative posts, 1 newsletter, and 1 press pitch.
-- Tie content to industry moments: quarter ends, major conferences, big M&A announcements.
+1. Only live features. No gated items.
+2. No real advisors or firms in public content.
+3. No methodology.
+4. No named competitors in public.
+5. AI drafts, people decide. Never "AI-powered" as a headline.
+6. No customer names without written approval. [PROOF NEEDED] never goes public.
+7. RIA aggregator content is education only.
+8. Voice: someone who's run a recruiting desk. No "unlock," "supercharge," "real-time," "game-changing."
 
 ## Measurement
 
-| Stage | Metric |
-|---|---|
-| Attention | Impressions and follower growth *among ICP titles* (not raw) |
-| Engagement | Comments from ICP accounts, newsletter open/click rate |
-| Pipeline | Demo requests sourced/influenced by content; ICP account engagement lift |
-| Category | Branded + "decision intelligence wealth management" search volume; press mentions |
+Set baselines in month 1. Track: newsletter subscribers from ICP titles · engagement from recruiting leaders · report requests · press pickups · demo requests sourced or influenced by content · pilots started. Review monthly, and cut any series that doesn't move ICP engagement after 8 weeks.
 
-Review monthly. Prune formats and pillars that don't move ICP engagement after 8 weeks.
+## Unlocks later
+
+- Saved searches, watchlists and alerts ship → add a "what changed this week" series and the full "know first *and* act first" promise.
+- Comp/GDC confirmed live → compensation benchmarks become the strongest report topic.

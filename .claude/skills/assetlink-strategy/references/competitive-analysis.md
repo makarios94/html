@@ -22,9 +22,19 @@ Source: *AssetLink Strategy & Competitive Analysis* (Devon, Mar 12 2026), from F
 Product and packaging recommendations live in the brief itself (internal). The one that shapes marketing: **invest in brand awareness** ("I didn't know what AssetLink did").
 
 ### Kill sheet (internal sales framing) [INTERNAL]
-- Pitch AssetLink as an **intelligence layer / GPS**, versus competitors' **static map**.
+- Pitch AssetLink as the **intelligence layer for what you do next**. The original "GPS vs. static map" line is outdated (see the Sep 2026 update below). Use: "Alerts tell you where the traffic is. AssetLink gives you the route and the first turn." 
 - **Lead demos with the output** (the brief or AI draft), not the search bar.
 - **Preqin**: position AssetLink as a complementary, forward-looking layer, not a replacement data source.
+
+## Market update: September 2026 [PUBLIC, verify before reuse]
+
+Since Devon's March brief, the head-to-head competitors moved onto AssetLink's "timing" message:
+- **FINTRX:** MCP connectors to Claude, ChatGPT and Perplexity (Mar 26, 2026). **"Fin" AI agent** (Sep 10, 2026) pushes advisor-move alerts, prospect lists and meeting prep into email, Slack, Teams and calendars, **free for every client**. **Relationship Path** finds warm intros via employment overlap, alumni and teammates. Coverage claims: 790K registered reps, 45K RIA/BD firms.
+- **AdvizorPro:** MCP server (Dec 9, 2025), advisor-move alerts, two-way Salesforce/HubSpot/Redtail sync, AI search and lead scoring, TrafficIQ website-visitor intent, 13F. Heavy SEO and monthly "Advisor Moves" reports.
+- **Dakota:** Claude/ChatGPT connectors, 13F holdings filters, monthly RIA M&A roundups.
+- **Discovery Data:** markets "real-time" advisor transition updates.
+
+**Implications:** push alerts and LLM connectors are now table stakes. AssetLink's live wedge is the recruiter action loop (profile depth plus AI-drafted outreach in the inbox), which is why positioning v3 says "act first," not "know first." FINTRX's Relationship Path means an advisor relationship graph is no longer a moat on its own.
 
 ## Adjacent AI / CRM landscape [INTERNAL, older]
 
@@ -54,5 +64,5 @@ Build this internally for each engagement: take every competitor capability, the
 ## Guardrails
 
 - Internal pricing and competitor price intel are for internal battlecards only. Never put them in public content.
-- No disparagement. Contrast on approach (layer vs. map), not quality.
+- No disparagement. Contrast on approach (same alert vs. the first good call), not quality. Never name competitors in public copy; battlecards only.
 - Never answer "where does your data come from" with a source list.

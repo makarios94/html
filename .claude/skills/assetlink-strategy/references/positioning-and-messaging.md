@@ -1,59 +1,105 @@
 # Positioning & Messaging
 
-Before drafting, apply the claims gate in `assetlink-context.md` §0: only features the Product Reality doc lists as **live today**.
+The current positioning is **v3 (Sep 29, 2026)**, pending sign-off from Devon and Ari. The full internal version is the private page listed in the repo's `CLAUDE.md`. This file is the working summary.
 
-## Process (adapted from April Dunford's *Obviously Awesome*)
+Before drafting anything, apply the claims gate in `assetlink-context.md` §0: only features the Product Reality doc lists as **live today**.
 
-1. **Competitive alternatives:** FINTRX ("the standard"), AdvizorPro ("the value play"), and the status-quo stitch (CRM + Power BI + LinkedIn + BrokerCheck/IAPD). See `competitive-analysis.md`.
-2. **Unique attributes (live):** regulatory-data accuracy across 390K advisors / 8.7K firms; deep profiles (registrations, disclosures, social activity, firm asset breakdowns); salary/GDC benchmarking and Social Pulse (confirm); AI Profile Agent drafting outreach into Gmail/Outlook; AI Insight chatbot; ICP tagging.
-3. **Value:** one queryable source replaces the five-tab stitch, and outreach goes out personalized and faster.
-4. **Who cares most:** recruiters with an active mandate (primary).
-5. **Market category:** see below.
-6. **Relevant trends:** advisor movement, RIA consolidation, and AI fatigue. The last one means *show the output, don't say "AI."*
+## The positioning in one table
 
-## Category framing
+| | |
+|---|---|
+| **Beachhead** | Recruiting leaders at RIAs, broker-dealers and wirehouses with an active recruiting mandate |
+| **Category** | Relationship intelligence for advisor recruiting. Company umbrella: relationship intelligence for wealth management |
+| **Owned idea** | **The first call** |
+| **Enemy** | The five-tab stitch: BrokerCheck, IAPD, LinkedIn, spreadsheets and the CRM |
+| **Promise** | From mandate to a researched, personalized first message, in one place |
+| **Spine** | *Compete on timing*, backed by **acting first**, not knowing first. Alerts and predictions aren't live |
+| **Tagline** | Find them. Know them. Reach them first. |
+| **One-liner** | Recruiters lose advisors to whoever calls first and best. AssetLink puts the advisor's full record and a drafted first message in one place, so your call is first. |
 
-- **Internal one-liner [INTERNAL]:** "relationship intelligence platform … find, prioritize, and engage high-fit advisor and firm relationships using regulatory data and AI."
-- **Public frame [PUBLIC]:** "Decision Intelligence for Wealth Management."
-- **Working approach:** use *decision intelligence* as the umbrella and *relationship intelligence* as the concrete description. Define it by contrast, using the kill-sheet metaphor: **competitors give you a map; AssetLink is the GPS.** Map = who exists. GPS = who to reach, why, and what to say.
-- Category education is ongoing (it's also the fix for "under-known").
+## The five frameworks behind it
 
-## Positioning statement (draft, validate with Devon/Ari)
+| Framework | Idea | What it decided for AssetLink |
+|---|---|---|
+| **Ries & Trout**, *Positioning* | Own one idea in the buyer's mind. Turn the leader's strength into a weakness | Own "the first call." FINTRX's breadth becomes sameness: everyone gets the same list and alert |
+| **Geoffrey Moore**, *Crossing the Chasm* | Win one beachhead, then the next segments. Deliver the whole product | Recruiters first. Aggregators after the firm screener ships. Asset managers after CRM sync, alerts and a lower tier |
+| **April Dunford**, *Obviously Awesome* / *Sales Pitch* | Alternatives → unique attributes → value → best fit → category. Pitch opens with a market insight | The canvas below, and a demo that opens with the output |
+| **Christopher Lochhead**, *Play Bigger* | Define the problem, name an enemy, publish a point of view | Name the problem ("same data, same alerts") and the enemy (the stitch), without inventing a big new category |
+| **Donald Miller**, *StoryBrand* | The customer is the hero, the brand is the guide | The recruiter is the hero. Website, email and social messaging follow the BrandScript |
 
-> For recruiting, M&A, and distribution teams in wealth management who win on getting to the right advisor first, AssetLink is the relationship intelligence layer that turns regulatory data into prioritized, ready-to-send outreach. Advisor directories give you a map. AssetLink gives you the route, and drafts the first message.
+## Options weighed
+
+| Option | Verdict | Why |
+|---|---|---|
+| "A better advisor database" | Reject | Loses head-to-head on coverage, price, CRM sync and 13F |
+| Price fighter | Reject as positioning | Signals a commodity, and competitors now bundle AI agents free. Solve price with packaging |
+| "AI outreach writer" | Reject as category | Easiest part to copy. Keep drafting as proof |
+| **Relationship intelligence for advisor recruiting** | **Adopt** | Where AssetLink wins, and the primary revenue persona |
+| Relationship intelligence for all three personas equally | Umbrella only | Spreads effort into fights AssetLink loses today |
+| "Decision intelligence" category creation | Reject for now | Abstract, feeds "I didn't know what AssetLink did," and needs features that aren't live |
+
+## Positioning statement (Moore's template)
+
+> For recruiting leaders at RIAs, broker-dealers and wirehouses who compete for the same advisors, AssetLink is relationship intelligence for advisor recruiting that takes you from a mandate to a researched, personalized first message in one place. Unlike advisor databases, which give every recruiter the same list and the same alert, AssetLink gets your first call out first, and better.
+
+## Positioning canvas (Dunford)
+
+| Element | AssetLink |
+|---|---|
+| **Competitive alternatives** | The five-tab stitch · FINTRX (breadth, free alerts) · AdvizorPro (low price) · generic AI · an outside recruiting firm |
+| **Unique attributes (live)** | One screener over 390K advisors and 8.7K firms (state, city, assets, custodian, compliance) · profiles with registrations, disclosures, social activity and firm assets · AI Profile Agent drafts outreach into Gmail/Outlook · AI Insight chatbot · ICP tagging · regulatory data refreshed daily |
+| **Gated (not claimable until confirmed live)** | Comp/GDC benchmarking, Social Pulse, custom lists, personal contact data |
+| **Value** | Fewer wasted calls, no surprises on the record, and the first message out first |
+| **Best fit** | Recruiting leaders with an active mandate who pay for direct outreach data |
+| **Relevant trend** | Alerts are becoming free and identical, so the edge moves from knowing to acting well |
+
+## Point of view
+
+> Every recruiter has the same data now: the same advisor lists, the same filings and, more and more, the same alerts at the same moment. When everyone finds out at once, finding out isn't the edge. The edge is the first good call: the right advisor, their full record, and a message worth answering, out the door before anyone else's. Databases were built to tell you who exists. AssetLink is built for what you do next.
 
 ## Message house
 
-**Roof (spine):** *Compete on timing.*
-Live-backed meaning: get from mandate → shortlist → personalized outreach faster than a competitor still stitching tools together.
-
-**Pillars:**
-1. **Find:** screen 390K advisors and 8.7K firms by what your mandate actually requires.
-2. **Know:** profiles deep enough to walk in informed (registrations, disclosures, social activity, asset breakdowns, compensation benchmarks).
-3. **Engage:** AI drafts the first message into your inbox, and you decide and send.
-
-**Foundation (proof):** daily-refreshed regulatory data · [PROOF NEEDED] customer outcomes (no customer names without approval) · the patent (public).
-Never use data sources or methodology as proof.
-
-### Persona houses (weighted by revenue priority)
-
-| Priority | Persona | Headline direction | Lead proof (live) |
+| | Find | Know | Reach |
 |---|---|---|---|
-| Primary | **Recruiters** | "Your mandate, shortlisted. Your first message, drafted." / "Be the first call, not the fifth." | Credential/geo screener, direct contact data, AI Profile Agent |
-| Secondary | **RIA aggregators** | *Education only:* "What actually happens before an RIA changes hands." | None. No capability claims [DECISION] |
-| Tertiary | **Asset managers / wholesalers** | "Walk into every meeting knowing what changed." / "Prioritize a territory, not a phone book." | Territory filters, firm-move tracking via profiles, AI outreach |
+| **Claim** | One accurate source for the advisors who fit your mandate | The full record before you reach out | A personalized first message, drafted for you to send |
+| **Live proof** | 390K advisors · 8.7K firms · filters · export | Registrations, disclosures, social activity, firm assets · AI Insight chatbot | AI Profile Agent → Gmail/Outlook · ICP tagging · HubSpot |
+| **Evidence still needed** | Time to a mandate shortlist | Research time saved per advisor | Reply rate on drafted outreach |
 
-### Premium justification (price is a known loss reason)
-AssetLink is priced at a significant premium to FINTRX and AdvizorPro. Messaging must make the gap feel like **output vs. input**: "You're not buying rows; you're buying the shortlist and the first draft." Demo the output first (kill sheet).
+**Foundation:** regulatory data refreshed daily · a US patent in AI-driven matchmaking · works alongside the CRM · AI drafts, people decide · live customers (no names without approval).
+
+## StoryBrand summary
+
+- **Hero:** a recruiting leader with a mandate and a number to hit.
+- **Problem:** research scattered across five tabs (external); losing an advisor you found first (internal); recruiting should be about the conversation (philosophical).
+- **Plan:** 1. Screen your mandate. 2. Read the full record. 3. Send the drafted first message.
+- **Direct call to action:** "Bring a live mandate."
+- **Success / failure:** the first good call on every mandate, versus another firm's call landing first.
+
+## Persona variants
+
+| Persona | Go-to-market role | Lead message | Don't say |
+|---|---|---|---|
+| Recruiter (primary) | Beachhead | "Your mandate, shortlisted. Your first message, drafted." | Alerts, predictions, credential filters, gated items |
+| Asset manager / wholesaler (tertiary) | Complement to the incumbent vendor | "Walk into every meeting knowing the advisor's record." | 13F, CRM sync, coverage comparisons |
+| RIA aggregator (secondary) | Education only | "Reading an ADV like a buyer." | "Spot likely sellers" |
+
+## Sales narrative (Dunford's *Sales Pitch*)
+
+1. **Insight:** everyone has the same data, and now the same alerts.
+2. **What great looks like:** the first good call, within the hour.
+3. **Why alternatives fall short:** the stitch is slow. Databases still leave the research and writing to you.
+4. **Demo:** open on a finished, drafted message. Then show the profile, then the screener.
+5. **Proof** [PROOF NEEDED]. **Close:** "Run one live mandate with us."
+
+**The GPS line (redefined kill-sheet metaphor):** "Alerts tell you where the traffic is. AssetLink gives you the route and the first turn." Never call competitors "static."
 
 ## Copy checks before anything ships
 
 - [ ] Every feature mentioned is **live today** per the Product Reality doc
-- [ ] No "real-time" language, and no feature outside the live list (cross-check the Product Reality doc's not-live list (internal))
-- [ ] AI is framed as drafting/assisting, never deciding
+- [ ] No gated items, and no alerts, predictive, real-time, CRM-sync, 13F or credential-filter language
+- [ ] AI drafts and assists; people decide and send
 - [ ] Leads with an outcome, not "AI-powered"
-- [ ] Contains a timing idea (first / before / ahead)
 - [ ] No methodology or data-source itemization
-- [ ] No customer names, pricing, TAM, or roadmap
+- [ ] No customer names, pricing, market sizing or roadmap
+- [ ] No named competitors in public copy
 - [ ] RIA aggregator content stays educational
-- [ ] Hypotheses labelled as such in strategy docs

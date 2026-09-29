@@ -1,16 +1,27 @@
 # AssetLink project
 
 ## Delivering documents
-The user reads documents on one private web page, **AssetLink Strategy Docs**: https://claude.ai/artifact/EJH1tdnc5SbgwH8451FUhY
+Each AssetLink document lives on **its own private web page**. One index page links to all of them:
 
-Their app only downloads file cards (Markdown, HTML and PDF alike), so never deliver a document as a file card alone.
+**AssetLink Strategy Docs (index):** https://claude.ai/artifact/EJH1tdnc5SbgwH8451FUhY
+
+| Document | Private page |
+|---|---|
+| Positioning & Messaging Strategy (v3) | https://claude.ai/artifact/7pMywVDoduvvXEY74h58hR |
+| Content Strategy (v1) | https://claude.ai/artifact/2KunR6geqo6gFrEoXFtAbs |
+| Competitive Analysis | https://claude.ai/artifact/BR7T5EixdUJKEZjbaHdvYz |
+| Positioning & Messaging (v2, superseded by v3) | https://claude.ai/artifact/EtYAweS3DvAYNVNPjQsQu3 |
+
+The user's app only downloads file cards (Markdown, HTML and PDF alike), so never deliver a document as a file card alone.
 
 For every document deliverable, each time it's created or meaningfully updated, without being asked:
 1. Keep the source as Markdown in the scratchpad (internal data never goes in this public repo).
-2. Rebuild the page with every current document as a tab:
-   `python3 .claude/skills/assetlink-strategy/scripts/build_docs_page.py OUT.html doc1.md doc2.md ...`
+2. Build the document's page on its own:
+   `python3 .claude/skills/assetlink-strategy/scripts/build_docs_page.py OUT.html doc.md`
    (needs `pip install markdown` once per session).
-3. Publish `OUT.html` with the Artifact tool, passing `url` set to the page above so it updates in place. Read the page first (`action: "read"`) to get the current document list if this session didn't publish it.
+3. Publish `OUT.html` with the Artifact tool:
+   - **Updated document:** pass `url` set to its page above, so it updates in place. Read the page first (`action: "read"`) if this session didn't publish it.
+   - **New document:** publish it as a new page. Then add it to the index page and to the table above.
 4. Reply with the link and a short summary of what changed.
 
-A PDF copy is optional, made with `scripts/md2view.py`, and only if the user asks for one.
+Never combine documents into one page. A PDF copy is optional, made with `scripts/md2view.py`, and only if the user asks for one.

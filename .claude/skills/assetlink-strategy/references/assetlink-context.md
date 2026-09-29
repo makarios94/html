@@ -7,7 +7,7 @@ Standing facts, decisions, and constraints. Status tags:
 - **[DECISION]**: a standing rule this skill must respect.
 - **[TO CONFIRM]**: a working assumption to validate with Devon / Ari / Andrew.
 
-_Last reviewed: 2026-09-28._
+_Last reviewed: 2026-09-29._
 
 ## 0. The claims gate (read before writing anything external)
 
@@ -35,6 +35,12 @@ Public site copy (e.g. "detects movement signals daily," "links stories … befo
 
 **Public category frame [PUBLIC]:** "Decision Intelligence for Wealth Management" serving teams "who compete on timing and precision." The skill's spine, **"compete on timing,"** comes from this. [DECISION: keep the spine, but only back it with live capabilities (§3). Today, "timing" means *daily-refreshed regulatory data + fast search + AI-drafted outreach*. Check the Product Reality doc's not-live list (internal) before tying the spine to any signal or prediction capability.]
 
+**Current positioning [PROPOSED v3, Sep 29 2026, pending Devon/Ari sign-off]:**
+- Category: *relationship intelligence for advisor recruiting*, under the umbrella *relationship intelligence for wealth management*. Retire "decision intelligence" from the website hero.
+- Owned idea: **the first call**. Enemy: the five-tab stitch.
+- Spine: "compete on timing," backed by **acting first** (speed from mandate to a drafted first message), not knowing first.
+- Detail: `positioning-and-messaging.md`.
+
 **Market perception [INTERNAL, Future Proof 2026]:** "best-in-class but under-known." AssetLink wins on product superiority and loses on brand familiarity and price. Quote from a stakeholder: *"I didn't know what AssetLink did."* Brand awareness is a named strategic priority.
 
 ## 3. Product reality
@@ -47,7 +53,8 @@ Public site copy (e.g. "detects movement signals daily," "links stories … befo
 - **Manual ICP tagging:** Closed / Prospect / Not a Fit.
 - **Integrations:** Gmail, Outlook, HubSpot (OAuth).
 - Data is **batch-updated daily**, not real-time.
-- Sold differentiators cited in the competitive brief: salary/GDC benchmarking, "Social Pulse" social-engagement signals, and sophisticated custom lists. [TO CONFIRM each against the Product Reality doc before claiming it.]
+- **[GATED]** Cited as strengths in the competitive brief but not on the live list: salary/GDC benchmarking, "Social Pulse" social-engagement signals, custom lists. Personal contact data appears in the persona use cases but not explicitly on the live list. None of these can be claimed until the Product Reality doc lists them as live.
+- The live screener filters are state, city, assets, custodian and compliance. **Credential filters (e.g. CFP) aren't on the live list.**
 
 ### Not live. Do not claim. [INTERNAL]
 The not-live list lives in the Product Reality doc and is not reproduced here. **Anything not in the live list above is unclaimable until someone confirms it against that doc.**
@@ -93,7 +100,7 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Read
 1. **Talk like someone who's run a territory or a recruiting desk.** Use native vocabulary (CRD, U4/U5, BrokerCheck, IAPD, ADV, GDC, AUM, breakaway, book, territory) and never define it.
 2. **Specific beats superlative.** No "revolutionary," "game-changing," "unlock," "supercharge."
 3. **Treat "AI" as the means, not the headline.** Lead with the outcome. And never imply autonomous AI decisions (a hard boundary): AI *drafts*, *summarizes*, and *answers*, while humans decide and send.
-4. **Use "intelligence layer / GPS," not "database / map."** (From the kill sheet.)
+4. **Frame AssetLink as the intelligence layer for what you do next.** Kill-sheet GPS line, redefined: "Alerts tell you where the traffic is. AssetLink gives you the route and the first turn." Never call competitors "static": FINTRX and AdvizorPro push alerts now.
 5. **Avoid real-time language.** Data is daily-refreshed, so avoid "real-time," "live signals," and "instant alerts."
 6. **No fabricated proof.** Use `[PROOF NEEDED]` placeholders.
 7. **Stay compliance-aware.** No investment advice, no performance promises, no accuracy guarantees.
@@ -112,7 +119,11 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Read
 - **Ari**: product; owns Product Reality doc and Idea Inventory.
 - **Andrew**: validates strategy/positioning. [TO CONFIRM: role]
 
-## 11. Related skills
+## 11. Strategy documents
+
+The full internal documents (positioning v3, content strategy, competitive analysis) are private pages listed in the repo's `CLAUDE.md`.
+
+## 12. Related skills
 
 - `assetlink-content-studio`: asset production.
 - `assetlink-seo-organic`: SEO/blog/organic.

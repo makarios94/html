@@ -4,7 +4,7 @@ Tags: **[INTERNAL]** means from the Product Reality doc (Ari, Jun 2026) or Devon
 
 ## Method
 
-1. **Weight by revenue priority** [INTERNAL]: Recruiter (primary) → RIA Aggregator (secondary) → Asset Manager / Distribution incl. wholesalers (tertiary).
+1. **Weight by revenue priority** [INTERNAL]: Recruiter (primary) → RIA Aggregator (secondary) → Asset Manager / Distribution incl. wholesalers (tertiary). **Launch-phase effort (positioning v3):** ~70% recruiters, ~15% asset managers, ~15% aggregators (education only).
 2. **Situational fit beats firmographics.** An *active mandate* (recruiting, M&A, or territory) is the best-fit signal for every persona.
 3. **Map the buying committee.** It's thin for recruiters and deep for enterprise asset managers.
 4. **Write JTBD in the buyer's words.**
@@ -24,7 +24,8 @@ That's the most defensible, live-backed "compete on timing" story: *less time as
 - **JTBD:** Source advisors open to moving, get **direct (not corporate-gatekept) contact info**, and filter against a specific mandate (e.g. "CFP in the Northeast managing $200M+"). Catch competitive moves before rivals do.
 - **Critical data [INTERNAL]:** name, CRD, tenure at current firm, license type, production/AUM estimate, personal email/cell.
 - **Best-fit signal [INTERNAL]:** has an active recruiting mandate and **pays for direct outreach data, not just a directory**.
-- **Live features that serve them:** screener (credentials/geo/assets/custodian/compliance), profiles (registrations, disclosures, social activity), AI Profile Agent → Gmail/Outlook drafts, ICP tagging, export. Also salary/GDC benchmarking and Social Pulse (sold differentiators per the competitive brief).
+- **Live features that serve them:** screener (state, city, assets, custodian, compliance), profiles (registrations, disclosures, social activity), AI Profile Agent → Gmail/Outlook drafts, ICP tagging, export.
+- **[GATED] until confirmed live:** credential filters, salary/GDC benchmarking, Social Pulse, personal contact data.
 - **Pains [HYPOTHESIS, Med]:** stale directory data, gatekept corporate emails, hours on BrokerCheck, generic outreach that gets ignored.
 - **Objections:** "FINTRX is the standard." "AdvizorPro is a fifth of the price." "I have my network."
 - **Gaps:** check the Product Reality doc's not-live list (internal) before promising any workflow feature.

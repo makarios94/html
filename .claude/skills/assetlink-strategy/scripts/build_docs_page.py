@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build the private "AssetLink Strategy Docs" page: one tab per Markdown document.
+"""Build a private AssetLink document page from Markdown.
 
-Usage: python3 build_docs_page.py OUTPUT.html doc1.md [doc2.md ...]
-Each doc's tab label is its first "# " heading. Publish OUTPUT.html with the Artifact tool,
-updating the existing private page (URL in the repo's CLAUDE.md) rather than creating a new one.
+Usage: python3 build_docs_page.py OUTPUT.html doc.md [more.md ...]
+One document (the normal case) gives a page of its own, titled from its first "# " heading.
+Several documents give one page with a tab per document.
+Publish OUTPUT.html with the Artifact tool; the page URLs are listed in the repo's CLAUDE.md.
 """
 import html
 import os
@@ -46,7 +47,12 @@ for i,(did,label,f) in enumerate(DOCS):
 <header class="dochead"><p class="eyebrow">AssetLink · Internal · Sep 2026</p><h1>{html.escape(title)}</h1></header>
 <div class="cols"><nav class="toc" aria-label="Sections"><p class="toclabel">Sections</p><ol>{nav}</ol></nav>
 <article class="prose">{h}</article></div></section>''')
-page=f'''<title>AssetLink Strategy Docs</title>
+if len(DOCS) == 1:
+    PAGE_TITLE = "AssetLink " + re.sub(r"\s*\((v\d+)\)", r" \1", DOCS[0][1]).split(":")[0].strip()
+    tabs = []  # a single document needs no tab bar
+else:
+    PAGE_TITLE = "AssetLink Strategy Docs"
+page=f'''<title>{html.escape(PAGE_TITLE)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87,600;87,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
@@ -107,7 +113,7 @@ tr:last-child td{{border-bottom:0}}
 @media (max-width:860px){{.cols{{grid-template-columns:minmax(0,1fr);gap:16px}} .toc{{position:static;max-height:none}} .toc ol{{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}}}}
 @media (prefers-reduced-motion:no-preference){{html{{scroll-behavior:smooth}}}}
 </style>
-<div class="bar"><div class="barin"><span class="brand">AssetLink Strategy</span><div class="tabs" role="tablist" aria-label="Documents">{"".join(tabs)}</div></div></div>
+<div class="bar"><div class="barin"><span class="brand">AssetLink Strategy</span>{('<div class="tabs" role="tablist" aria-label="Documents">' + "".join(tabs) + '</div>') if tabs else ""}</div></div>
 <main class="wrap">{"".join(secs)}</main>
 <script>
 (function(){{
