@@ -19,6 +19,7 @@ OUT = sys.argv[1]
 DOCS = []
 for path in sys.argv[2:]:
     first = open(path, encoding="utf-8").readline().lstrip("# ").strip()
+    first = re.sub(r"^AssetLink\s+", "", first)  # tab label: drop the brand prefix
     doc_id = re.sub(r"[^a-z0-9]+", "", os.path.splitext(os.path.basename(path))[0].lower())[:24]
     DOCS.append((doc_id, first, path))
 TAGS={"LIVE":"live","GATED":"gated","PROOF NEEDED":"proof","HYPOTHESIS":"hyp","SEP-26 UPDATE":"upd",
