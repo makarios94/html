@@ -49,4 +49,5 @@ Before doing any strategy work, read `references/assetlink-context.md`. It captu
 
 - Persona docs, competitive matrices, and message houses: clean markdown artifact or a real file (xlsx for matrices with scoring, docx for narrative positioning docs) since these get reused and shared with Devon/Andrew.
 - Competitive/strategic analysis: lead with the 2-3 highest-impact findings in prose, don't bury insight under framework explanation.
+- **Show every Markdown or PDF deliverable in the conversation.** Send each `.md` or `.pdf` file with `SendUserFile` using `display: "render"` so it opens in the viewer. For `.md` files, also paste the full content into the reply. Do this every time a file is created or meaningfully updated, without being asked.
 - Always apply the standing brand voice and copywriting rules from `assetlink-context.md` to any drafted copy, even at the strategy stage — a positioning statement or message house line should already sound like AssetLink, not need a rewrite pass later.
