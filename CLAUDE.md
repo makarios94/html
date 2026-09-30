@@ -24,4 +24,10 @@ For every document deliverable, each time it's created or meaningfully updated, 
    - **New document:** publish it as a new page. Then add it to the index page and to the table above.
 4. Reply with the link and a short summary of what changed.
 
+## Writing documents for leadership
+Documents on these pages are read by the CEO and leadership, so:
+- Use plain, everyday words and short sentences. No marketing or strategy jargon (for example "beachhead," "category," "canvas," "spine," "ICP," "gated").
+- Keep only what's important to know or decide: who we sell to, the problem, what makes us different, what we say, and the decisions needed.
+- Leave out working material: frameworks used, options weighed, scoring, readiness checklists and method notes. Those stay internal for the marketing team, in the skill references or a scratchpad working copy.
+
 Never combine documents into one page. A PDF copy is optional, made with `scripts/md2view.py`, and only if the user asks for one.
