@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Build a private AssetLink document page from Markdown.
 
-Usage: python3 build_docs_page.py OUTPUT.html doc.md [more.md ...]
+Usage: python3 build_docs_page.py OUTPUT.html [--downloads DIR/BASENAME] doc.md [more.md ...]
 One document (the normal case) gives a page of its own, titled from its first "# " heading.
 Several documents give one page with a tab per document.
+--downloads adds Word / PDF / Markdown buttons (make the files with export_formats.py first).
+The Word file is embedded in the page, because .docx can't be published as a page file.
+Publish BASENAME.pdf and BASENAME.md through the Artifact tool's `files` and declare
+`capabilities: {downloads: true}`.
 Publish OUTPUT.html with the Artifact tool; the page URLs are listed in the repo's CLAUDE.md.
 """
 import html
@@ -16,9 +20,16 @@ import markdown
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from md2view import separate_lists  # noqa: E402
 
-OUT = sys.argv[1]
+ARGS = sys.argv[1:]
+DL = None
+if "--downloads" in ARGS:
+    i = ARGS.index("--downloads")
+    DL_PATH = ARGS[i + 1]
+    DL = os.path.basename(DL_PATH)
+    del ARGS[i:i + 2]
+OUT = ARGS[0]
 DOCS = []
-for path in sys.argv[2:]:
+for path in ARGS[1:]:
     first = open(path, encoding="utf-8").readline().lstrip("# ").strip()
     first = re.sub(r"^AssetLink\s+", "", first)  # tab label: drop the brand prefix
     doc_id = re.sub(r"[^a-z0-9]+", "", os.path.splitext(os.path.basename(path))[0].lower())[:24]
@@ -47,6 +58,50 @@ for i,(did,label,f) in enumerate(DOCS):
 <header class="dochead"><p class="eyebrow">AssetLink · Internal · Sep 2026</p><h1>{html.escape(title)}</h1></header>
 <div class="cols"><nav class="toc" aria-label="Sections"><p class="toclabel">Sections</p><ol>{nav}</ol></nav>
 <article class="prose">{h}</article></div></section>''')
+DL_BAR = ""
+DL_SCRIPT = ""
+if DL:
+    DL_BAR = ('<div class="dl" id="dl" hidden><span class="dllabel">Download</span>'
+              '<button type="button" class="dlbtn" data-ext="docx">Word</button>'
+              '<button type="button" class="dlbtn" data-ext="pdf">PDF</button>'
+              '<button type="button" class="dlbtn" data-ext="md">Markdown</button>'
+              '<span class="dlmsg" id="dlmsg" role="status"></span></div>')
+    import base64
+    DOCX_B64 = base64.b64encode(open(DL_PATH + ".docx", "rb").read()).decode()
+    DL_SCRIPT = """<script type="text/plain" id="docx-data">""" + DOCX_B64 + """</script>
+<script>
+(function(){
+  var base = %s;
+  function docxBlob(){
+    var b64 = document.getElementById('docx-data').textContent.trim(), bin = atob(b64), n = bin.length, u = new Uint8Array(n);
+    for (var i = 0; i < n; i++) u[i] = bin.charCodeAt(i);
+    return new Blob([u]);
+  }
+  var bar = document.getElementById('dl'), msg = document.getElementById('dlmsg');
+  if (!window.claude || !window.claude.use) return;
+  window.claude.use('downloads').then(function(dl){
+    if (!dl) return;
+    bar.hidden = false;
+    [].slice.call(bar.querySelectorAll('.dlbtn')).forEach(function(b){
+      b.addEventListener('click', function(){
+        var ext = b.dataset.ext; msg.textContent = '';
+        b.disabled = true;
+        (ext === 'docx' ? Promise.resolve(docxBlob()) : fetch(base + '.' + ext).then(function(r){ if(!r.ok) throw new Error('missing'); return r.blob(); }))
+          .then(function(blob){ return dl.save({filename: base + '.' + ext, data: blob}); })
+          .then(function(){ msg.textContent = 'Saved.'; })
+          .catch(function(e){
+            var c = e && e.code;
+            if (c === 'declined') msg.textContent = '';
+            else if (c === 'rate_limited') msg.textContent = 'A save is already open. Try again in a moment.';
+            else msg.textContent = 'That file couldn\\'t be saved here.';
+          })
+          .then(function(){ b.disabled = false; });
+      });
+    });
+  });
+})();
+</script>
+""" % repr(DL)
 if len(DOCS) == 1:
     PAGE_TITLE = "AssetLink " + re.sub(r"\s*\((v\d+)\)", r" \1", DOCS[0][1]).split(":")[0].strip()
     tabs = []  # a single document needs no tab bar
@@ -75,6 +130,14 @@ page=f'''<title>{html.escape(PAGE_TITLE)}</title>
 body{{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body)}}
 .bar{{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}}
 .barin{{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}}
+.dl{{display:flex;flex-wrap:wrap;align-items:center;gap:6px}}
+.dl[hidden]{{display:none}}
+.dllabel{{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}}
+.dlbtn{{font:600 13px/1 var(--body);padding:8px 12px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}}
+.dlbtn:hover{{border-color:var(--accent);color:var(--accent)}}
+.dlbtn:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+.dlbtn:disabled{{opacity:.6;cursor:progress}}
+.dlmsg{{font-size:13px;color:var(--muted);min-width:0}}
 .brand{{font:700 15px/1 var(--display);font-stretch:87%;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}}
 .tabs{{display:flex;flex-wrap:wrap;gap:6px}}
 .tab{{font:600 14px/1 var(--body);padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}}
@@ -113,9 +176,9 @@ tr:last-child td{{border-bottom:0}}
 @media (max-width:860px){{.cols{{grid-template-columns:minmax(0,1fr);gap:16px}} .toc{{position:static;max-height:none}} .toc ol{{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}}}}
 @media (prefers-reduced-motion:no-preference){{html{{scroll-behavior:smooth}}}}
 </style>
-<div class="bar"><div class="barin"><span class="brand">AssetLink Strategy</span>{('<div class="tabs" role="tablist" aria-label="Documents">' + "".join(tabs) + '</div>') if tabs else ""}</div></div>
+<div class="bar"><div class="barin"><span class="brand">AssetLink Strategy</span>{('<div class="tabs" role="tablist" aria-label="Documents">' + "".join(tabs) + '</div>') if tabs else ""}{DL_BAR}</div></div>
 <main class="wrap">{"".join(secs)}</main>
-<script>
+{DL_SCRIPT}<script>
 (function(){{
   var tabs=[].slice.call(document.querySelectorAll('.tab'));
   function show(id,push){{
