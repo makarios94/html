@@ -1,6 +1,6 @@
 # Content & Social Strategy
 
-The current plan is **Content Strategy v1 (Sep 29, 2026)**, built on positioning v3. The full internal version is the private page listed in the repo's `CLAUDE.md`. This file is the working summary. It's the strategy layer only: asset production goes to `assetlink-content-studio`, and SEO/blog execution goes to `assetlink-seo-organic`.
+The current plan is **Content Strategy v2 (Oct 8, 2026)**, built on positioning v4 and Devon's October Product Reality and ICP. The full internal version is the private page listed in the repo's `CLAUDE.md`. This file is the working summary. It's the strategy layer only: asset production goes to `assetlink-content-studio`, and SEO/blog execution goes to `assetlink-seo-organic`.
 
 ## The strategy on one table
 
@@ -9,7 +9,7 @@ The current plan is **Content Strategy v1 (Sep 29, 2026)**, built on positioning
 | **Job of content** | Make AssetLink known for **the first call**, and turn that into recruiter demos |
 | **Primary audience** | Recruiting leaders (the beachhead) |
 | **Core story** | Everyone has the same data and the same alerts. The first good call wins. The five-tab stitch slows you down |
-| **What's ours** | Aggregated views of the 390K-advisor / 8.7K-firm dataset, and real AssetLink output on screen |
+| **What's ours** | Movement data from our signals (moves from news in about a day, hiring hotspots, firm growth) across 600K+ advisors and 20K+ firms, and real AssetLink output on screen |
 | **Call to action** | "Bring a live mandate" |
 
 ## Objectives
@@ -39,7 +39,7 @@ Rebalance once the next segments' features ship. Map pieces to awareness stages 
 | **4. Proof and product** (output) | *Mandate Teardown*, annotated drafts, outcome stories [PROOF NEEDED] | 15% |
 | **5. Reading the Record** (education) | BrokerCheck, IAPD and ADV literacy. Safe for aggregators | 10% |
 
-**Data rules for Pillar 2:** aggregated counts and shares only. Never name an advisor or firm, never describe how the data is assembled, no compensation or GDC figures until confirmed live, and no predictions about who will move or sell.
+**Data rules for Pillar 2:** never name an individual advisor. Firm-level trends from public filings (which firms gain or lose advisors) are pending leadership approval. Never describe how the data is assembled, never say "predicts," and use pilot figures only with their context.
 
 ## Signature series
 
@@ -83,7 +83,7 @@ Competitor comparison pages ("X alternative") are on hold: public copy doesn't n
 
 ## Guardrails
 
-1. Only live features. No gated items.
+1. Only live features, and nothing on the Product Reality "claims to avoid" list.
 2. No real advisors or firms in public content.
 3. No methodology.
 4. No named competitors in public.
@@ -98,5 +98,5 @@ Set baselines in month 1. Track: newsletter subscribers from ICP titles · engag
 
 ## Unlocks later
 
-- Saved searches, watchlists and alerts ship → add a "what changed this week" series and the full "know first *and* act first" promise.
+- Always-on agents ship → add an "AssetLink found this for you" series showing pushed findings.
 - Comp/GDC confirmed live → compensation benchmarks become the strongest report topic.

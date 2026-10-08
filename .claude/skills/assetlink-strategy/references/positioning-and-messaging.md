@@ -1,6 +1,8 @@
 # Positioning & Messaging
 
-The current positioning is **v3 (Sep 29, 2026)**, pending sign-off from Devon and Ari. The full internal version is the private page listed in the repo's `CLAUDE.md`. This file is the working summary.
+The current positioning is **v4 (Oct 8, 2026)**, built on Devon's October Product Reality and Ideal Customer Profile. The full leadership version is the private page listed in the repo's `CLAUDE.md`. This file is the marketing team's working summary: the framework reasoning below still holds, with the facts updated.
+
+**What changed in v4:** move signals are live (news in about a day, versus about 30 days for filings), so the spine is now *know first and act first*. Personal contact details and saved lists are live. Coverage is 600K+ advisors and 20K+ firms [TO CONFIRM]. Buyers are now three lanes and three use cases, with recruiting as the wedge. A managed-service scoring pilot gives real proof (use with context). Claims to avoid: "ranks advisors," "predicts who will move," a pilot accuracy figure as a guarantee.
 
 Before drafting anything, apply the claims gate in `assetlink-context.md` §0: only features the Product Reality doc lists as **live today**.
 
@@ -8,14 +10,15 @@ Before drafting anything, apply the claims gate in `assetlink-context.md` §0: o
 
 | | |
 |---|---|
-| **Beachhead** | Recruiting leaders at RIAs, broker-dealers and wirehouses with an active recruiting mandate |
+| **Beachhead** | Recruiting leaders (the wedge) inside growth, recruiting and distribution teams at ~4,000 wealth firms with $1–20B AUM |
 | **Category** | Relationship intelligence for advisor recruiting. Company umbrella: relationship intelligence for wealth management |
 | **Owned idea** | **The first call** |
 | **Enemy** | The five-tab stitch: BrokerCheck, IAPD, LinkedIn, spreadsheets and the CRM |
-| **Promise** | From mandate to a researched, personalized first message, in one place |
-| **Spine** | *Compete on timing*, backed by **acting first**, not knowing first. Alerts and predictions aren't live |
+| **Promise** | See who may be moving within a day of the news, and reach them first with a drafted message |
+| **Spine** | *Compete on timing*, backed by **knowing first and acting first**. Never "predicts" |
 | **Tagline** | Find them. Know them. Reach them first. |
-| **One-liner** | Recruiters lose advisors to whoever calls first and best. AssetLink puts the advisor's full record and a drafted first message in one place, so your call is first. |
+| **Headline** | See the move sooner. Make the first call. |
+| **One-liner** | AssetLink spots advisor moves in about a day, not a month, gives you the full record, and drafts the first message, so your firm gets there first. |
 
 ## The five frameworks behind it
 
@@ -47,11 +50,12 @@ Before drafting anything, apply the claims gate in `assetlink-context.md` §0: o
 | Element | AssetLink |
 |---|---|
 | **Competitive alternatives** | The five-tab stitch · FINTRX (breadth, free alerts) · AdvizorPro (low price) · generic AI · an outside recruiting firm |
-| **Unique attributes (live)** | One screener over 390K advisors and 8.7K firms (state, city, assets, custodian, compliance) · profiles with registrations, disclosures, social activity and firm assets · AI Profile Agent drafts outreach into Gmail/Outlook · AI Insight chatbot · ICP tagging · regulatory data refreshed daily |
-| **Gated (not claimable until confirmed live)** | Comp/GDC benchmarking, Social Pulse, custom lists, personal contact data |
+| **Unique attributes (live)** | Movement signals from news in about a day, leaderboards, hotspots, firm growth · 600K+ advisors, 20K+ firms, ~41K teams [TO CONFIRM] · personal and work contacts, exams, disclosures, historical AUM, social activity · saved lists and filters · Insight agent (lists, lookalikes, why a name fits) · drafted outreach into Outlook/Gmail · native Microsoft, Google, HubSpot |
+| **Managed service** | Calibrated scoring against the client's ideal profile, with strong 8-week pilot results (use with context) |
+| **Not live (never claim)** | Ranking in the platform, predictions, always-on agents, individual AUM estimates, A–Z sort, regional filters, self-serve checkout |
 | **Value** | Fewer wasted calls, no surprises on the record, and the first message out first |
 | **Best fit** | Recruiting leaders with an active mandate who pay for direct outreach data |
-| **Relevant trend** | Alerts are becoming free and identical, so the edge moves from knowing to acting well |
+| **Relevant trend** | Alerts based on filings arrive about 30 days late and everyone gets them; signals from news arrive in about a day |
 
 ## Point of view
 
@@ -62,7 +66,7 @@ Before drafting anything, apply the claims gate in `assetlink-context.md` §0: o
 | | Find | Know | Reach |
 |---|---|---|---|
 | **Claim** | One accurate source for the advisors who fit your mandate | The full record before you reach out | A personalized first message, drafted for you to send |
-| **Live proof** | 390K advisors · 8.7K firms · filters · export | Registrations, disclosures, social activity, firm assets · AI Insight chatbot | AI Profile Agent → Gmail/Outlook · ICP tagging · HubSpot |
+| **Live proof** | 600K+ advisors · 20K+ firms · filters · saved lists · Insight agent | Signals within a day of the news · contacts, disclosures, exams, historical AUM | Drafted outreach → Outlook/Gmail · ideal-profile upload · HubSpot |
 | **Evidence still needed** | Time to a mandate shortlist | Research time saved per advisor | Reply rate on drafted outreach |
 
 **Foundation:** regulatory data refreshed daily · a US patent in AI-driven matchmaking · works alongside the CRM · AI drafts, people decide · live customers (no names without approval).
@@ -79,7 +83,7 @@ Before drafting anything, apply the claims gate in `assetlink-context.md` §0: o
 
 | Persona | Go-to-market role | Lead message | Don't say |
 |---|---|---|---|
-| Recruiter (primary) | Beachhead | "Your mandate, shortlisted. Your first message, drafted." | Alerts, predictions, credential filters, gated items |
+| Recruiter (primary) | Beachhead | "Know who may be moving before everyone else does, and reach them first." | "Predicts," "ranks," always-on agents |
 | Asset manager / wholesaler (tertiary) | Complement to the incumbent vendor | "Walk into every meeting knowing the advisor's record." | 13F, CRM sync, coverage comparisons |
 | RIA aggregator (secondary) | Education only | "Reading an ADV like a buyer." | "Spot likely sellers" |
 
@@ -96,7 +100,7 @@ Before drafting anything, apply the claims gate in `assetlink-context.md` §0: o
 ## Copy checks before anything ships
 
 - [ ] Every feature mentioned is **live today** per the Product Reality doc
-- [ ] No gated items, and no alerts, predictive, real-time, CRM-sync, 13F or credential-filter language
+- [ ] Nothing from the Product Reality "claims to avoid" or "in development" lists: no "ranks," "predicts," "always-on," "MVP," individual AUM, or pilot accuracy figures stated as guarantees
 - [ ] AI drafts and assists; people decide and send
 - [ ] Leads with an outcome, not "AI-powered"
 - [ ] No methodology or data-source itemization

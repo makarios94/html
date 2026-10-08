@@ -12,9 +12,7 @@ Source: *AssetLink Strategy & Competitive Analysis* (Devon, Mar 12 2026), from F
 |---|---|---|---|
 | **FINTRX** | "The Standard": safe, corporate (Capital Group / BlackRock) | mid | Building personal profiles to match AssetLink. Partnering with AIidentified for advisor "passion" data |
 | **AdvizorPro** | "The Value Play" | low | 13F ticker data, website visitor identification |
-| **AssetLink** | "The Alpha" / New Guard | premium | Salary/GDC benchmarking, Social Pulse social-engagement signals, sophisticated custom lists* |
-
-\*As described in the Mar 2026 brief. Confirm each against the Product Reality doc before citing.
+| **AssetLink** | "The Alpha" / New Guard | premium | (Mar 2026 brief. For current capabilities, use the Oct 2026 Product Reality summary in `assetlink-context.md`.) |
 
 **Implications:** AssetLink is priced well above both (see internal brief for figures). Every competitive message has to justify a premium or route price-sensitive buyers to a lower tier.
 
@@ -34,7 +32,7 @@ Since Devon's March brief, the head-to-head competitors moved onto AssetLink's "
 - **Dakota:** Claude/ChatGPT connectors, 13F holdings filters, monthly RIA M&A roundups.
 - **Discovery Data:** markets "real-time" advisor transition updates.
 
-**Implications:** push alerts and LLM connectors are now table stakes. AssetLink's live wedge is the recruiter action loop (profile depth plus AI-drafted outreach in the inbox), which is why positioning v3 says "act first," not "know first." FINTRX's Relationship Path means an advisor relationship graph is no longer a moat on its own.
+**Implications:** push alerts and LLM connectors are now table stakes. **Update (Oct 2026 Product Reality):** AssetLink's signals are live and pick up moves from news in about a day versus about 30 days for filings, so positioning v4 claims *know first and act first*. AssetLink's remaining gaps are push delivery (always-on agents are in development), in-platform ranking (scoring is a managed service), and confirmed Dynamics/API/MCP options. FINTRX's Relationship Path means an advisor relationship graph is no longer a moat on its own.
 
 ## Adjacent AI / CRM landscape [INTERNAL, older]
 

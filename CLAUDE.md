@@ -7,10 +7,10 @@ Each AssetLink document lives on **its own private web page**. One index page li
 
 | Document | Private page |
 |---|---|
-| Positioning & Messaging Strategy (v3) | https://claude.ai/artifact/7pMywVDoduvvXEY74h58hR |
-| Content Strategy (v1) | https://claude.ai/artifact/2KunR6geqo6gFrEoXFtAbs |
+| Positioning & Messaging (v4) | https://claude.ai/artifact/7pMywVDoduvvXEY74h58hR |
+| Content Strategy (v2) | https://claude.ai/artifact/2KunR6geqo6gFrEoXFtAbs |
 | Competitive Analysis | https://claude.ai/artifact/BR7T5EixdUJKEZjbaHdvYz |
-| Positioning & Messaging (v2, superseded by v3) | https://claude.ai/artifact/EtYAweS3DvAYNVNPjQsQu3 |
+| Positioning & Messaging (v2, outdated) | https://claude.ai/artifact/EtYAweS3DvAYNVNPjQsQu3 |
 
 The user's app only downloads file cards (Markdown, HTML and PDF alike), so never deliver a document as a file card alone.
 

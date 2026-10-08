@@ -1,83 +1,81 @@
 # ICP & Personas
 
-Tags: **[INTERNAL]** means from the Product Reality doc (Ari, Jun 2026) or Devon's analyses. **[HYPOTHESIS]** means inference to validate. No standalone ICP doc exists yet. This file is the working draft. Devon and Ari should confirm it and turn it into its own doc.
+Source: Devon's **AssetLink Ideal Customer Profile (October 8, 2026)**. This replaces the earlier draft built from the June Product Reality doc. Pricing and customer names are in the internal document only.
 
-## Method
+## The short version
 
-1. **Weight by revenue priority** [INTERNAL]: Recruiter (primary) → RIA Aggregator (secondary) → Asset Manager / Distribution incl. wholesalers (tertiary). **Launch-phase effort (positioning v3):** ~70% recruiters, ~15% asset managers, ~15% aggregators (education only).
-2. **Situational fit beats firmographics.** An *active mandate* (recruiting, M&A, or territory) is the best-fit signal for every persona.
-3. **Map the buying committee.** It's thin for recruiters and deep for enterprise asset managers.
-4. **Write JTBD in the buyer's words.**
-5. **Claims gate.** Persona "value" must map to *live* features (see `assetlink-context.md` §3).
+**Sell first to growth, recruiting and distribution leaders at wealth firms that already pay for advisor data and feel its gaps.** The core universe is about 4,000 firms with $1–20B of AUM.
 
-## The common thread [INTERNAL]
+## Three lanes (by firm size and how the buyer wants to buy)
 
-All three personas currently stitch together **Salesforce/HubSpot + Power BI + LinkedIn + manual FINRA BrokerCheck / IAPD lookups**. AssetLink's fit is **replacing that fragmentation with one queryable source plus AI-drafted outreach.** All are **US-only**.
+| Lane | Firms | Buyers |
+|---|---|---|
+| **Enterprise** | Wirehouses, large broker-dealer networks, insurer-affiliated wealth arms | Head of Advisor Recruiting, Chief Growth Officer, Head of Revenue |
+| **Mid-market** | Regional broker-dealers, RIA platforms, asset managers' distribution teams | Head of Business Development, Chief Growth Officer, Head of Sales Enablement |
+| **Starter** | Smaller RIAs, boutique managers, fintechs selling to advisors | Founder or head of business development |
 
-That's the most defensible, live-backed "compete on timing" story: *less time assembling, more time reaching out, ahead of the rep still toggling between five tabs.*
+Enterprise deals are scoped per engagement. Starter relies on self-serve plans that aren't launched yet, so don't run Starter campaigns until they are.
 
----
+## Three use cases (same data)
 
-## Primary: Recruiter (RIA / BD / wirehouse)
+| Use case | The pain | What they do with AssetLink | Content weight (launch) |
+|---|---|---|---|
+| **Recruit advisors** (the wedge, fastest growing) | Static databases, stale contact data, too few people to work the list | Build lists to their ideal advisor profile, watch movement signals, send drafted outreach | ~60% |
+| **Sell to advisors** | Hours lost in data packs and CRM notes instead of talking to advisors | Find the advisors most likely to need a fund, product or service, by market and firm | ~25% |
+| **Acquire firms** | Hard to see which RIAs and wealth firms are growing, shrinking or in play | Source tuck-in and acquisition targets, track fast-growing firms | ~15% (industry education until leadership confirms otherwise) |
 
-- **Who [INTERNAL]:** Recruiting leaders at RIAs, broker-dealers, and wirehouses. [HYPOTHESIS: also independent recruiting firms and transition consultants.]
-- **JTBD:** Source advisors open to moving, get **direct (not corporate-gatekept) contact info**, and filter against a specific mandate (e.g. "CFP in the Northeast managing $200M+"). Catch competitive moves before rivals do.
-- **Critical data [INTERNAL]:** name, CRD, tenure at current firm, license type, production/AUM estimate, personal email/cell.
-- **Best-fit signal [INTERNAL]:** has an active recruiting mandate and **pays for direct outreach data, not just a directory**.
-- **Live features that serve them:** screener (state, city, assets, custodian, compliance), profiles (registrations, disclosures, social activity), AI Profile Agent → Gmail/Outlook drafts, ICP tagging, export.
-- **[GATED] until confirmed live:** credential filters, salary/GDC benchmarking, Social Pulse, personal contact data.
-- **Pains [HYPOTHESIS, Med]:** stale directory data, gatekept corporate emails, hours on BrokerCheck, generic outreach that gets ignored.
-- **Objections:** "FINTRX is the standard." "AdvizorPro is a fifth of the price." "I have my network."
-- **Gaps:** check the Product Reality doc's not-live list (internal) before promising any workflow feature.
-- **Buying committee:** usually the recruiting leader (economic buyer + user). Sometimes the head of growth/business development.
+The earlier persona map (Recruiter / RIA Aggregator / Asset Manager-Wholesaler) maps onto these: recruiters → recruit advisors; aggregators → acquire firms; asset managers and wholesalers → sell to advisors.
 
-## Secondary: RIA Aggregator / M&A buyer (CONSTRAINED)
+## Buyer titles
 
-- **Who [INTERNAL]:** PE-backed platforms and consolidators buying RIA books.
-- **JTBD:** Identify targets by size (AUM, headcount) and growth trajectory. Spot firms likely to sell (smaller, aging founder, low growth). Reach owners directly.
-- **Critical data [INTERNAL]:** firm name, AUM, AUM CAGR, ADV filing data, advisor count, owner name + contact.
-- **Best-fit signal [INTERNAL]:** active or repeatable RIA buy-side mandates.
-- **Live customers:** yes (due diligence / aggregator). Never name them publicly.
-- **Constraint [DECISION]:** category-education content only. "Likely to sell" is a *prediction* capability, so don't claim it unless the Product Reality doc lists it as live. Content can teach *what precedes an RIA sale* without claiming AssetLink detects it.
+Sell to the people who feel the problem daily. **The CFO signs the contract but doesn't buy.**
+- Chief Growth Officer
+- Head of Business Development or Corporate Development
+- Head of Advisor Recruiting
+- Head of Revenue or RevOps
+- Head of Sales Enablement
+- At smaller firms, the founder or managing partner
 
-## Tertiary: Asset Manager / Distribution (incl. Wholesalers)
+## Buying triggers (ready now when one is true)
 
-- **Who [INTERNAL]:** wholesalers and distribution pros at ETF/SMA/mutual fund managers, Series 7 + 63/65/66. [HYPOTHESIS: plus distribution leadership and Sales Ops/CRM owners as enterprise buyers.]
-- **JTBD:** Identify top-producing advisors by AUM/flows, get **compliant corporate contacts**, prioritize by state/territory, and track firm moves that reset relationships.
-- **Critical data [INTERNAL]:** name, CRD, firm affiliation, license, AUM, corporate email/phone.
-- **Best-fit signal [INTERNAL]:** manages a territory and needs to prioritize a large advisor universe, not just look up individuals.
-- **Live customers:** yes, including an enterprise account. Never name them publicly.
-- **Pricing tension [INTERNAL]:** power-user seat pricing is steep for wholesalers. A lower tier is under consideration.
-- **Gaps:** check the Product Reality doc's not-live list (internal). Enterprise buyers will ask about Salesforce.
-- **Buying committee [HYPOTHESIS]:** Head of Distribution (economic buyer) · Sales Ops/Distribution Analytics (champion) · CRM/Data (technical evaluator) · top wholesalers (influencers) · Procurement/InfoSec/Compliance (blockers).
-- **Wholesaler note:** often a user/influencer, not the buyer. Wholesaler content builds bottom-up pull and champion enablement.
+- A data contract is up for renewal (e.g. FINTRX, AdvizorPro, MarketPro)
+- Opening a new market or office and needing target lists
+- Contact-accuracy complaints from the recruiting or sales team
+- Too few people to work the list, so follow-up slips
+- An industry event that frees advisors (e.g. a platform cutting off smaller accounts)
+- An active push into acquisitions, lift-outs or tuck-ins
 
----
+Time content and campaigns to these triggers (see `content-and-social-strategy.md`).
+
+## Qualify in the first call
+
+1. Who owns recruiting or distribution targets, and how many people do outreach?
+2. What do you use today, and when does it renew?
+3. What does a good advisor look like for you?
+4. How do you track outcomes today?
+5. What do procurement and security need, and how long do they take?
+
+**Deprioritize if:** they want a one-time list, no one owns the process, there's no data budget, or compliance rules out any third-party data and there's no pilot path.
+
+## What AssetLink gives each use case (live, per Product Reality Oct 2026)
+
+- **Everyone:** 600K+ advisor profiles, 20K+ firms, ~41K teams [TO CONFIRM counts] · filters and saved lists · the Insight agent (list building, lookalikes, "why this name fits") · drafted outreach into Outlook/Gmail · native Microsoft, Google, HubSpot.
+- **Recruiting:** movement signals from news in about a day · personal and work contact details · disclosures, exams, historical AUM, social activity · ideal-profile upload and outcome tracking.
+- **Selling to advisors:** profiles with allocations and historical AUM · market and firm filters · curated reports.
+- **Acquiring firms:** fast- and slow-growing firms, firm movement and tenure, hotspots. (Capability claims on hold; see the constraint above.)
+- **Managed service (any lane):** calibrated scoring against the client's ideal profile, market reports, outcome modeling, data unification.
 
 ## Persona doc template
 
 ```
-# [Persona]  — revenue priority: [primary/secondary/tertiary]
-Confidence summary: [High/Med/Low] (based on: …)
-Titles / where they sit:
-JTBD (their words):
-Best-fit signal / buying trigger:
-Critical data they need:
-Live AssetLink features that serve this (Product Reality ✓):
-Gaps they'll hit (not live — do not promise):
-Top 3 pains [confidence]:
-Current stack being replaced:
-Objections & responses:
-Proof they need: [PROOF NEEDED]
-Buying committee:
-Channels they trust:
-One-line message (brand voice):
-Open questions for Devon/Ari:
+# [Use case / lane]
+Who (titles, firm type, lane):
+The pain (their words):
+Buying trigger:
+Live AssetLink capabilities that serve this (Product Reality ✓):
+Not live yet (never promise):
+Objections & answers:
+Proof: [PROOF NEEDED] or pilot result with context
+One-line message (plain words):
+Open questions for Devon/Ari/Ivan:
 ```
-
-## Validation questions
-
-- Which persona produced the last 5 closed deals, and who signed?
-- For recruiters: how much of the win is personal contact data vs. workflow (AI drafts)?
-- Does a lower wholesaler tier change the tertiary persona into a volume play?
-- Can aggregator content reference live firm-profile and ADV capabilities?
