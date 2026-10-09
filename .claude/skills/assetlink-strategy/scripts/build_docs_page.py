@@ -55,7 +55,7 @@ for i,(did,label,f) in enumerate(DOCS):
     title,h,nav=render(did,open(f,encoding="utf-8").read())
     tabs.append(f'<button class="tab" role="tab" id="tab-{did}" aria-controls="{did}" data-doc="{did}" aria-selected="{"true" if i==0 else "false"}">{label}</button>')
     secs.append(f'''<section class="doc" id="{did}" role="tabpanel" aria-labelledby="tab-{did}"{"" if i==0 else " hidden"}>
-<header class="dochead"><p class="eyebrow">AssetLink · Internal · Sep 2026</p><h1>{html.escape(title)}</h1></header>
+<header class="dochead"><p class="eyebrow">AssetLink</p><h1>{html.escape(title)}</h1></header>
 <div class="cols"><nav class="toc" aria-label="Sections"><p class="toclabel">Sections</p><ol>{nav}</ol></nav>
 <article class="prose">{h}</article></div></section>''')
 DL_BAR = ""
