@@ -25,6 +25,8 @@ The current plan is **Content Strategy v3 (Oct 9, 2026)**, built on positioning 
 
 ## Signature series
 
+**Start with two:** *The First Call* and the *Advisor Movement Report*. Add *Search Teardown* and *Reading the Record* only once those two run steadily (earliest month 3).
+
 | Series | Format and cadence |
 |---|---|
 | ***The First Call*** | Weekly newsletter: notable advisor moves and firm changes, one tip, one data point |
