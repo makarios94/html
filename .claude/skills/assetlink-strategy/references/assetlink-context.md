@@ -21,6 +21,8 @@ Check every claim against it before it goes into a deck, email, demo or post. Th
 |---|---|---|---|
 | **AssetLink Product Reality** | Devon | 2026-10-08 | What's live, the managed service, what's in development, claims to avoid |
 | **AssetLink Ideal Customer Profile** | Devon | 2026-10-08 | Buyer lanes, use cases, titles, buying triggers, qualifying questions |
+| **AssetLink Messaging and Marketing Kit** | Devon | 2026-10-08 | Official tagline, one-liner, boilerplate, message by buyer, outreach templates, demo flow, objections, words to use and avoid |
+| Competitor reports: FINTRX, AdvizorPro, ISS Market Intelligence | Devon | 2026-06-02/03 | Website scans: coverage, features, limits, openings for AssetLink |
 | AssetLink Strategy & Competitive Analysis (Future Proof 2026 notes) | Devon | 2026-03-12 | Competitor positions, kill sheet (older) |
 | Competitive Analysis: AssetLink.ai | Devon | 2025-01-30 | Generic AI/CRM landscape (older) |
 | Market sizing doc | Devon | 2026-04-20 | Market sizing (internal only) |
@@ -30,10 +32,10 @@ The June 2026 Product Reality v1.1 is **outdated**. Don't use its numbers (390K 
 
 ## 2. Positioning
 
-**Current positioning: v4 (Oct 8, 2026).** Full version: the private page listed in the repo's `CLAUDE.md`. Summary in `positioning-and-messaging.md`.
-- **One sentence:** AssetLink helps wealth firms find the right advisors, see who may be moving, and reach them first with a personal message that's already drafted.
-- **Spine:** "compete on timing." It's backed by **knowing first** (move signals from news in about a day, versus about 30 days for filings) **and acting first** (drafted outreach).
-- **Tagline:** Find them. Know them. Reach them first. **Headline:** See the move sooner. Make the first call.
+**Current positioning: v5 (Oct 9, 2026), following Devon's Messaging and Marketing Kit.** Full version: the private page listed in the repo's `CLAUDE.md`. Summary in `positioning-and-messaging.md`.
+- **Tagline:** Know who, why and when.
+- **One-liner:** AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act.
+- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and a source for every field) and when (news signals in about a day, versus about 30 days for filings).
 
 **Market perception [INTERNAL, Future Proof 2026]:** "best-in-class but under-known." Quote: *"I didn't know what AssetLink did."* Brand awareness is a named priority.
 
@@ -87,7 +89,7 @@ Not a broker-dealer, custodian or RIA. No investment advice or trade execution. 
 
 **Buying triggers:** a data contract up for renewal (e.g. FINTRX, AdvizorPro, MarketPro) · opening a new market or office · contact-accuracy complaints · too few people to work the list · an industry event that frees advisors · an acquisition push.
 
-**Acquire-firms constraint [DECISION, under review]:** content for acquirers stays industry education, with no AssetLink capability claims, until leadership confirms otherwise. The October ICP makes acquisitions a core use case and firm-growth signals are live, so this is flagged for a decision.
+**Acquire-firms constraint: lifted (Oct 9, 2026).** Devon's Messaging Kit gives Corporate Development its own message ("See which RIAs and wealth firms are growing, shrinking or in play") and outreach template, backed by live leaderboards, hotspots and fast-growing firm lists. Acquirer content may now reference those live capabilities. Prediction claims ("likely to sell") stay off-limits.
 
 Full detail: `icp-and-personas.md`.
 
@@ -117,8 +119,8 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Don'
 ## 9. Standing constraints (summary)
 
 1. **Claims gate** (§0): live features only, and the claims-to-avoid list.
-2. **Methodology stays undisclosed** [DECISION]. Say "regulatory and public sources," never the pipeline.
-3. **Acquire-firms content = industry education** until confirmed otherwise (§4).
+2. **Methodology stays undisclosed** [DECISION]. The kit's boilerplate names the source types (regulatory filings, advisor websites, social activity, news); go no further than that.
+3. **Acquire-firms content** may use live firm-growth capabilities, never prediction claims (§4).
 4. **No customer names, pricing, TAM, or roadmap in external material** without approval.
 5. **No individual advisors named in public content.** Firm-level trends from public filings are a decision pending with leadership.
 6. **Competitor claims must be verifiable and dated.**

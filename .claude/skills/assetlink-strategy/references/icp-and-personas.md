@@ -22,7 +22,7 @@ Enterprise deals are scoped per engagement. Starter relies on self-serve plans t
 |---|---|---|---|
 | **Recruit advisors** (the wedge, fastest growing) | Static databases, stale contact data, too few people to work the list | Build lists to their ideal advisor profile, watch movement signals, send drafted outreach | ~60% |
 | **Sell to advisors** | Hours lost in data packs and CRM notes instead of talking to advisors | Find the advisors most likely to need a fund, product or service, by market and firm | ~25% |
-| **Acquire firms** | Hard to see which RIAs and wealth firms are growing, shrinking or in play | Source tuck-in and acquisition targets, track fast-growing firms | ~15% (industry education until leadership confirms otherwise) |
+| **Acquire firms** | Hard to see which RIAs and wealth firms are growing, shrinking or in play | Source tuck-in and acquisition targets, track fast-growing firms | ~15% |
 
 The earlier persona map (Recruiter / RIA Aggregator / Asset Manager-Wholesaler) maps onto these: recruiters → recruit advisors; aggregators → acquire firms; asset managers and wholesalers → sell to advisors.
 
@@ -62,7 +62,7 @@ Time content and campaigns to these triggers (see `content-and-social-strategy.m
 - **Everyone:** 600K+ advisor profiles, 20K+ firms, ~41K teams [TO CONFIRM counts] · filters and saved lists · the Insight agent (list building, lookalikes, "why this name fits") · drafted outreach into Outlook/Gmail · native Microsoft, Google, HubSpot.
 - **Recruiting:** movement signals from news in about a day · personal and work contact details · disclosures, exams, historical AUM, social activity · ideal-profile upload and outcome tracking.
 - **Selling to advisors:** profiles with allocations and historical AUM · market and firm filters · curated reports.
-- **Acquiring firms:** fast- and slow-growing firms, firm movement and tenure, hotspots. (Capability claims on hold; see the constraint above.)
+- **Acquiring firms:** fast- and slow-growing firms, firm movement and tenure, hotspots, leaderboards. Never claim to predict who will sell.
 - **Managed service (any lane):** calibrated scoring against the client's ideal profile, market reports, outcome modeling, data unification.
 
 ## Persona doc template

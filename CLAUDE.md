@@ -7,8 +7,8 @@ Each AssetLink document lives on **its own private web page**. One index page li
 
 | Document | Private page |
 |---|---|
-| Positioning & Messaging (v4) | https://claude.ai/artifact/7pMywVDoduvvXEY74h58hR |
-| Content Strategy (v2) | https://claude.ai/artifact/2KunR6geqo6gFrEoXFtAbs |
+| Positioning & Messaging (v5) | https://claude.ai/artifact/7pMywVDoduvvXEY74h58hR |
+| Content Strategy (v3) | https://claude.ai/artifact/2KunR6geqo6gFrEoXFtAbs |
 | Competitive Analysis | https://claude.ai/artifact/BR7T5EixdUJKEZjbaHdvYz |
 | Positioning & Messaging (v2, outdated) | https://claude.ai/artifact/EtYAweS3DvAYNVNPjQsQu3 |
 

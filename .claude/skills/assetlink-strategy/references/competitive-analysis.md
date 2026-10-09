@@ -34,6 +34,20 @@ Since Devon's March brief, the head-to-head competitors moved onto AssetLink's "
 
 **Implications:** push alerts and LLM connectors are now table stakes. **Update (Oct 2026 Product Reality):** AssetLink's signals are live and pick up moves from news in about a day versus about 30 days for filings, so positioning v4 claims *know first and act first*. AssetLink's remaining gaps are push delivery (always-on agents are in development), in-platform ranking (scoring is a managed service), and confirmed Dynamics/API/MCP options. FINTRX's Relationship Path means an advisor relationship graph is no longer a moat on its own.
 
+## Devon's competitor reports (website scans, June 2–3 2026) [INTERNAL]
+
+| | FINTRX | AdvizorPro | ISS Market Intelligence (MarketPro, ex-Discovery Data) |
+|---|---|---|---|
+| **Coverage claims** | 45K+ RIAs/BDs, 780K+ reps, 27K+ wealth teams, 4.5K+ family offices, endowments and foundations | 35K+ RIA firms, 450K+ reps, 2M+ insurance producers, 780K+ retirement plans, bank and trust | 3.1M+ professionals and 47K+ firms in North America, plus UK, Europe, Australia (50+ markets) |
+| **Strengths** | Breadth, wealth-team mapping, warm-intro paths, AI Analyst, MCP (Claude/ChatGPT/Perplexity), CRM sync incl. Salesforce and Dynamics, 13F | TrafficIQ visitor intent, built-in AI lead scoring, personal-interest filters, Salesforce/HubSpot/Dynamics, Snowflake and data feeds, MCP | Retirement-plan data with plan scoring (BrightScope), annuity consortia data, multi-region coverage, a 461K-reader media network, the ISS name in procurement |
+| **Weak spots** | Little workflow (no sequences or pipeline), AI is research-assistant style, no insurance/DC/bank data, hidden pricing | Accuracy claims with no per-record source, noisy visitor matching, hidden pricing | 11 overlapping products, no MCP, AI or modern sales workflow, enterprise-only buying |
+
+**Openings for AssetLink the reports name:** per-field sources and last-verified dates (no competitor shows them); bundling outreach with the data (competitors stop at data); published pricing for smaller buyers (all three hide it); open data and benchmarks (none publish them).
+
+**Where not to fight:** retirement plans and global coverage (ISS), insurance producers (AdvizorPro), family offices and endowments (FINTRX).
+
+**Parity gaps AssetLink should plan for:** MCP/LLM connectors and Salesforce/Dynamics sync.
+
 ## Adjacent AI / CRM landscape [INTERNAL, older]
 
 Source: *Competitive Analysis: AssetLink.ai* (Devon, Jan 30 2025). A SWOT-style comparison against **Tifin AMP, ForwardLane, Microsoft Copilot (Dynamics 365), Salesforce Einstein, Perplexity, Hebbia.** None of them are advisor-recruiting-specific. The analysis frames AssetLink as a workflow-complete platform versus point tools (CRM AI, search, document research).
