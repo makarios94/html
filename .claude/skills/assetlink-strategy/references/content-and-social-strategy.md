@@ -38,7 +38,9 @@ Teardowns use composite or anonymized profiles, never a real advisor's name, fac
 
 ## Channels
 
-Founder and leadership LinkedIn (main voice, 3 posts a week each) · the newsletter · the company page · trade press (AdvisorHub, InvestmentNews, WealthManagement.com, Financial Planning, ThinkAdvisor) · industry events · website and SEO · paid LinkedIn from month 3, aimed at firms nearing a data-contract renewal.
+**Main three:** the newsletter (an audience we own) · the AssetLink LinkedIn page (shares the founder's posts and the report) · the website (search pages built over time, e.g. "advisor recruiting data").
+
+**Add later:** founder and leadership LinkedIn as a regular voice, trade press pitches from the report (AdvisorHub, InvestmentNews, WealthManagement.com, Financial Planning, ThinkAdvisor), industry events, and paid LinkedIn aimed at firms nearing a data-contract renewal.
 
 ## Timing content to buying triggers (from the ICP)
 
