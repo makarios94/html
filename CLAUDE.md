@@ -30,7 +30,7 @@ For every document deliverable, each time it's created or meaningfully updated, 
 Documents on these pages are read by the CEO and leadership, so:
 - Use plain, everyday words and short sentences. No marketing or strategy jargon (for example "beachhead," "category," "canvas," "spine," "ICP," "gated").
 - Keep only what's important to know: who we sell to, the problem, what makes us different, and what we say.
-- No "Internal. Updated…" line under the title, and no "Decisions we need" section. Raise open decisions in the chat reply instead.
+- No "Internal. Updated…" line under the title, and no "Decisions we need," "What we need" (people and time) or "How we'll know it's working" (metrics) sections. Raise those in the chat reply instead.
 - Leave out working material: frameworks used, options weighed, scoring, readiness checklists and method notes. Those stay internal for the marketing team, in the skill references or a scratchpad working copy.
 
 Never combine documents into one page.
