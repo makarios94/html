@@ -13,6 +13,8 @@ The current plan is **Content Strategy v3 (Oct 9, 2026)**, built on positioning 
 | **What's ours** | Movement data from our signals (hotspots, leaderboards, firm growth) and real AssetLink output on screen. Devon's competitor reports note FINTRX, AdvizorPro and ISS publish no open data or benchmarks |
 | **Call to action** | A side-by-side on one list, or "let us build a list to your criteria" |
 
+**Standing principle: lead with trust and timing.** "Know who, why and when," backed by a source for every field (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
+
 ## Audience weighting (by use case)
 
 | Use case | Share | Notes |

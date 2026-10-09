@@ -35,6 +35,7 @@ The June 2026 Product Reality v1.1 is **outdated**. Don't use its numbers (390K 
 **Current positioning: v5 (Oct 9, 2026), following Devon's Messaging and Marketing Kit.** Full version: the private page listed in the repo's `CLAUDE.md`. Summary in `positioning-and-messaging.md`.
 - **Tagline:** Know who, why and when.
 - **One-liner:** AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act.
+- **Lead with trust and timing** (standing principle): a source for every field, and signals ahead of filings.
 - **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and a source for every field) and when (news signals in about a day, versus about 30 days for filings).
 
 **Market perception [INTERNAL, Future Proof 2026]:** "best-in-class but under-known." Quote: *"I didn't know what AssetLink did."* Brand awareness is a named priority.

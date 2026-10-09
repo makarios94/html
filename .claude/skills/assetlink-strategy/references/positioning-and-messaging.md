@@ -14,6 +14,8 @@
 
 **Spine:** "compete on timing" is backed by *who* (lists built to the client's own profile), *why* (the reason each name fits, and the source of every field), and *when* (signals from news in about a day, versus about 30 days for filings).
 
+**Standing principle: lead with trust and timing.** "Know who, why and when," backed by a source for every field (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
+
 ## Message by buyer (from the kit)
 
 | Buyer | Lead with | Proof to use |
