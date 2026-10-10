@@ -41,7 +41,8 @@ Teardowns use composite or anonymized profiles, never a real advisor's name, fac
 **Main three:** the newsletter (an audience we own) · the AssetLink LinkedIn page (the most active channel) · the website (search pages built over time, e.g. "advisor recruiting data").
 
 **On the LinkedIn page:**
-- The founder's posts and the monthly report.
+- The monthly report.
+- The founder's posts (optional): shared when the founder has time; the page never depends on them.
 - Thought leadership: points of view on recruiting, selling to advisors and firm consolidation.
 - Data and stats posts: one chart or number from our own data, always with its source.
 - Pain points and how AssetLink solves them, one post per buyer problem: recruiting (stale contacts, late moves, too few people → signals within a day, contacts, drafted emails); distribution (hours in data packs → lists by firm, market and allocation, team data); corporate development (can't see who's growing → leaderboards, hotspots, fast-growing firms).
@@ -58,7 +59,7 @@ Teardowns use composite or anonymized profiles, never a real advisor's name, fac
 
 ## 90-day shape
 
-1. **Month 1, get the idea out:** founder launch post, first newsletter, first movement report, first teardown, the pilot story (once approved).
+1. **Month 1, get the idea out:** launch post (founder if available, otherwise the company page), first newsletter, first movement report, first teardown, the pilot story (once approved).
 2. **Month 2, show how it works:** recruiting and selling how-tos, two more teardowns, first press pitch, a one-page sales sheet.
 3. **Month 3, show it works for customers:** a customer story, a live event session, paid ads to firms nearing renewal.
 
