@@ -41,7 +41,7 @@ Before doing any strategy work, read `references/assetlink-context.md`. It captu
 
 **"Fix/build our positioning and messaging"** → `positioning-and-messaging.md` → run the positioning process against the four competitive alternatives, build persona-specific message houses under the shared "compete on timing" spine, and produce draft copy respecting the standing brand-voice rules.
 
-**"Build our content/social strategy"** → `content-and-social-strategy.md` → design the channel mix, format allocation, and content pillar architecture (this feeds directly into what assetlink-content-studio produces and what assetlink-seo-organic builds toward).
+**"Build our content/social strategy"** → `content-and-social-strategy.md` → design the channel mix, format allocation, and content pillar architecture (this feeds directly into what assetlink-content-studio produces and what assetlink-seo-organic builds toward). **All content ideation follows the Content Ideation Wheel** in that file (pillars → sub-ideas → formats → publish and engage → analyze and reuse). Use the concept, not the letter. Formats and publishing frequency are decided together with the user; propose, never set them alone.
 
 **"Full strategy audit/build"** → run all four in sequence, then synthesize into a single prioritized set of recommendations — don't just hand back four disconnected documents.
 

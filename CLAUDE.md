@@ -34,3 +34,6 @@ Documents on these pages are read by the CEO and leadership, so:
 - Leave out working material: frameworks used, options weighed, scoring, readiness checklists and method notes. Those stay internal for the marketing team, in the skill references or a scratchpad working copy.
 
 Never combine documents into one page.
+
+## Content ideation
+All AssetLink content ideation follows the Content Ideation Wheel (pillars → sub-ideas → formats → publish and engage → analyze and reuse). Use it as a direction, not to the letter. Formats and publishing frequency are always decided together with the user: propose options, never set them alone. Details are in `.claude/skills/assetlink-strategy/references/content-and-social-strategy.md`.

@@ -15,6 +15,22 @@ The current plan is **Content Strategy v3 (Oct 9, 2026)**, built on positioning 
 
 **Standing principle: lead with trust and timing.** "Know who, why and when," backed by a source for every field (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
 
+## How we come up with content: the Content Ideation Wheel [DECISION, Oct 12, 2026]
+
+All AssetLink content ideation follows this five-step loop (after Pierre Herubel's "5-Step Content Ideation Wheel"). It's the direction, not a script: use the concept, adapt the numbers.
+
+1. **Choose content pillars.** Three recurring topics: a broader narrative, a skill or industry focus, and a topic only AssetLink can own.
+2. **Ideate sub-ideas.** About 10 per pillar (roughly 30 in total), e.g. "how advisor recruiting has changed," "what to ask before you renew a data contract."
+3. **Try formats.** Pick from a menu such as carousel, infographic, comparison table, problem–agitate–solve, story, before vs. after, build in public, team photo. Match each sub-idea to a format, and test several.
+4. **Publish and engage.** A steady rhythm with engagement around each post (the wheel suggests about 15 minutes before and after).
+5. **Analyze and reuse.** Track impressions, engagement, save rate, followers and profile visits. Reuse the best ideas and formats, and repurpose winners (e.g. a webinar into clips, a report into data posts).
+
+**Decided with the user, never alone:** which formats we use, and how often we publish. Propose options with a recommendation, then wait for the user's call. The wheel's "8 formats" and "5 posts a week for 4 weeks" are reference points only.
+
+**Fit with this plan:** the pillars sit under the core story ("Know who, why and when"), and every sub-idea still passes the guardrails below, especially no sources or methods (§9.2 of `assetlink-context.md`) and live capabilities only. The two series (*The First Call*, *Advisor Movement Report*) and the LinkedIn page mix are where the wheel's posts land. The wheel is internal working method. It stays out of the leadership pages.
+
+**Pillars:** proposed Oct 12, 2026, awaiting the user's decision. Record the agreed pillars, formats and cadence here once set.
+
 ## Audience weighting (by use case)
 
 | Use case | Share | Notes |
