@@ -60,7 +60,7 @@ Time content and campaigns to these triggers (see `content-and-social-strategy.m
 ## What AssetLink gives each use case (live, per Product Reality Oct 2026)
 
 - **Everyone:** 600K+ advisor profiles, 20K+ firms, ~41K teams [TO CONFIRM counts] · filters and saved lists · the Insight agent (list building, lookalikes, "why this name fits") · drafted outreach into Outlook/Gmail · native Microsoft, Google, HubSpot.
-- **Recruiting:** movement signals from news in about a day · personal and work contact details · disclosures, exams, historical AUM, social activity · ideal-profile upload and outcome tracking.
+- **Recruiting:** movement signals within about a day · personal and work contact details · disclosures, exams, historical AUM, social activity · ideal-profile upload and outcome tracking.
 - **Selling to advisors:** profiles with allocations and historical AUM · market and firm filters · curated reports.
 - **Acquiring firms:** fast- and slow-growing firms, firm movement and tenure, hotspots, leaderboards. Never claim to predict who will sell.
 - **Managed service (any lane):** calibrated scoring against the client's ideal profile, market reports, outcome modeling, data unification.

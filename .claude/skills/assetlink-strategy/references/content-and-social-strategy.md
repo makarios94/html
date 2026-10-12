@@ -8,7 +8,7 @@ The current plan is **Content Strategy v3 (Oct 9, 2026)**, built on positioning 
 |---|---|
 | **Job of content** | Make AssetLink known for the kit's tagline, **Know who, why and when**, and turn that into demo requests |
 | **Audience** | Growth, recruiting and distribution leaders at ~4,000 wealth firms with $1–20B AUM |
-| **Core story** | Filings show a move about 30 days late; AssetLink signals it from the news in about a day, shows why each name fits, and drafts the outreach |
+| **Core story** | Filings show a move about 30 days late; AssetLink signals it within about a day, shows why each name fits, and drafts the outreach |
 | **Second theme** | Data you can check: every field traces to its source. Competitors make accuracy claims without showing sources |
 | **What's ours** | Movement data from our signals (hotspots, leaderboards, firm growth) and real AssetLink output on screen. Devon's competitor reports note FINTRX, AdvizorPro and ISS publish no open data or benchmarks |
 | **Call to action** | A side-by-side on one list, or "let us build a list to your criteria" |

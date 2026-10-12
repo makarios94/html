@@ -36,7 +36,7 @@ The June 2026 Product Reality v1.1 is **outdated**. Don't use its numbers (390K 
 - **Tagline:** Know who, why and when.
 - **One-liner:** AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act.
 - **Lead with trust and timing** (standing principle): a source for every field, and signals ahead of filings.
-- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and a source for every field) and when (news signals in about a day, versus about 30 days for filings).
+- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and a source for every field) and when (signals within about a day, versus about 30 days for filings).
 
 **Market perception [INTERNAL, Future Proof 2026]:** "best-in-class but under-known." Quote: *"I didn't know what AssetLink did."* Brand awareness is a named priority.
 
@@ -47,7 +47,7 @@ The platform finds and filters advisors and firms, surfaces signals, and drafts 
 - **Coverage:** 600K+ advisor profiles, 20K+ firm profiles, about 41K advisor teams. [TO CONFIRM with Ari and Ivan; decks still say 500K+ and 10K+]
 - **Search and lists:** filters (state, city, firm, age, experience), saved lists, exports with chosen columns.
 - **Insight agent:** plain-English questions: build lists, trend analysis, lookalikes from a firm's hires, and why a name fits.
-- **Signals:** change detection, news with sentiment, leaderboards, hotspots, fast- and slow-growing firms, firm movement and tenure. **News appears in about a day, versus about 30 days for filings.**
+- **Signals:** change detection, leaderboards, hotspots, fast- and slow-growing firms, firm movement and tenure. **Signals arrive within about a day, versus about 30 days for filings.** How signals are generated is confidential (see §9).
 - **Advisor profiles:** personal and work contact details, education, exams, disclosures, team and office, historical AUM, social activity, allocations.
 - **Your profile and ICP:** each user uploads an ideal advisor profile and customer lists, and can load outcomes. Private to the client.
 - **Curated reports** shaped by each user's usage.
@@ -113,14 +113,14 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Don'
 1. **Plain words, short sentences.** Leadership and buyers read these. Use industry terms buyers use (BrokerCheck, IAPD, ADV, AUM, breakaway), but no marketing jargon.
 2. **Specific beats superlative.** No "revolutionary," "game-changing," "unlock," "supercharge."
 3. **AI is the means, not the headline.** AI drafts, summarizes and answers; people decide and send.
-4. **Timing language:** "within a day of the news," "see the move sooner." Never "real-time" or "predicts."
+4. **Timing language:** "within about a day," "ahead of the filings," "see the move sooner." Never "real-time" or "predicts."
 5. **No fabricated proof.** Use `[PROOF NEEDED]` placeholders. Pilot results always carry their context.
 6. **Compliance-aware.** No investment advice, no performance promises, no accuracy guarantees.
 
 ## 9. Standing constraints (summary)
 
 1. **Claims gate** (§0): live features only, and the claims-to-avoid list.
-2. **Methodology stays undisclosed** [DECISION]. The kit's boilerplate names the source types (regulatory filings, advisor websites, social activity, news); go no further than that.
+2. **Methodology stays undisclosed** [DECISION, tightened Oct 12, 2026]. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. Talk about outcomes: "signals within about a day," "ahead of the filings," "every field traces to its source."
 3. **Acquire-firms content** may use live firm-growth capabilities, never prediction claims (§4).
 4. **No customer names, pricing, TAM, or roadmap in external material** without approval.
 5. **No individual advisors named in public content.** Firm-level trends from public filings are a decision pending with leadership.

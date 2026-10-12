@@ -2,17 +2,19 @@
 
 **Source of truth: Devon's *AssetLink Messaging and Marketing Kit* (October 8, 2026).** Every line in it matches the Product Reality doc. Use it for the website, decks, posts and outreach, and check any new claim against Product Reality before adding it. The full leadership version (v5) is the private page listed in the repo's `CLAUDE.md`. This file is the working summary. Pricing, customer names and pilot figures stay in the internal documents.
 
+**Never reveal how signals are generated** (Oct 12, 2026). Say "signals within about a day" or "ahead of the filings." Never say where signals or data come from (no "from the news," no list of data sources). The boilerplate below was edited from Devon's kit to remove its source list.
+
 ## Core lines (use exactly)
 
 | | |
 |---|---|
 | **Tagline** | Know who, why and when. |
 | **One-liner** | AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act. |
-| **Boilerplate (~50 words)** | AssetLink helps wealth firms, asset managers and fintechs decide who to recruit, sell to or acquire. It combines regulatory filings, advisor websites, social activity and news with each client's own criteria and outcomes, then drafts the outreach. Customers span insurance, asset management and wealth management. |
+| **Boilerplate (~50 words)** | AssetLink helps wealth firms, asset managers and fintechs decide who to recruit, sell to or acquire. It combines broad market intelligence with each client's own criteria and outcomes, then drafts the outreach. Customers span insurance, asset management and wealth management. |
 
 **Category:** *decision intelligence* (per the kit). An earlier internal proposal to switch to "relationship intelligence" is retired.
 
-**Spine:** "compete on timing" is backed by *who* (lists built to the client's own profile), *why* (the reason each name fits, and the source of every field), and *when* (signals from news in about a day, versus about 30 days for filings).
+**Spine:** "compete on timing" is backed by *who* (lists built to the client's own profile), *why* (the reason each name fits, and the source of every field), and *when* (signals within about a day, versus about 30 days for filings).
 
 **Standing principle: lead with trust and timing.** "Know who, why and when," backed by a source for every field (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
 
@@ -29,8 +31,8 @@ Recruiting is the lead use (the fastest growing, per the ICP).
 
 ## Differentiators (live, per Product Reality)
 
-1. **Signals ahead of filings:** news-based change detection in about a day, plus leaderboards, hotspots and firm growth.
-2. **Why each name fits, and where the data came from:** lists built to the client's ideal profile; every field traces to its source (filing or web page). Competitors make accuracy claims without showing sources.
+1. **Signals ahead of filings:** change signals within about a day, plus leaderboards, hotspots and firm growth.
+2. **Why each name fits, and where the data came from:** lists built to the client's ideal profile; every field traces to its source. Competitors make accuracy claims without showing sources.
 3. **Outreach done for you:** drafted emails into Outlook/Gmail; nothing sends automatically. Managed-service scoring against the client's profile.
 4. **Private by design:** a client's profile, lists and outcomes stay in their own instance and never train other clients' models.
 5. **Easy start:** managed delivery for security-cautious firms (we send output, they integrate nothing).
