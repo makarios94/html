@@ -16,7 +16,7 @@
 
 **Spine:** "compete on timing" is backed by *who* (lists built to the client's own profile), *why* (the reason each name fits, and the source of every field), and *when* (signals within about a day, versus about 30 days for filings).
 
-**Standing principle: lead with trust and timing.** "Know who, why and when," backed by a source for every field (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
+**Standing principle: lead with trust and timing.** "Know who, why and when," backed by data customers can check inside AssetLink (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
 
 ## Message by buyer (from the kit)
 
@@ -32,7 +32,7 @@ Recruiting is the lead use (the fastest growing, per the ICP).
 ## Differentiators (live, per Product Reality)
 
 1. **Signals ahead of filings:** change signals within about a day, plus leaderboards, hotspots and firm growth.
-2. **Why each name fits, and where the data came from:** lists built to the client's ideal profile; every field traces to its source. Competitors make accuracy claims without showing sources.
+2. **Why each name fits, and data you can check:** lists built to the client's ideal profile; customers can check every detail inside AssetLink. Competitors make accuracy claims with nothing to back them up. Never say where the data comes from.
 3. **Outreach done for you:** drafted emails into Outlook/Gmail; nothing sends automatically. Managed-service scoring against the client's profile.
 4. **Private by design:** a client's profile, lists and outcomes stay in their own instance and never train other clients' models.
 5. **Easy start:** managed delivery for security-cautious firms (we send output, they integrate nothing).
@@ -61,7 +61,7 @@ Lead with a real signal about the prospect's firm, then one question. Under 90 w
 | "I worry about another tool." | Start with a small test group and your own criteria; use the platform or push drafts into existing tools |
 | "Will our data train other clients' models?" | No. It stays in your private instance |
 | "Security won't allow third-party access." | Start with managed delivery, then move to platform access |
-| "How do I know the data is right?" | Every field traces to its source, so you can audit it |
+| "How do I know the data is right?" | You can check every detail inside AssetLink; start with a side-by-side on one of your own lists |
 
 ## Words to use and avoid (from the kit and Product Reality)
 

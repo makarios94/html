@@ -13,7 +13,7 @@ The current plan is **Content Strategy v3 (Oct 9, 2026)**, built on positioning 
 | **What's ours** | Movement data from our signals (hotspots, leaderboards, firm growth) and real AssetLink output on screen. Devon's competitor reports note FINTRX, AdvizorPro and ISS publish no open data or benchmarks |
 | **Call to action** | A side-by-side on one list, or "let us build a list to your criteria" |
 
-**Standing principle: lead with trust and timing.** "Know who, why and when," backed by a source for every field (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
+**Standing principle: lead with trust and timing.** "Know who, why and when," backed by data customers can check inside AssetLink (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
 
 ## How we come up with content: the Content Ideation Wheel [DECISION, Oct 12, 2026]
 
@@ -41,14 +41,13 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 ## Signature series
 
-**Start with two:** *The First Call* and the *Advisor Movement Report*. Add *Search Teardown* and *Reading the Record* only once those two run steadily (earliest month 3).
+**Start with two:** *The First Call* and the *Advisor Movement Report*. Add *Search Teardown* only once those two run steadily (earliest month 3).
 
 | Series | Format and cadence |
 |---|---|
 | ***The First Call*** | Weekly newsletter: notable advisor moves and firm changes, one tip, one data point |
 | ***Advisor Movement Report*** | Monthly data report: hiring hotspots, growing and shrinking firms, team moves. Pitched to trade press |
 | ***Search Teardown*** | Video every two weeks: an ideal advisor profile goes in; a matched list, signals and a drafted first message come out |
-| ***Reading the Record*** | Monthly plain guides to BrokerCheck, IAPD and ADV filings |
 
 Teardowns use composite or anonymized profiles, never a real advisor's name, face or contact details.
 

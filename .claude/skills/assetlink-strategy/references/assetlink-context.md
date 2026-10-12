@@ -35,8 +35,8 @@ The June 2026 Product Reality v1.1 is **outdated**. Don't use its numbers (390K 
 **Current positioning: v5 (Oct 9, 2026), following Devon's Messaging and Marketing Kit.** Full version: the private page listed in the repo's `CLAUDE.md`. Summary in `positioning-and-messaging.md`.
 - **Tagline:** Know who, why and when.
 - **One-liner:** AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act.
-- **Lead with trust and timing** (standing principle): a source for every field, and signals ahead of filings.
-- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and a source for every field) and when (signals within about a day, versus about 30 days for filings).
+- **Lead with trust and timing** (standing principle): data customers can check inside AssetLink, and signals ahead of filings.
+- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and data customers can check) and when (signals within about a day, versus about 30 days for filings).
 
 **Market perception [INTERNAL, Future Proof 2026]:** "best-in-class but under-known." Quote: *"I didn't know what AssetLink did."* Brand awareness is a named priority.
 
@@ -120,7 +120,7 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Don'
 ## 9. Standing constraints (summary)
 
 1. **Claims gate** (§0): live features only, and the claims-to-avoid list.
-2. **Sources and methods stay secret** [DECISION, tightened Oct 12, 2026]. This covers everything, not just signals: where data comes from, how contacts are found or verified, how signals, scores and reports are produced. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. Talk about outcomes: "signals within about a day," "ahead of the filings," "every field traces to its source."
+2. **Sources and methods stay secret** [DECISION, tightened Oct 12, 2026]. This covers everything, not just signals: where data comes from, how contacts are found or verified, how signals, scores and reports are produced. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. No "every field traces to its source," no "where each detail came from," and no content that points to the records or filings we might use (e.g. guides to BrokerCheck, IAPD or ADV). **No source is ever given out.** Talk about outcomes: "signals within about a day," "ahead of the filings," "customers can check every detail inside AssetLink."
 3. **Acquire-firms content** may use live firm-growth capabilities, never prediction claims (§4).
 4. **No customer names, pricing, TAM, or roadmap in external material** without approval.
 5. **No individual advisors named in public content.** Firm-level trends from public filings are a decision pending with leadership.
