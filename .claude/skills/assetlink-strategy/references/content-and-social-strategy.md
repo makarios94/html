@@ -41,15 +41,15 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 ## Signature series
 
-**Start with two:** *The First Call* and the *Advisor Movement Report*. Add *Search Teardown* only once those two run steadily (earliest month 3).
+**Start with two:** *The First Call* and the *Advisor Movement Report*. Add *Search Walkthrough* only once those two run steadily (earliest month 3).
 
 | Series | Format and cadence |
 |---|---|
 | ***The First Call*** | Weekly newsletter: notable advisor moves and firm changes, one tip, one data point |
 | ***Advisor Movement Report*** | Monthly data report: hiring hotspots, growing and shrinking firms, team moves. Pitched to trade press |
-| ***Search Teardown*** | Video every two weeks: an ideal advisor profile goes in; a matched list, signals and a drafted first message come out |
+| ***Search Walkthrough*** | Video every two weeks: an ideal advisor profile goes in; a matched list, signals and a drafted first message come out. Results only, never what happens behind the screen |
 
-Teardowns use composite or anonymized profiles, never a real advisor's name, face or contact details.
+Walkthroughs use composite or anonymized profiles, never a real advisor's name, face or contact details.
 
 ## Channels
 
@@ -76,7 +76,7 @@ Teardowns use composite or anonymized profiles, never a real advisor's name, fac
 
 1. **Month 1, get the idea out:** launch post (founder if available, otherwise the company page), first newsletter, first movement report, the pilot story (once approved).
 2. **Month 2, show how it works:** pain-point posts for each buyer, the first live webinar, first press pitch from the report, a one-page sales sheet.
-3. **Month 3, show it works for customers:** a customer story, a live session at an event, paid ads to firms nearing renewal. If the two series are steady, add the first Search Teardown.
+3. **Month 3, show it works for customers:** a customer story, a live session at an event, paid ads to firms nearing renewal. If the two series are steady, add the first Search Walkthrough.
 
 **Before launch:** update the website and decks with the kit's tagline and one-liner, and the confirmed numbers.
 

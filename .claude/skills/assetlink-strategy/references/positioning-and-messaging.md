@@ -10,7 +10,7 @@
 |---|---|
 | **Tagline** | Know who, why and when. |
 | **One-liner** | AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act. |
-| **Boilerplate (~50 words)** | AssetLink helps wealth firms, asset managers and fintechs decide who to recruit, sell to or acquire. It combines broad market intelligence with each client's own criteria and outcomes, then drafts the outreach. Customers span insurance, asset management and wealth management. |
+| **Boilerplate (~50 words)** | AssetLink helps wealth firms, asset managers and fintechs decide who to recruit, sell to or acquire. It finds the right advisors and firms for each client's criteria, shows why they fit, signals when to act, and drafts the outreach. Customers span insurance, asset management and wealth management. |
 
 **Category:** *decision intelligence* (per the kit). An earlier internal proposal to switch to "relationship intelligence" is retired.
 
@@ -34,7 +34,7 @@ Recruiting is the lead use (the fastest growing, per the ICP).
 1. **Signals ahead of filings:** change signals within about a day, plus leaderboards, hotspots and firm growth.
 2. **Why each name fits, and data you can check:** lists built to the client's ideal profile; customers can check every detail inside AssetLink. Competitors make accuracy claims with nothing to back them up. Never say where the data comes from.
 3. **Outreach done for you:** drafted emails into Outlook/Gmail; nothing sends automatically. Managed-service scoring against the client's profile.
-4. **Private by design:** a client's profile, lists and outcomes stay in their own instance and never train other clients' models.
+4. **Private by design:** a client's profile, lists and outcomes stay private to them and are never shared with other clients.
 5. **Easy start:** managed delivery for security-cautious firms (we send output, they integrate nothing).
 
 Proof: the managed-service scoring pilot and customer feedback on contact data (figures in the internal docs; always state pilot context).
@@ -59,7 +59,7 @@ Lead with a real signal about the prospect's firm, then one question. Under 90 w
 |---|---|
 | "We already have a data vendor." | Run a side-by-side on one list. Customers tell us the contact data is the difference |
 | "I worry about another tool." | Start with a small test group and your own criteria; use the platform or push drafts into existing tools |
-| "Will our data train other clients' models?" | No. It stays in your private instance |
+| "Will our data be shared with other clients?" | No. It stays private to you |
 | "Security won't allow third-party access." | Start with managed delivery, then move to platform access |
 | "How do I know the data is right?" | You can check every detail inside AssetLink; start with a side-by-side on one of your own lists |
 
