@@ -60,7 +60,7 @@ Teardowns use composite or anonymized profiles, never a real advisor's name, fac
 - The monthly report.
 - The founder's posts (optional): shared when the founder has time; the page never depends on them.
 - Thought leadership: points of view on recruiting, selling to advisors and firm consolidation.
-- Data and stats posts: one chart or number from our own data, always with its source.
+- Data and stats posts: one chart or number from our own data, labeled as AssetLink data. Never say where the data comes from or how it's built.
 - Pain points and how AssetLink solves them, one post per buyer problem: recruiting (stale contacts, late moves, too few people → signals within a day, contacts, drafted emails); distribution (hours in data packs → lists by firm, market and allocation, team data); corporate development (can't see who's growing → leaderboards, hotspots, fast-growing firms).
 - Live webinar events: a monthly live webinar with a functional guest speaker (not necessarily famous) who reaches our buyers and can become a partner: recruiting leaders, heads of distribution, RIA founders, transition consultants, M&A advisors, CRM and wealth-tech partners, association or podcast hosts. Each becomes several clips, and the guest shares it with their network. First one in month 2. Speakers speak for themselves: no scripted endorsements, and written approval before featuring a speaker from a customer firm.
 
@@ -75,9 +75,9 @@ Teardowns use composite or anonymized profiles, never a real advisor's name, fac
 
 ## 90-day shape
 
-1. **Month 1, get the idea out:** launch post (founder if available, otherwise the company page), first newsletter, first movement report, first teardown, the pilot story (once approved).
-2. **Month 2, show how it works:** recruiting and selling how-tos, two more teardowns, first press pitch, a one-page sales sheet.
-3. **Month 3, show it works for customers:** a customer story, a live event session, paid ads to firms nearing renewal.
+1. **Month 1, get the idea out:** launch post (founder if available, otherwise the company page), first newsletter, first movement report, the pilot story (once approved).
+2. **Month 2, show how it works:** pain-point posts for each buyer, the first live webinar, first press pitch from the report, a one-page sales sheet.
+3. **Month 3, show it works for customers:** a customer story, a live session at an event, paid ads to firms nearing renewal. If the two series are steady, add the first Search Teardown.
 
 **Before launch:** update the website and decks with the kit's tagline and one-liner, and the confirmed numbers.
 

@@ -134,7 +134,7 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Don'
 
 ## 11. Strategy documents
 
-Positioning (v4), content strategy (v2) and competitive analysis are private pages listed in the repo's `CLAUDE.md`.
+Positioning (v5), content strategy (v3) and competitive analysis are private pages listed in the repo's `CLAUDE.md`.
 
 ## 12. Related skills
 
