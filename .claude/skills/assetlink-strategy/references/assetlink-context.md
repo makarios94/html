@@ -120,7 +120,7 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Don'
 ## 9. Standing constraints (summary)
 
 1. **Claims gate** (§0): live features only, and the claims-to-avoid list.
-2. **Methodology stays undisclosed** [DECISION, tightened Oct 12, 2026]. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. Talk about outcomes: "signals within about a day," "ahead of the filings," "every field traces to its source."
+2. **Sources and methods stay secret** [DECISION, tightened Oct 12, 2026]. This covers everything, not just signals: where data comes from, how contacts are found or verified, how signals, scores and reports are produced. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. Talk about outcomes: "signals within about a day," "ahead of the filings," "every field traces to its source."
 3. **Acquire-firms content** may use live firm-growth capabilities, never prediction claims (§4).
 4. **No customer names, pricing, TAM, or roadmap in external material** without approval.
 5. **No individual advisors named in public content.** Firm-level trends from public filings are a decision pending with leadership.
