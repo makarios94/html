@@ -29,7 +29,9 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 **Fit with this plan:** the pillars sit under the core story ("Know who, why and when"), and every sub-idea still passes the guardrails below, especially no sources or methods (§9.2 of `assetlink-context.md`) and live capabilities only. The two series (*The First Call*, *Advisor Movement Report*) and the LinkedIn page mix are where the wheel's posts land. The wheel is internal working method. It stays out of the leadership pages.
 
-**Pillars:** proposed Oct 12, 2026, awaiting the user's decision. Record the agreed pillars, formats and cadence here once set.
+**Topics and questions (Oct 13, 2026, the user's direction):** start from 12 content topics drawn from the positioning, find about 6 real questions buyers ask under each (search Google's "People also ask" and related questions; trade press and industry guides when Google can't be reached), and build each piece of content as an answer to one question, with a format assigned to each. Current plan: the "Content Topics & Questions" page in `CLAUDE.md`. The 12 topics: recruiting advisors · why advisors change firms · reaching advisors (first message and call) · what a recruit is worth · advisor movement trends · timing: getting there first · advisor data you can trust · selling to advisors · reaching RIAs as an asset manager · buying RIAs and wealth firms · growing a wealth firm · AI in wealth management growth. Never pick a question whose honest answer would give out the secret sauce (e.g. "where does advisor data come from?").
+
+**Still to agree with the user:** publishing frequency.
 
 ## Audience weighting (by use case)
 
