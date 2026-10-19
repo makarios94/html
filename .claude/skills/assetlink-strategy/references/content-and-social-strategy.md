@@ -27,9 +27,9 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 **Decided with the user, never alone:** which formats we use, and how often we publish. Propose options with a recommendation, then wait for the user's call. The wheel's "8 formats" and "5 posts a week for 4 weeks" are reference points only.
 
-**Fit with this plan:** the pillars sit under the core story ("Know who, why and when"), and every sub-idea still passes the guardrails below, especially no sources or methods (§9.2 of `assetlink-context.md`) and live capabilities only. The two series (*The First Call*, *Advisor Movement Report*) and the LinkedIn page mix are where the wheel's posts land. The wheel is internal working method. It stays out of the leadership pages.
+**Fit with this plan:** the pillars sit under the core story ("Know who, why and when"), and every sub-idea still passes the guardrails below, especially no sources or methods (§9.2 of `assetlink-context.md`) and live capabilities only. The two series (*The Asset Link* newsletter, *Advisor Movement Report*) and the LinkedIn page mix are where the wheel's posts land. The wheel is internal working method. It stays out of the leadership pages.
 
-**Topics and questions (Oct 13, 2026, the user's direction):** start from 12 content topics drawn from the positioning, find about 6 real questions buyers ask under each. **Don't base questions on Google search or search intent** [DECISION, Oct 13, 2026]: in this space it's dominated by consumers (B2C), not our B2B buyers. Use B2B sources instead: questions from sales calls and demos, Devon's qualifying questions and objections, customer conversations, trade press, conference agendas, research firms, and what buyer titles discuss on LinkedIn, and build each piece of content as an answer to one question, with a format assigned to each. Current plan: the "Content Topics & Questions" page in `CLAUDE.md`. The 12 topics, split 7 / 3 / 2 to match the ~60/25/15 use-case weighting: recruiting (recruiting advisors · why advisors move, and when · reaching advisors · what a recruit is worth · advisor movement trends · timing: getting there first · advisor data you can trust), selling (selling to advisors · reaching RIAs as an asset manager · who to call and when), acquiring (buying RIAs and wealth firms · which firms are growing, shrinking or in play). Every angle must come back to who/why/when and to timing or trust; general industry advice alone doesn't qualify. Questions are written in the buyer's own words (leaders, not reps or advisors), and each row shows who asks it and where it comes from (Devon's ICP, Messaging Kit, competitor reports, trade press, AssetLink data). Each piece names its home: LinkedIn, *The First Call*, Movement Report, website or webinar, with one live webinar question in each selling and acquiring topic. No AI-as-the-headline topic: AI shows up only as "AI drafts, people decide." Never pick a question whose honest answer would give out the secret sauce (e.g. "where does advisor data come from?").
+**Topics and questions (Oct 13, 2026, the user's direction):** start from 12 content topics drawn from the positioning, find about 6 real questions buyers ask under each. **Don't base questions on Google search or search intent** [DECISION, Oct 13, 2026]: in this space it's dominated by consumers (B2C), not our B2B buyers. Use B2B sources instead: questions from sales calls and demos, Devon's qualifying questions and objections, customer conversations, trade press, conference agendas, research firms, and what buyer titles discuss on LinkedIn, and build each piece of content as an answer to one question, with a format assigned to each. Current plan: the "Content Topics & Questions" page in `CLAUDE.md`. The 12 topics, split 7 / 3 / 2 to match the ~60/25/15 use-case weighting: recruiting (recruiting advisors · why advisors move, and when · reaching advisors · what a recruit is worth · advisor movement trends · timing: getting there first · advisor data you can trust), selling (selling to advisors · reaching RIAs as an asset manager · who to call and when), acquiring (buying RIAs and wealth firms · which firms are growing, shrinking or in play). Every angle must come back to who/why/when and to timing or trust; general industry advice alone doesn't qualify. Questions are written in the buyer's own words (leaders, not reps or advisors), and each row shows who asks it and where it comes from (Devon's ICP, Messaging Kit, competitor reports, trade press, AssetLink data). Each piece names its home: LinkedIn, *The Asset Link* newsletter, Movement Report, website or webinar, with one live webinar question in each selling and acquiring topic. No AI-as-the-headline topic: AI shows up only as "AI drafts, people decide." Never pick a question whose honest answer would give out the secret sauce (e.g. "where does advisor data come from?").
 
 **Still to agree with the user:** publishing frequency.
 
@@ -43,11 +43,11 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 ## Signature series
 
-**Start with two:** *The First Call* and the *Advisor Movement Report*. Add *Search Walkthrough* only once those two run steadily (earliest month 3).
+**Start with two:** *The Asset Link* newsletter and the *Advisor Movement Report*. Add *Search Walkthrough* only once those two run steadily (earliest month 3).
 
 | Series | Format and cadence |
 |---|---|
-| ***The First Call*** | Weekly newsletter: notable advisor moves and firm changes, one tip, one data point |
+| ***The Asset Link*** | Our existing LinkedIn newsletter, every two weeks ("insights and actionable data for asset managers and advisors"): notable advisor moves and firm changes, one tip, one data point. Always use this name; never invent a new newsletter name [DECISION, Oct 19, 2026] |
 | ***Advisor Movement Report*** | Monthly data report: hiring hotspots, growing and shrinking firms, team moves. Pitched to trade press |
 | ***Search Walkthrough*** | Video every two weeks: an ideal advisor profile goes in; a matched list, signals and a drafted first message come out. Results only, never what happens behind the screen |
 
@@ -55,7 +55,7 @@ Walkthroughs use composite or anonymized profiles, never a real advisor's name, 
 
 ## Channels
 
-**Main three:** the newsletter (an audience we own) · the AssetLink LinkedIn page (the most active channel) · the website (search pages built over time, e.g. "advisor recruiting data").
+**Main three:** the newsletter, *The Asset Link* on LinkedIn (a subscriber audience) · the AssetLink LinkedIn page (the most active channel) · the website (search pages built over time, e.g. "advisor recruiting data").
 
 **On the LinkedIn page:**
 - The monthly report.
