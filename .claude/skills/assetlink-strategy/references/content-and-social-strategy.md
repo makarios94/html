@@ -33,6 +33,12 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 **Still to agree with the user:** publishing frequency.
 
+## Every piece: pain to AssetLink [DECISION, Oct 19, 2026]
+
+Every piece of content, captions and design alike, follows one path: (1) **the pain**, a plain headline in the buyer's words that says exactly what the post is about; (2) **why it hurts**, the cost in time, missed advisors or lost deals; (3) **AssetLink solves it**, naming AssetLink and the specific live capability that fixes this pain (results only, never how); (4) **what changes** for the buyer; (5) **a clear next step**. Never stop at the pain. Tips, how-tos, data posts and webinar announcements also end with how AssetLink helps.
+
+**Design briefs:** clear, not clever. No abstract metaphors (scales, dartboards, arrows). Pain panels or slides in muted tones; the **last slide or panel is always the AssetLink frame**: logo, one line on what AssetLink does for this pain, a product-style mockup of that result, "Know who, why and when." and a button-style call to action.
+
 ## Audience weighting (by use case)
 
 | Use case | Share | Notes |
