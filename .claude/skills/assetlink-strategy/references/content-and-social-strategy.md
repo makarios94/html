@@ -47,7 +47,7 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 | Series | Format and cadence |
 |---|---|
-| ***The Asset Link*** | Our existing LinkedIn newsletter, every other Thursday (description, updated Oct 19, 2026: "A bi-weekly newsletter delivering cutting-edge insights and actionable data for wealth firms, recruiting leaders and asset managers"): notable advisor moves and firm changes, one tip, one data point. Always use this name; never invent a new newsletter name [DECISION, Oct 19, 2026] |
+| ***The Asset Link*** | Our existing LinkedIn newsletter, every other Thursday (description, updated Oct 19, 2026: "Bi-weekly insights and actionable data for wealth firms, recruiting leaders and asset managers." (95 characters; the original 109-character line fit LinkedIn's space)): notable advisor moves and firm changes, one tip, one data point. Always use this name; never invent a new newsletter name [DECISION, Oct 19, 2026] |
 | ***Advisor Movement Report*** | Monthly data report: hiring hotspots, growing and shrinking firms, team moves. Pitched to trade press |
 | ***Search Walkthrough*** | Video every two weeks: an ideal advisor profile goes in; a matched list, signals and a drafted first message come out. Results only, never what happens behind the screen |
 
