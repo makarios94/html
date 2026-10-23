@@ -33,6 +33,10 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 **Still to agree with the user:** publishing frequency.
 
+## Two content calendars [DECISION, Oct 23, 2026]
+
+The CEO version has only: where it goes, a simple format name, the copy on the visual (text only, no layout labels or design direction), the caption and the call to action. All design direction (Canva setup, layouts, sizes, mockups) goes only in the marketing version with design notes. No publish dates in either until the user sets them.
+
 ## Never overclaim [DECISION, Oct 23, 2026]
 
 Copy and captions stay clear, truthful and direct. Say only what AssetLink does today, and never promise results ("more replies," "first try," "every time," "before the crowd," "in minutes," "live view," "answers yes to all"). Use "can" for benefits ("one good recruit can pay for AssetLink many times over"). Say "personal and work contact details," not "current" or "accurate" contacts. Say "you can check the details inside AssetLink," not "every detail." Describe what the buyer gets, not guaranteed outcomes.
