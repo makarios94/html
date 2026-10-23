@@ -23,7 +23,7 @@
 | Buyer | Lead with | Proof to use |
 |---|---|---|
 | Head of Advisor Recruiting | "Find advisors who fit your profile, and reach them when they're ready to move." | Signals of who may be moving, drafted outreach, a private view of your own hires |
-| Chief Growth Officer | "One good recruit pays for AssetLink many times over." | What one new advisor brings in compared with the cost, plus the hours saved. (Changed Oct 12, 2026 from the kit's "pays for AssetLink for seven years," which can't be explained without showing pricing. Tell Devon so the kit matches.) |
+| Chief Growth Officer | "One good recruit can pay for AssetLink many times over." | What one new advisor brings in compared with the cost, plus the hours saved. (Changed Oct 12, 2026 from the kit's "pays for AssetLink for seven years," which can't be explained without showing pricing. Tell Devon so the kit matches.) |
 | Head of Distribution or Sales Enablement | "Put your product in front of the advisors most likely to need it." | Filters by firm, market and allocation, plus team data |
 | Corporate Development | "See which RIAs and wealth firms are growing, shrinking or in play." | Leaderboards, hotspots and fast-growing firm lists |
 

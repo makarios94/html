@@ -33,6 +33,10 @@ All AssetLink content ideation follows this five-step loop (after Pierre Herubel
 
 **Still to agree with the user:** publishing frequency.
 
+## Never overclaim [DECISION, Oct 23, 2026]
+
+Copy and captions stay clear, truthful and direct. Say only what AssetLink does today, and never promise results ("more replies," "first try," "every time," "before the crowd," "in minutes," "live view," "answers yes to all"). Use "can" for benefits ("one good recruit can pay for AssetLink many times over"). Say "personal and work contact details," not "current" or "accurate" contacts. Say "you can check the details inside AssetLink," not "every detail." Describe what the buyer gets, not guaranteed outcomes.
+
 ## Every piece: pain to AssetLink [DECISION, Oct 19, 2026]
 
 Every piece of content, captions and design alike, follows one path: (1) **the pain**, a plain headline in the buyer's words that says exactly what the post is about; (2) **why it hurts**, the cost in time, missed advisors or lost deals; (3) **AssetLink solves it**, naming AssetLink and the specific live capability that fixes this pain (results only, never how); (4) **what changes** for the buyer; (5) **a clear next step**: on LinkedIn posts only, a short call to action ("Book a demo," "Get started" or "Talk to sales"). No calls to action on webinar or newsletter pieces; the user adds those [DECISION, Oct 20, 2026]. Never stop at the pain. Tips, how-tos, data posts and webinar announcements also end with how AssetLink helps.
