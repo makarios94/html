@@ -12,7 +12,8 @@ Each AssetLink document lives on **its own private web page**. One index page li
 | Competitive Analysis | https://claude.ai/artifact/BR7T5EixdUJKEZjbaHdvYz |
 | Content Topics & Questions | https://claude.ai/artifact/WCv4Ytb3AY7jxKPMLp66WV |
 | Content Plan | https://claude.ai/artifact/H71fqXA6rhytSxXR5BNbu4 |
-| Content Calendar | https://claude.ai/artifact/Taf69BBPkMRDJUwFrjRavi |
+| Content Calendar (for the CEO, no design notes) | https://claude.ai/artifact/2WitdQLq8NjnLFPTgJYey3 |
+| Content Calendar with Design Notes (marketing, Canva) | https://claude.ai/artifact/Taf69BBPkMRDJUwFrjRavi |
 | Positioning & Messaging (v2, outdated) | https://claude.ai/artifact/EtYAweS3DvAYNVNPjQsQu3 |
 
 The user's app only downloads file cards (Markdown, HTML and PDF alike), so never deliver a document as a file card alone.
