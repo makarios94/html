@@ -35,8 +35,8 @@ The June 2026 Product Reality v1.1 is **outdated**. Don't use its numbers (390K 
 **Current positioning: v5 (Oct 9, 2026), following Devon's Messaging and Marketing Kit.** Full version: the private page listed in the repo's `CLAUDE.md`. Summary in `positioning-and-messaging.md`.
 - **Tagline:** Know who, why and when.
 - **One-liner:** AssetLink is a decision intelligence platform for wealth management that finds the right advisors and firms for your criteria, shows why they fit, and signals when to act.
-- **Lead with trust and timing** (standing principle): data customers can check inside AssetLink, and signals ahead of filings.
-- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and data customers can check) and when (signals within about a day, versus about 30 days for filings).
+- **Lead with trust and timing** (standing principle): data customers can check inside AssetLink, and signals of who may be moving.
+- **Spine:** "compete on timing," backed by who (lists built to the client's profile), why (the reason each name fits, and data customers can check) and when (signals of who may be moving).
 
 **Market perception [INTERNAL, Future Proof 2026]:** "best-in-class but under-known." Quote: *"I didn't know what AssetLink did."* Brand awareness is a named priority.
 
@@ -47,7 +47,7 @@ The platform finds and filters advisors and firms, surfaces signals, and drafts 
 - **Coverage:** 600K+ advisor profiles, 20K+ firm profiles, about 41K advisor teams. [TO CONFIRM with Ari and Ivan; decks still say 500K+ and 10K+]
 - **Search and lists:** filters (state, city, firm, age, experience), saved lists, exports with chosen columns.
 - **Insight agent:** plain-English questions: build lists, trend analysis, lookalikes from a firm's hires, and why a name fits.
-- **Signals:** change detection, leaderboards, hotspots, fast- and slow-growing firms, firm movement and tenure. **Signals arrive within about a day, versus about 30 days for filings.** How signals are generated is confidential (see §9).
+- **Signals:** change detection, leaderboards, hotspots, fast- and slow-growing firms, firm movement and tenure. How signals are generated is confidential (see §9). **No speed-vs-filings claims** [DECISION, Oct 23, 2026, Devon]: a firm can file the day an advisor leaves or wait up to 30 days, so "about 30 days vs. about a day" is not part of the value proposition. Say AssetLink "surfaces signals that an advisor may be moving" / "signals who may be moving."
 - **Advisor profiles:** personal and work contact details, education, exams, disclosures, team and office, historical AUM, social activity, allocations.
 - **Your profile and ICP:** each user uploads an ideal advisor profile and customer lists, and can load outcomes. Private to the client.
 - **Curated reports** shaped by each user's usage.
@@ -113,14 +113,14 @@ TAM/SAM/SOM figures live in Devon's market sizing doc (internal, Apr 2026). Don'
 1. **Plain words, short sentences.** Leadership and buyers read these. Use industry terms buyers use (BrokerCheck, IAPD, ADV, AUM, breakaway), but no marketing jargon.
 2. **Specific beats superlative.** No "revolutionary," "game-changing," "unlock," "supercharge."
 3. **AI is the means, not the headline.** AI drafts, summarizes and answers; people decide and send.
-4. **Timing language:** "within about a day," "ahead of the filings," "see the move sooner." Never "real-time" or "predicts."
+4. **Timing language:** "signals who may be moving," "reach advisors at the right time." Never compare our speed with the filings (no "within about a day," "ahead of the filings," "a month late"). Never "real-time" or "predicts."
 5. **No fabricated proof.** Use `[PROOF NEEDED]` placeholders. Pilot results always carry their context.
 6. **Compliance-aware.** No investment advice, no performance promises, no accuracy guarantees.
 
 ## 9. Standing constraints (summary)
 
 1. **Claims gate** (§0): live features only, and the claims-to-avoid list.
-2. **Our secret sauce stays secret** [DECISION, tightened Oct 12, 2026]. Never give out how we get our data, how the product works underneath, or the core of the product: how matching, "why it fits", signals, scoring and reports are produced, or what models and data sit behind them. Show what AssetLink does and the results, never how. No "trains models," no "combines market intelligence with your outcomes," no "most databases work from filings" (it invites "what do you work from?"), and no videos or screenshots of what happens behind the screen. Sources and methods specifically cover where data comes from, how contacts are found or verified, how signals, scores and reports are produced. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. No "every field traces to its source," no "where each detail came from," and no content that points to the records or filings we might use (e.g. guides to BrokerCheck, IAPD or ADV). **No source is ever given out.** Talk about outcomes: "signals within about a day," "ahead of the filings," "customers can check every detail inside AssetLink."
+2. **Our secret sauce stays secret** [DECISION, tightened Oct 12, 2026]. Never give out how we get our data, how the product works underneath, or the core of the product: how matching, "why it fits", signals, scoring and reports are produced, or what models and data sit behind them. Show what AssetLink does and the results, never how. No "trains models," no "combines market intelligence with your outcomes," no "most databases work from filings" (it invites "what do you work from?"), and no videos or screenshots of what happens behind the screen. Sources and methods specifically cover where data comes from, how contacts are found or verified, how signals, scores and reports are produced. Never say how signals are generated or where data comes from: no "from the news," no list of data sources, not even the source list in Devon's original boilerplate. No "every field traces to its source," no "where each detail came from," and no content that points to the records or filings we might use (e.g. guides to BrokerCheck, IAPD or ADV). **No source is ever given out.** Talk about outcomes: "signals who may be moving," "customers can check every detail inside AssetLink."
 3. **Acquire-firms content** may use live firm-growth capabilities, never prediction claims (§4).
 4. **No customer names, pricing, TAM, or roadmap in external material** without approval.
 5. **No individual advisors named in public content.** Firm-level trends from public filings are a decision pending with leadership.

@@ -2,7 +2,7 @@
 
 **Source of truth: Devon's *AssetLink Messaging and Marketing Kit* (October 8, 2026).** Every line in it matches the Product Reality doc. Use it for the website, decks, posts and outreach, and check any new claim against Product Reality before adding it. The full leadership version (v5) is the private page listed in the repo's `CLAUDE.md`. This file is the working summary. Pricing, customer names and pilot figures stay in the internal documents.
 
-**Never reveal how signals are generated** (Oct 12, 2026). Say "signals within about a day" or "ahead of the filings." Never say where signals or data come from (no "from the news," no list of data sources). The boilerplate below was edited from Devon's kit to remove its source list.
+**Never reveal how signals are generated** (Oct 12, 2026). Say "signals who may be moving." Never compare our speed with the filings (Devon, Oct 23, 2026). Never say where signals or data come from (no "from the news," no list of data sources). The boilerplate below was edited from Devon's kit to remove its source list.
 
 ## Core lines (use exactly)
 
@@ -14,15 +14,15 @@
 
 **Category:** *decision intelligence* (per the kit). An earlier internal proposal to switch to "relationship intelligence" is retired.
 
-**Spine:** "compete on timing" is backed by *who* (lists built to the client's own profile), *why* (the reason each name fits, and the source of every field), and *when* (signals within about a day, versus about 30 days for filings).
+**Spine:** "compete on timing" is backed by *who* (lists built to the client's own profile), *why* (the reason each name fits, and the source of every field), and *when* (signals of who may be moving).
 
-**Standing principle: lead with trust and timing.** "Know who, why and when," backed by data customers can check inside AssetLink (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
+**Standing principle: lead with trust and timing.** "Know who, why and when," backed by data customers can check inside AssetLink (trust) and signals of who may be moving (timing). Every piece of content and messaging should carry at least one of the two.
 
 ## Message by buyer (from the kit)
 
 | Buyer | Lead with | Proof to use |
 |---|---|---|
-| Head of Advisor Recruiting | "Find advisors who fit your profile, and reach them when they're ready to move." | Signals ahead of filings, drafted outreach, a private view of your own hires |
+| Head of Advisor Recruiting | "Find advisors who fit your profile, and reach them when they're ready to move." | Signals of who may be moving, drafted outreach, a private view of your own hires |
 | Chief Growth Officer | "One good recruit pays for AssetLink many times over." | What one new advisor brings in compared with the cost, plus the hours saved. (Changed Oct 12, 2026 from the kit's "pays for AssetLink for seven years," which can't be explained without showing pricing. Tell Devon so the kit matches.) |
 | Head of Distribution or Sales Enablement | "Put your product in front of the advisors most likely to need it." | Filters by firm, market and allocation, plus team data |
 | Corporate Development | "See which RIAs and wealth firms are growing, shrinking or in play." | Leaderboards, hotspots and fast-growing firm lists |
@@ -31,7 +31,7 @@ Recruiting is the lead use (the fastest growing, per the ICP).
 
 ## Differentiators (live, per Product Reality)
 
-1. **Signals ahead of filings:** change signals within about a day, plus leaderboards, hotspots and firm growth.
+1. **Signals of who may be moving:** change signals, plus leaderboards, hotspots and firm growth.
 2. **Why each name fits, and data you can check:** lists built to the client's ideal profile; customers can check every detail inside AssetLink. Competitors make accuracy claims with nothing to back them up. Never say where the data comes from.
 3. **Outreach done for you:** drafted emails into Outlook/Gmail; nothing sends automatically. Managed-service scoring against the client's profile.
 4. **Private by design:** a client's profile, lists and outcomes stay private to them and are never shared with other clients.

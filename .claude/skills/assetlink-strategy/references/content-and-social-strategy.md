@@ -8,12 +8,12 @@ The current plan is **Content Strategy v3 (Oct 9, 2026)**, built on positioning 
 |---|---|
 | **Job of content** | Make AssetLink known for the kit's tagline, **Know who, why and when**, and turn that into demo requests |
 | **Audience** | Growth, recruiting and distribution leaders at ~4,000 wealth firms with $1–20B AUM |
-| **Core story** | Filings show a move about 30 days late; AssetLink signals it within about a day, shows why each name fits, and drafts the outreach |
+| **Core story** | AssetLink signals who may be moving, shows why each name fits, and drafts the outreach |
 | **Second theme** | Data you can check: customers can verify every detail inside AssetLink. Content shows the data holds up, never where it comes from or how it's built |
 | **What's ours** | Movement data from our signals (hotspots, leaderboards, firm growth) and real AssetLink output on screen. Devon's competitor reports note FINTRX, AdvizorPro and ISS publish no open data or benchmarks |
 | **Call to action** | A side-by-side on one list, or "let us build a list to your criteria" |
 
-**Standing principle: lead with trust and timing.** "Know who, why and when," backed by data customers can check inside AssetLink (trust) and signals ahead of filings (timing). Every piece of content and messaging should carry at least one of the two.
+**Standing principle: lead with trust and timing.** "Know who, why and when," backed by data customers can check inside AssetLink (trust) and signals of who may be moving (timing). Every piece of content and messaging should carry at least one of the two.
 
 ## How we come up with content: the Content Ideation Wheel [DECISION, Oct 12, 2026]
 

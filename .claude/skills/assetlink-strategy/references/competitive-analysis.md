@@ -32,7 +32,7 @@ Since Devon's March brief, the head-to-head competitors moved onto AssetLink's "
 - **Dakota:** Claude/ChatGPT connectors, 13F holdings filters, monthly RIA M&A roundups.
 - **Discovery Data:** markets "real-time" advisor transition updates.
 
-**Implications:** push alerts and LLM connectors are now table stakes. **Update (Oct 2026 Product Reality):** AssetLink's signals are live and flag moves within about a day versus about 30 days for filings, so positioning v4 claims *know first and act first*. AssetLink's remaining gaps are push delivery (always-on agents are in development), in-platform ranking (scoring is a managed service), and confirmed Dynamics/API/MCP options. FINTRX's Relationship Path means an advisor relationship graph is no longer a moat on its own.
+**Implications:** push alerts and LLM connectors are now table stakes. **Update (Oct 2026 Product Reality):** AssetLink's signals are live and show who may be moving (no speed-vs-filings claims, per Devon, Oct 23, 2026). AssetLink's remaining gaps are push delivery (always-on agents are in development), in-platform ranking (scoring is a managed service), and confirmed Dynamics/API/MCP options. FINTRX's Relationship Path means an advisor relationship graph is no longer a moat on its own.
 
 ## Devon's competitor reports (website scans, June 2–3 2026) [INTERNAL]
 
