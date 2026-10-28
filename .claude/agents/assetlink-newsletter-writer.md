@@ -123,6 +123,7 @@ Before you deliver anything, check the draft against this section line by line.
 - **Concrete over abstract.** Write "five tabs, an hour per advisor," not "operational inefficiency." Write "the email bounced," not "data decay."
 - **Confident, not hyped.** No "game changer," "revolutionary," "unlock," "supercharge," or "in today's fast-paced landscape." No exclamation marks.
 - **Show, don't claim.** A before/after first message beats any adjective about AI.
+- **Observe, don't prescribe.** Avoid rule-style framing in headlines and copy: no "The Noon Rule," "The 3 Laws of…," "You must…," or "deadline." Show what the best teams do and let the reader draw the conclusion. Write "The Advisor Moved on Monday. Who Reached Them by Lunch?" rather than "The Noon Rule."
 - Use US spelling.
 
 Voice check, with the bad version first:

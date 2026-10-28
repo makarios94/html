@@ -1,6 +1,6 @@
 ## Headline options
 1. Your Best Recruit Was Ready on Monday. You Called on Friday.
-2. The Noon Rule: Act on an Advisor Move the Same Day
+2. The Advisor Moved on Monday. Who Reached Them by Lunch?
 3. "Let's Reach Out Next Week" Is How You Lose the Advisor
 
 **Pick:** #1. It puts the cost in the reader's own week, and Monday-to-Friday sets up the bookend.
@@ -45,7 +45,7 @@ And it never shows up on a dashboard. It just looks like a quiet quarter.
 
 Early in a move, an advisor is deciding who to talk to. A few days later, they're choosing between firms they've already talked to. You want to be in the first conversation, not the comparison.
 
-A noon deadline forces a useful trade. You can't research everything by lunch, so you research the one thing that matters: can you say, in one sentence, why this advisor fits?
+Aiming for noon changes how you work. You can't research everything by lunch, so you research the one thing that matters: can you say, in one sentence, why this advisor fits?
 
 *"Your team's focus on [client type] in [City] is the market we're building in."*
 
@@ -82,7 +82,7 @@ This issue: what a week of "getting ready" really costs, and why noon on day one
 
 **SEO title (≤ 60 chars):** Act on an Advisor Move the Same Day
 
-**SEO description (≤ 155 chars):** Teams that wait a week call after everyone else. Why recruiting leaders should reach a moving advisor by noon on day one, and what to research first.
+**SEO description (≤ 155 chars):** Teams that wait a week call after everyone else. Why reaching a moving advisor on day one matters, and the one thing worth researching first.
 
 **Notes for the editor**
 - Placeholders to fill: [Book a demo] link. [client type] and [City] in the sample fit sentence are intentional.
