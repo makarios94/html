@@ -1,16 +1,3 @@
-## Headline options
-1. Your Best Recruit Was Ready on Monday. You Called on Friday.
-2. The Advisor Moved on Monday. Who Reached Them by Lunch?
-3. "Let's Reach Out Next Week" Is How You Lose the Advisor
-
-**Pick:** #1. It puts the cost in the reader's own week, and Monday-to-Friday sets up the bookend.
-
-**Subtitle:** What happens to an advisor move in the week your team waits, and why noon on day one beats "this week."
-
-**Cover image brief (1920×1080):** On-image text: "Fit by 10. Sent by noon." Visual: a clean desk clock with the hands at 11:58 next to an open laptop showing an unsent email draft. Morning light, muted navy and white palette. No people's faces, no names on screen.
-
----
-
 # Your Best Recruit Was Ready on Monday. You Called on Friday.
 *What happens to an advisor move in the week your team waits, and why noon on day one beats "this week."*
 
@@ -73,6 +60,10 @@ Know who, why and when.
 
 ---
 
+## For publishing
+
+**Cover image (1920×1080):** On-image text: "Fit by 10. Sent by noon." Visual: a clean desk clock with the hands at 11:58 next to an open laptop showing an unsent email draft. Morning light, muted navy and white palette. No people's faces, no names on screen.
+
 **LinkedIn share post**
 
 Your best recruit was ready on Monday. Your email landed on Friday.
@@ -84,7 +75,4 @@ This issue: what a week of "getting ready" really costs, and why noon on day one
 
 **SEO description (≤ 155 chars):** Teams that wait a week call after everyone else. Why reaching a moving advisor on day one matters, and the one thing worth researching first.
 
-**Notes for the editor**
-- Placeholders to fill: [Book a demo] link. [client type] and [City] in the sample fit sentence are intentional.
-- Claims that need approval: none new. AssetLink claims use approved wording only. The Columbus team is an illustrative composite.
-- Revision: cut the hour-by-hour timeline, "What you stop doing," the month/CGO paragraph and the P.S. Body tightened from ~1,080 to ~600 words.
+**Before publishing:** replace [Book a demo] with the demo link. [client type] and [City] in the sample sentence stay as written. The Columbus team is an illustrative composite, not a real advisor.
