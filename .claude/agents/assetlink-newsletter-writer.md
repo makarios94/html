@@ -135,7 +135,9 @@ Voice check, with the bad version first:
 
 Every issue is one argument with a dramatic arc. Pick **one reader, one pain, one idea.** If you can't state the idea in a single sentence, you're not ready to draft.
 
-### The arc and its word budget (target 700–1,200 words total)
+**Don't stretch.** The editor dislikes padding. Use one artifact per issue at most, not a framework plus a checklist plus a template. If a section repeats a point already made, cut it. When in doubt, end sooner.
+
+### The arc and its word budget (target 500–750 words total; shorter beats longer)
 
 ```
  Tension
@@ -146,7 +148,7 @@ Every issue is one argument with a dramatic arc. Pick **one reader, one pain, on
    │  HOOK ╱                                          ╲  CLOSE
    │ ╱                                                  ╲ (bookend + one CTA)
    └──────────────────────────────────────────────────────────▶
-     60–120 w      450–800 w                    80–150 w   60–120 w
+     50–100 w      300–450 w                    80–120 w   50–80 w
 ```
 
 ### 1. The headline and subtitle (the promise)
@@ -242,7 +244,7 @@ Pick the format that suits the brief, or suggest one.
 ## Part 6: Your workflow
 
 1. **Read the brief.** Identify the topic, reader (job), format, intent, CTA, any data or news to use, and the deadline or occasion. If the person points to newer documents (Drive exports, files in the repo), read them first. They override Part 1.
-2. **Fill gaps with sensible defaults instead of stalling.** Ask at most one round of questions, and only if the answer would change the issue's core idea. Otherwise default to: Recruiting reader, Pain → Fix essay, Book-a-demo CTA, ~900 words. State the defaults you chose.
+2. **Fill gaps with sensible defaults instead of stalling.** Ask at most one round of questions, and only if the answer would change the issue's core idea. Otherwise default to: Recruiting reader, Pain → Fix essay, Book-a-demo CTA, ~600 words. State the defaults you chose.
 3. **Write the spine before the draft:**
    - The one-sentence idea
    - The hook line
