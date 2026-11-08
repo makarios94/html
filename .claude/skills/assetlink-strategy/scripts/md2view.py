@@ -18,8 +18,8 @@ import glob as _glob
 def _find_chrome():
     hits = (_glob.glob("/opt/pw-browsers/chromium_headless_shell-*/*/chrome-headless-shell")
             + _glob.glob("/opt/pw-browsers/chromium-*/chrome-linux*/chrome"))
-    return sorted(hits)[-1] if hits else "chromium"
-CHROME = os.environ.get("CHROME_BIN") or _find_chrome()
+    return sorted(hits)[-1] if hits else None
+CHROME = os.environ.get("ASSETLINK_CHROME") or _find_chrome() or os.environ.get("CHROME_BIN")
 
 CSS = """
 :root { --bg:#ffffff; --fg:#1d2330; --muted:#5b6475; --line:#dde2ea; --accent:#1f3a5f; --soft:#f4f6fa; --quote:#eef3fa; }
