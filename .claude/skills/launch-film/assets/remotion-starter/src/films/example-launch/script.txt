@@ -1,0 +1,13 @@
+# Example launch film for a fictional product. One line = one caption pill and one cue id.
+# {display|spoken}: captions show the first form, the voice reads the second.
+[hook] You did the work weeks ago.
+[sent] You've sent the invoice three times,
+[replies] and every reply says "next week".
+[silence] Some clients stop replying at all.
+[turn] Chasing payments is a second job.
+[reveal] Meet Paidly.
+[add] Add an invoice once.
+[follow] Paidly follows up on schedule, in your words,
+[paid] and tells you the moment you're paid.
+[cta] Get paid without the chasing.
+[url] Try it free at {paidly.app|paidly dot app}.

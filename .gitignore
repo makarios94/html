@@ -1,0 +1,6 @@
+node_modules/
+out/
+.remotion/
+*.native.wav
+*.timing.json
+__pycache__/

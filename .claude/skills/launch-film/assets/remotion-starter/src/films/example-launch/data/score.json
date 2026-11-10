@@ -1,0 +1,17 @@
+{
+ "fps": 30,
+ "problem": {
+  "src": "music_problem.wav",
+  "at": 0,
+  "endAt": 342,
+  "bpm": 88.962,
+  "break": 243
+ },
+ "product": {
+  "src": "music_product.wav",
+  "at": 256,
+  "bpm": 100.765,
+  "swell": 327,
+  "outro": 542
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "nora",
+ "name": "Nora (engaging ads and educational pro)",
+ "voice_id": "L51A0Vt79LFJ0refo6v8",
+ "provider": "ElevenLabs (creative connector), eleven_v4",
+ "gender": "female",
+ "accent": "en-british",
+ "film": "example-launch",
+ "script_print": "21a6d2db3f17",
+ "direction": "assets/remotion-starter/src/films/example-launch/vo-direction.txt",
+ "length_s": 23.8,
+ "measured": {
+  "verdict": "PERFORMS",
+  "median_pitch_hz": 241.8,
+  "pitch_range_st": 14.5,
+  "melody_st": 10.0,
+  "register_st": 2.01,
+  "pause_share": 0.13,
+  "pace_wps": 2.98,
+  "level_range_db": 5.7,
+  "notes": [
+   "NOTE: pace variety 0.12 (floor 0.15): every line runs at the same speed"
+  ]
+ },
+ "verdict": "Kept: the female version the user asked for.",
+ "note": "One of two takes came back (the other failed on the free plan's queue).",
+ "score_args": [
+  "--turn",
+  "turn",
+  "--reveal",
+  "reveal",
+  "--cta",
+  "cta",
+  "--lead",
+  "4"
+ ],
+ "banked": "2026-11-08"
+}

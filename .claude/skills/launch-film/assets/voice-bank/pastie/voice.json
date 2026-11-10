@@ -1,0 +1,39 @@
+{
+ "id": "pastie",
+ "name": "Pastie (warm Nigerian storyteller)",
+ "voice_id": "y47FZICqt6oFf4Z89DXT",
+ "provider": "ElevenLabs (creative connector), eleven_v4",
+ "gender": "female",
+ "accent": "en-nigerian",
+ "film": "example-launch",
+ "script_print": "21a6d2db3f17",
+ "direction": "assets/remotion-starter/src/films/example-launch/vo-direction.txt",
+ "length_s": 24.0,
+ "measured": {
+  "verdict": "NEEDS DIRECTION",
+  "median_pitch_hz": 216.3,
+  "pitch_range_st": 14.0,
+  "melody_st": 11.6,
+  "register_st": 1.34,
+  "pause_share": 0.16,
+  "pace_wps": 3.08,
+  "level_range_db": 6.0,
+  "notes": [
+   "FLAT: register shifts 1.34 st (floor 1.5): every line sits at the same height (no lower turn, no brighter reveal)",
+   "NOTE: pace variety 0.14 (floor 0.15): every line runs at the same speed"
+  ]
+ },
+ "verdict": "Kept by ear (they sound good, keep both) although vo_check flags her register.",
+ "note": "For a Nigerian market. Her pauses hold breath and room sound, so tighten_vo.py left most of them whole (about 1 s before Meet Paidly). Whisper writes her Paidly as Paidely: listen to the name.",
+ "score_args": [
+  "--turn",
+  "turn",
+  "--reveal",
+  "reveal",
+  "--cta",
+  "cta",
+  "--lead",
+  "4"
+ ],
+ "banked": "2026-11-08"
+}

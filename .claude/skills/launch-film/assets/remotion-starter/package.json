@@ -1,0 +1,33 @@
+{
+  "name": "motion-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A launch-film project: one voice-led film, every aspect ratio, rendered with Remotion.",
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "stills": "node tools/stills.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.541",
+    "@remotion/cli": "4.0.541",
+    "@remotion/renderer": "4.0.541",
+    "@remotion/google-fonts": "4.0.541",
+    "@remotion/fonts": "4.0.541",
+    "@remotion/layout-utils": "4.0.541",
+    "@remotion/media": "4.0.541",
+    "@remotion/media-utils": "4.0.541",
+    "@remotion/motion-blur": "4.0.541",
+    "@remotion/noise": "4.0.541",
+    "@remotion/paths": "4.0.541",
+    "@remotion/transitions": "4.0.541",
+    "lucide-react": "1.70.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.541"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}

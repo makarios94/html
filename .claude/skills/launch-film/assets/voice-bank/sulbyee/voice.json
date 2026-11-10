@@ -1,0 +1,36 @@
+{
+ "id": "sulbyee",
+ "name": "Sulbyee (Nigerian professional)",
+ "voice_id": "i9sr2Eu9ynYVEaDDkF8I",
+ "provider": "ElevenLabs (creative connector), eleven_v4",
+ "gender": "male",
+ "accent": "en-nigerian",
+ "film": "example-launch",
+ "script_print": "21a6d2db3f17",
+ "direction": "assets/remotion-starter/src/films/example-launch/vo-direction.txt",
+ "length_s": 22.2,
+ "measured": {
+  "verdict": "PERFORMS",
+  "median_pitch_hz": 167.0,
+  "pitch_range_st": 14.1,
+  "melody_st": 10.1,
+  "register_st": 3.04,
+  "pause_share": 0.1,
+  "pace_wps": 3.09,
+  "level_range_db": 6.7,
+  "notes": []
+ },
+ "verdict": "Kept: the user listened and said they sound good, keep both.",
+ "note": "For a Nigerian market. The first two takes failed on the free plan's queue; a retry went through. Take 2 of 2.",
+ "score_args": [
+  "--turn",
+  "turn",
+  "--reveal",
+  "reveal",
+  "--cta",
+  "cta",
+  "--lead",
+  "4"
+ ],
+ "banked": "2026-11-08"
+}

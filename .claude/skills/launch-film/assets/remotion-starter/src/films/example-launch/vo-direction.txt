@@ -1,0 +1,24 @@
+# Performance script: what is sent to the voice model (eleven_v4). The captions come from script.txt; this file only
+# shapes how the same words are read, so keep every word identical (alignment matches them).
+#
+# Voice: Justin Case, warm, clear, conversational (creative_list_voices id DtQLDxHbTiQTpVVanTy1). The read in the film
+# measures 3.2 words per second of speech, lines 2.7 semitones apart and 7.5 dB of dynamics (vo_check.py: PERFORMS).
+# The first take had [softly] on the low point and read it hushed: 2.7 dB under the lines around it and 8 semitones
+# lower, heard as a whisper the film did not need. That line was re-read alone in [conversational] and spliced in
+#   pickup_line.py vo.wav --captions data/captions.json --cue silence --take pick1.mp3 --take pick2.mp3
+# (about 51 credits a take instead of a full read), so this file no longer asks for it. The edit then closed the
+# slack between lines in proportion:
+#   tighten_vo.py vo.wav --captions data/captions.json --gap 0.24
+# An earlier direction with a pause or a new emotion on every line came out halting (23 percent pauses, 2.1 words per
+# second overall) and was rejected: one storyteller who keeps moving lands better.
+#
+# The same direction, other voices the user kept: Nora (L51A0Vt79LFJ0refo6v8, British, female, made for ads) and
+# Sulbyee (i9sr2Eu9ynYVEaDDkF8I, Nigerian, male, made for ads) both PERFORMS; Pastie (y47FZICqt6oFf4Z89DXT, Nigerian,
+# female storyteller) keeps her lines closer in pitch (register 1.4 st against the 1.5 floor) and the user approved it
+# by ear. Sulbyee's first two takes failed on the free plan's queue; a later retry went through. All four reads are in
+# assets/voice-bank (scripts/voice_bank.py use <voice> <project> puts one into this film).
+#
+# The shape: conversational and close through the setup and the low point, one held beat before and after the turn,
+# serious on the turn, warm on the reveal, brighter through the product, warm on the close. One CAPITAL word per beat
+# carries the emphasis by pitch: THREE, JOB, PAID.
+[conversational] You did the work weeks ago. You've sent the invoice THREE times, and every reply says "next week." Some clients stop replying at all. [pause] [serious] Chasing payments is a second JOB. [pause] [warmly] Meet Paidly. [upbeat] Add an invoice once. Paidly follows up on schedule, in your words, and tells you the moment you're PAID. [warmly] Get paid without the chasing. Try it free at paidly.app.

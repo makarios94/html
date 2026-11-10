@@ -1,0 +1,425 @@
+{
+ "fps": 30,
+ "duration": 21.873,
+ "method": "whisper+script",
+ "source": "vo.wav",
+ "words": [
+  {
+   "text": "You",
+   "start": 0.0,
+   "end": 0.23
+  },
+  {
+   "text": "did",
+   "start": 0.24,
+   "end": 0.424
+  },
+  {
+   "text": "the",
+   "start": 0.434,
+   "end": 0.618
+  },
+  {
+   "text": "work",
+   "start": 0.628,
+   "end": 0.983
+  },
+  {
+   "text": "weeks",
+   "start": 0.993,
+   "end": 1.485
+  },
+  {
+   "text": "ago.",
+   "start": 1.495,
+   "end": 1.552
+  },
+  {
+   "text": "You've",
+   "start": 1.844,
+   "end": 2.097
+  },
+  {
+   "text": "sent",
+   "start": 2.107,
+   "end": 2.29
+  },
+  {
+   "text": "the",
+   "start": 2.3,
+   "end": 2.574
+  },
+  {
+   "text": "invoice",
+   "start": 2.584,
+   "end": 2.959
+  },
+  {
+   "text": "three",
+   "start": 2.969,
+   "end": 3.487
+  },
+  {
+   "text": "times,",
+   "start": 3.497,
+   "end": 3.81
+  },
+  {
+   "text": "and",
+   "start": 3.82,
+   "end": 4.034
+  },
+  {
+   "text": "every",
+   "start": 4.044,
+   "end": 4.359
+  },
+  {
+   "text": "reply",
+   "start": 4.369,
+   "end": 4.622
+  },
+  {
+   "text": "says",
+   "start": 4.632,
+   "end": 4.947
+  },
+  {
+   "text": "\"next",
+   "start": 4.957,
+   "end": 5.596
+  },
+  {
+   "text": "week\".",
+   "start": 5.606,
+   "end": 5.656
+  },
+  {
+   "text": "Some",
+   "start": 6.052,
+   "end": 6.338
+  },
+  {
+   "text": "clients",
+   "start": 6.348,
+   "end": 6.611
+  },
+  {
+   "text": "stop",
+   "start": 6.621,
+   "end": 7.07
+  },
+  {
+   "text": "replying",
+   "start": 7.08,
+   "end": 7.28
+  },
+  {
+   "text": "at",
+   "start": 7.29,
+   "end": 7.584
+  },
+  {
+   "text": "all.",
+   "start": 7.594,
+   "end": 7.936
+  },
+  {
+   "text": "Chasing",
+   "start": 8.36,
+   "end": 8.843
+  },
+  {
+   "text": "payments",
+   "start": 8.853,
+   "end": 9.116
+  },
+  {
+   "text": "is",
+   "start": 9.126,
+   "end": 9.354
+  },
+  {
+   "text": "a",
+   "start": 9.364,
+   "end": 9.558
+  },
+  {
+   "text": "second",
+   "start": 9.568,
+   "end": 10.018
+  },
+  {
+   "text": "job.",
+   "start": 10.028,
+   "end": 10.581
+  },
+  {
+   "text": "Meet",
+   "start": 11.048,
+   "end": 11.267
+  },
+  {
+   "text": "Paidly.",
+   "start": 11.277,
+   "end": 11.828
+  },
+  {
+   "text": "Add",
+   "start": 12.07,
+   "end": 12.142
+  },
+  {
+   "text": "an",
+   "start": 12.152,
+   "end": 12.286
+  },
+  {
+   "text": "invoice",
+   "start": 12.296,
+   "end": 12.65
+  },
+  {
+   "text": "once.",
+   "start": 12.66,
+   "end": 13.224
+  },
+  {
+   "text": "Paidly",
+   "start": 13.426,
+   "end": 13.782
+  },
+  {
+   "text": "follows",
+   "start": 13.792,
+   "end": 14.143
+  },
+  {
+   "text": "up",
+   "start": 14.153,
+   "end": 14.266
+  },
+  {
+   "text": "on",
+   "start": 14.276,
+   "end": 14.366
+  },
+  {
+   "text": "schedule,",
+   "start": 14.376,
+   "end": 15.075
+  },
+  {
+   "text": "in",
+   "start": 15.205,
+   "end": 15.489
+  },
+  {
+   "text": "your",
+   "start": 15.499,
+   "end": 15.67
+  },
+  {
+   "text": "words,",
+   "start": 15.68,
+   "end": 16.059
+  },
+  {
+   "text": "and",
+   "start": 16.069,
+   "end": 16.251
+  },
+  {
+   "text": "tells",
+   "start": 16.261,
+   "end": 16.584
+  },
+  {
+   "text": "you",
+   "start": 16.594,
+   "end": 16.782
+  },
+  {
+   "text": "the",
+   "start": 16.792,
+   "end": 16.98
+  },
+  {
+   "text": "moment",
+   "start": 16.99,
+   "end": 17.386
+  },
+  {
+   "text": "you're",
+   "start": 17.396,
+   "end": 17.657
+  },
+  {
+   "text": "paid.",
+   "start": 17.667,
+   "end": 17.836
+  },
+  {
+   "text": "Get",
+   "start": 18.06,
+   "end": 18.273
+  },
+  {
+   "text": "paid",
+   "start": 18.283,
+   "end": 18.545
+  },
+  {
+   "text": "without",
+   "start": 18.555,
+   "end": 18.967
+  },
+  {
+   "text": "the",
+   "start": 18.977,
+   "end": 19.19
+  },
+  {
+   "text": "chasing.",
+   "start": 19.2,
+   "end": 19.621
+  },
+  {
+   "text": "Try",
+   "start": 19.857,
+   "end": 20.094
+  },
+  {
+   "text": "it",
+   "start": 20.104,
+   "end": 20.287
+  },
+  {
+   "text": "free",
+   "start": 20.297,
+   "end": 20.59
+  },
+  {
+   "text": "at",
+   "start": 20.6,
+   "end": 20.782
+  },
+  {
+   "text": "paidly.app.",
+   "start": 20.792,
+   "end": 21.7
+  }
+ ],
+ "phrases": [
+  {
+   "id": "hook",
+   "text": "You did the work weeks ago.",
+   "start": 0.0,
+   "end": 1.552,
+   "words": [
+    0,
+    5
+   ]
+  },
+  {
+   "id": "sent",
+   "text": "You've sent the invoice three times,",
+   "start": 1.844,
+   "end": 3.81,
+   "words": [
+    6,
+    11
+   ]
+  },
+  {
+   "id": "replies",
+   "text": "and every reply says \"next week\".",
+   "start": 3.82,
+   "end": 5.656,
+   "words": [
+    12,
+    17
+   ]
+  },
+  {
+   "id": "silence",
+   "text": "Some clients stop replying at all.",
+   "start": 6.052,
+   "end": 7.936,
+   "words": [
+    18,
+    23
+   ]
+  },
+  {
+   "id": "turn",
+   "text": "Chasing payments is a second job.",
+   "start": 8.36,
+   "end": 10.581,
+   "words": [
+    24,
+    29
+   ]
+  },
+  {
+   "id": "reveal",
+   "text": "Meet Paidly.",
+   "start": 11.048,
+   "end": 11.828,
+   "words": [
+    30,
+    31
+   ]
+  },
+  {
+   "id": "add",
+   "text": "Add an invoice once.",
+   "start": 12.07,
+   "end": 13.224,
+   "words": [
+    32,
+    35
+   ]
+  },
+  {
+   "id": "follow",
+   "text": "Paidly follows up on schedule, in your words,",
+   "start": 13.426,
+   "end": 16.059,
+   "words": [
+    36,
+    43
+   ]
+  },
+  {
+   "id": "paid",
+   "text": "and tells you the moment you're paid.",
+   "start": 16.069,
+   "end": 17.836,
+   "words": [
+    44,
+    50
+   ]
+  },
+  {
+   "id": "cta",
+   "text": "Get paid without the chasing.",
+   "start": 18.06,
+   "end": 19.621,
+   "words": [
+    51,
+    55
+   ]
+  },
+  {
+   "id": "url",
+   "text": "Try it free at paidly.app.",
+   "start": 19.857,
+   "end": 21.7,
+   "words": [
+    56,
+    60
+   ]
+  }
+ ]
+}
