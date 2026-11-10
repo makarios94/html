@@ -1,0 +1,49 @@
+{
+  "bpm": 120.0,
+  "offset": 0.0,
+  "beatsPerBar": 4,
+  "bars": 9,
+  "duration": 20.0,
+  "sections": [
+    {
+      "bar": 0,
+      "section": "intro"
+    },
+    {
+      "bar": 1,
+      "section": "intro"
+    },
+    {
+      "bar": 2,
+      "section": "intro"
+    },
+    {
+      "bar": 3,
+      "section": "main"
+    },
+    {
+      "bar": 4,
+      "section": "main"
+    },
+    {
+      "bar": 5,
+      "section": "lift"
+    },
+    {
+      "bar": 6,
+      "section": "lift"
+    },
+    {
+      "bar": 7,
+      "section": "lift"
+    },
+    {
+      "bar": 8,
+      "section": "outro"
+    }
+  ],
+  "mood": "calm",
+  "key": "F",
+  "source": "music-sa.wav",
+  "method": "generated"
+}

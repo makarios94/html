@@ -1,77 +1,97 @@
-# Art Basel throwback: delivery note (v02)
+# Edition V throwback videos: delivery note (v3)
 
-A 17-second, music-led throwback to four years of AssetLink Art Basel events in Miami (2022 to 2025). There is no
-voiceover. v02 replaces the flyer-only v01 with real footage from the five event reels the user uploaded.
+Built to the script in the Claude doc "ASSETLINK x Miami Art Week 2026, Event Promo Strategy" (Content plan tab,
+section "Throwback motion videos"). Two music-led videos cut from the Edition I to IV recap footage, in the wall-label
+style, ending on the shared end card. Formats per the doc: 9:16 for Reels and Stories, 1:1 for LinkedIn.
+
+This replaces v01 (flyer only) and v02 (four-year montage), which are in git history.
 
 ## Files (`final/`)
 
-| File | Use |
+| File | Post date in the plan |
 |---|---|
-| `art_basel_throwback_4x5_v02.mp4` | LinkedIn and Instagram feed (lead version) |
-| `art_basel_throwback_9x16_v02.mp4` | Stories, Reels, Shorts |
-| `art_basel_throwback_1x1_v02.mp4` | Square feeds |
-| `art_basel_throwback_cover_*.png` | Thumbnails (the hook frame) |
+| `four_decembers_9x16_v01.mp4`, `four_decembers_1x1_v01.mp4` | Throwback video 1, Fri Nov 14; Stories re-share Tue Dec 1 |
+| `some_assets_9x16_v01.mp4`, `some_assets_1x1_v01.mp4` | Throwback video 2, Fri Nov 21 |
+| `four_decembers_cover_*.png`, `some_assets_cover_*.png` | Thumbnails (the opening label) |
 
-All 1080 wide, 30 fps, H.264, BT.709, -14.6 LUFS, true peak -1.3 dBTP. QA passed on all three (no black frames).
-v01 (flyer only) is in git history.
+All 1080 wide, 30 fps, H.264, about -14.8 LUFS. Four Decembers runs 25 s, Some Assets 19 s (each script length
+plus the 2-second end card hold).
 
-## Beat sheet (120 BPM, 2 s per bar)
+## Video 1: "Four Decembers"
 
-| Bar | On screen | Footage |
+| Time | On screen (from the doc) | Footage |
 |---|---|---|
-| 0 | THROWBACK / Art Basel, Miami (legible on frame 0) | 2024 crowd, tinted purple |
-| 1 | Four Decembers in Miami. | flyer marble |
-| 2 | 2022: a framed print lands, cuts on beat 3 | 2022 reel (DFD Partners): crowd at the product screen, guests by the pool |
-| 3 | 2023 (the year digit rolls) | 2023 reels: rooftop stage, then the talk under the AssetLink screen |
-| 4 | 2024 | 2024 reel: guest groups on the terrace |
-| 5 | 2025 | the 4th annual flyer, then the Casa Neos crowd |
-| 6 | Thank you to everyone who came. | 2024 guests at the AssetLink step-and-repeat |
-| 7 | AssetLink logo, Know who, why and when., assetlink.ai | flyer marble |
+| 0-2 s | ASSETLINK, Miami / One tradition, four Decembers | Slow aerial of the river (2025 venue) |
+| 2-6 s | Edition I · 2022 / It started with one evening. | 2022: arrivals, then the room |
+| 6-10 s | Edition II · 2023 / Then it became a tradition. | 2023: the rooftop crowd, then the talk under the ASSETLINK screen |
+| 10-14 s | Edition III · 2024 / We rebuilt the company. We still came back. | 2024: guests on the terrace |
+| 14-18 s | Edition IV · 2025 / Same city. Same week. More friends in the room. | 2025: the widest crowd shot, then a toast |
+| 18-22 s | Edition V · 2026 / Thursday, Dec 3 · 7–10 PM / Seaspice, on the Miami River | Freeze on the 2025 crowd, darkened |
+| 22-25 s | End card | |
 
-## How the years were set
+The big year flips forward on each edition, 2022 to 2026, and holds on 2026.
 
-From the reel captions and titles: the 2025 reel thanks guests for the "4th Annual" event (Casa Neos, matching the
-flyer, so the flyer is Dec 4, 2025), and the 2024 reel opens on "3rd Annual Art Basel Event". 2023 and 2022 follow by
-counting back, and match the post dates. The film shows years only, not "1st" or "2nd annual".
+## Video 2: "Some assets don't hang on walls"
 
-## Footage notes
+| Time | On screen (from the doc) | Footage |
+|---|---|---|
+| 0-3 s | Every December, / Miami fills up with art. | The river aerial, then the 2025 crowd |
+| 3-7 s | But some of the best things that week | Eight faces mid-conversation, a cut on every beat |
+| 7-10 s | happen in conversation. | Laughter and toasts |
+| 10-13 s | Some assets don't hang on walls. / Medium: advisors, capital, five years of conviction | A slow-motion champagne pour |
+| 13-16 s | ASSETLINK 5th Annual Art Basel Evening / Thursday, Dec 3 · Seaspice, on the Miami River | Its last frame, darkened |
+| 16-19 s | End card | |
 
-- Every clip is muted; the film runs on its own score.
-- The 2023 stage clip comes from a re-shared story. I cropped out the sharer's handle at the top and the
-  @dfdpartners tag at the bottom.
-- One 2023 rooftop shot shows the old DFD Partners mark on the screen, and the 2022 clips are from the DFD
-  Partners era. I kept them as history. Say if you want AssetLink-only footage and I'll swap them.
-- The 2025 reel came in at 640x316, so its clip is the softest in the film. The original export would sharpen it.
-- People in the clips are guests from AssetLink's own event posts. Check you're happy for the ones shown to appear
-  again, especially if this runs as a paid ad.
+The "Medium:" line comes from the doc's wall-label template, added so this beat reads as a real wall label.
+
+**End card for both:** ASSETLINK logo / Free to attend / Registration closes Dec 2 / Save your spot (link in bio).
+
+## Footage choices
+
+- Every clip is muted; each video has its own score.
+- The 2024 opening shot was trimmed past a sponsor backdrop that shows a bank's name. One 2025 moment was dropped
+  because it shows a sponsor wall. No third-party brand is on screen.
+- The 2023 rooftop shot shows the old DFD Partners logo on the stage screen. It is company history, so I kept it.
+  Say if you want it swapped.
+- The 2023 stage clip is a re-shared story. I cropped out the sharer's handle and the @dfdpartners tag.
+- The 2025 reel came in at 640x316, so its shots are the softest. The original export would sharpen them.
+- Guests on screen come from ASSETLINK's own event posts. Check you're happy for them to appear again, especially
+  before any paid boost.
 
 ## Stand-ins
 
-1. **Music:** a temp bed synthesized by `sound_kit.py` (warm, D, 120 BPM). A licensed track would lift it; run
-   `scripts/beat_grid.py` on it and the film re-times.
-2. **Typeface:** Montserrat Bold stands in for the flyer's Glacial Indifference Bold.
+1. **Music:** temp beds synthesized by `sound_kit.py` (Four Decembers warm in D, Some Assets calm in F, both at 120 BPM). A
+   licensed track would lift them. Run `scripts/beat_grid.py` on it and the cuts re-time.
+2. **Wall-label type:** Inter, the brand pack's provisional body face. Swap it if the Canva wall-label template uses
+   another face.
 
 ## Please confirm
 
-- The marble image comes from a Canva template. Check its licence for paid use.
-- The closing line is "Thank you to everyone who came." Swap it for "See you this December." if AssetLink is going
-  back in 2026.
+- **The year lines.** The doc says the year-by-year lines are placeholders to swap for what actually happened each
+  year. The videos use them as written; "We rebuilt the company" (2024) matches Devon's post.
+- **The registration link.** The end card says "link in bio". Make sure the form is in the bio before Nov 14.
 
-## Post copy (LinkedIn)
+## Post copy (from the doc)
 
-Four Decembers in Miami. A throwback to every AssetLink Art Basel event, from 2022 to our 4th annual at Casa Neos.
+**Video 1:** "Four Decembers in Miami. The fifth is next month. Join us for our 5th Annual Art Basel Evening,
+Thursday, Dec 3, 7–10 PM, at Seaspice on the Miami River. Free to attend. Registration closes Dec 2. Save your spot:
+[link]"
 
-Thank you to everyone who came.
+**Video 2:** "Art Week is about what hangs on the walls. Our evening is about who's in the room. Five years of
+advisors, firm leaders, investors and friends. Join us Thursday, Dec 3, 7–10 PM, at Seaspice on the Miami River. Free
+to attend. Registration closes Dec 2. Save your spot: [link]"
 
-#ArtBasel #MiamiArtWeek #WealthManagement
+**Alt text, video 1:** Footage from four ASSETLINK Art Basel evenings in Miami, one year at a time, with a large year
+flipping from 2022 to 2026 and a museum-style label for each edition. It ends on "Edition V, 2026, Thursday, Dec 3,
+7 to 10 PM, Seaspice, on the Miami River" and an end card: Free to attend, registration closes Dec 2, save your spot.
 
-**Alt text:** "Throwback. Art Basel, Miami." over footage of a rooftop party. Then "Four Decembers in Miami." Framed
-clips from AssetLink's Art Basel events land one per year, labelled 2022, 2023, 2024 and 2025, the last starting with
-the 4th annual event flyer. Guests pose at an AssetLink backdrop under "Thank you to everyone who came," followed by
-the AssetLink logo, "Know who, why and when." and assetlink.ai.
+**Alt text, video 2:** Quick cuts of guests talking, laughing and toasting at past ASSETLINK Art Basel evenings, with
+labels reading "Every December, Miami fills up with art. But some of the best things that week happen in
+conversation. Some assets don't hang on walls." It ends on the event details and the end card.
 
 ## Change it
 
-From this folder: `npx remotion studio` to preview. From the repo root:
-`python3 .claude/skills/motion-designer/scripts/finish.py finals films/art-basel-throwback ArtBaselThrowback films/art-basel-throwback/final --aspects 4x5,9x16,1x1 --stems music,sfx --lead music`
-Clips live in `public/films/art-basel-throwback/clips/`; swap a file and re-render.
+Source: `src/films/four-decembers/` (with `shared.tsx`, the wall label, year flip and end card) and
+`src/films/some-assets/`. Clips: `public/films/art-basel-throwback/c2/`. From the repo root:
+`python3 .claude/skills/motion-designer/scripts/finish.py finals films/art-basel-throwback FourDecembers films/art-basel-throwback/final --aspects 9x16,1x1 --stems music,sfx --lead music`
+(and the same with `SomeAssets`).
