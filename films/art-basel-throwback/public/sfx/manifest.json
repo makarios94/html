@@ -1,0 +1,142 @@
+{
+  "pop": {
+    "duration": 0.16,
+    "endsOnHit": false,
+    "description": "bubbly pop for pills, badges, props landing"
+  },
+  "pop-high": {
+    "duration": 0.16,
+    "endsOnHit": false,
+    "description": "higher pop, use for the 2nd/3rd item in a run"
+  },
+  "pop-low": {
+    "duration": 0.16,
+    "endsOnHit": false,
+    "description": "lower, rounder pop"
+  },
+  "tap": {
+    "duration": 0.07,
+    "endsOnHit": false,
+    "description": "soft UI tap on a button or card"
+  },
+  "click": {
+    "duration": 0.08,
+    "endsOnHit": false,
+    "description": "mouse click (press and release)"
+  },
+  "tick": {
+    "duration": 0.035,
+    "endsOnHit": false,
+    "description": "counter or clock tick"
+  },
+  "tick-soft": {
+    "duration": 0.035,
+    "endsOnHit": false,
+    "description": "quiet tick for fast counters"
+  },
+  "type-1": {
+    "duration": 0.075,
+    "endsOnHit": false,
+    "description": "keystroke variant 1"
+  },
+  "type-2": {
+    "duration": 0.075,
+    "endsOnHit": false,
+    "description": "keystroke variant 2"
+  },
+  "type-3": {
+    "duration": 0.075,
+    "endsOnHit": false,
+    "description": "keystroke variant 3"
+  },
+  "type-4": {
+    "duration": 0.075,
+    "endsOnHit": false,
+    "description": "keystroke variant 4"
+  },
+  "whoosh": {
+    "duration": 0.45,
+    "endsOnHit": false,
+    "description": "card or panel moving through frame (start it 3-5 frames early)"
+  },
+  "whoosh-long": {
+    "duration": 0.9,
+    "endsOnHit": false,
+    "description": "big camera move or scene push"
+  },
+  "swish": {
+    "duration": 0.22,
+    "endsOnHit": false,
+    "description": "fast small move, text swap"
+  },
+  "riser": {
+    "duration": 1.5,
+    "endsOnHit": true,
+    "description": "build into a reveal; ENDS on its hit"
+  },
+  "riser-short": {
+    "duration": 0.8,
+    "endsOnHit": true,
+    "description": "short build; ENDS on its hit"
+  },
+  "impact": {
+    "duration": 0.9,
+    "endsOnHit": false,
+    "description": "weighty hit on a big word or reveal"
+  },
+  "boom": {
+    "duration": 1.4,
+    "endsOnHit": false,
+    "description": "sub drop under a hard cut or logo"
+  },
+  "chime": {
+    "duration": 1.8,
+    "endsOnHit": false,
+    "description": "resolution, logo settle, end card"
+  },
+  "ding": {
+    "duration": 0.7,
+    "endsOnHit": false,
+    "description": "notification arrives"
+  },
+  "success": {
+    "duration": 0.6,
+    "endsOnHit": false,
+    "description": "task done, payment received, check mark"
+  },
+  "sparkle": {
+    "duration": 0.6,
+    "endsOnHit": false,
+    "description": "shine on a logo or premium moment"
+  },
+  "card": {
+    "duration": 0.2,
+    "endsOnHit": false,
+    "description": "paper or card sliding in"
+  },
+  "thud": {
+    "duration": 0.28,
+    "endsOnHit": false,
+    "description": "soft landing of a heavy element"
+  },
+  "send": {
+    "duration": 0.52,
+    "endsOnHit": false,
+    "description": "send button: whoosh up and pop"
+  },
+  "nope": {
+    "duration": 0.42,
+    "endsOnHit": false,
+    "description": "rejection or error, soft and descending"
+  },
+  "glitch": {
+    "duration": 0.32,
+    "endsOnHit": false,
+    "description": "digital glitch, broken state"
+  },
+  "swell": {
+    "duration": 1.2,
+    "endsOnHit": true,
+    "description": "reverse-cymbal swell; ENDS on its hit"
+  }
+}

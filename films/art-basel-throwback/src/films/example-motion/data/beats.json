@@ -1,0 +1,9 @@
+{
+ "bpm": 120,
+ "offset": 0,
+ "beatsPerBar": 4,
+ "bars": 8,
+ "source": "music.wav",
+ "method": "generated",
+ "note": "Matches the temp bed new_project.py writes (sound_kit.py bed --bpm 120 --bars 8 --mood drive). For a real track run scripts/beat_grid.py and replace this file."
+}
