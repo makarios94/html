@@ -1,68 +1,205 @@
 import React from 'react';
-import {FilmProps, FilmShell, Grain, Music, Sfx} from '../../kit';
-import {EndCard, Footage, Freeze, Shade, WallLabel} from '../four-decembers/shared';
-import {FONTS, GLYPHS, theme} from '../four-decembers/theme';
+import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {ease, FilmProps, FilmShell, Grain, Music, prog, Sfx, useLayout} from '../../kit';
+import {Legible, NIGHT, Pop, Shot, Slam} from '../four-decembers/motion';
+import {EndCard, Freeze} from '../four-decembers/shared';
+import {FONTS, GLYPHS, NAVY, PURPLE, theme} from '../four-decembers/theme';
 
 /*
- * Throwback video 2, "Some assets don't hang on walls" (16 s + the end card), to the script in the Edition V promo doc.
- * No years: moments from every edition. 120 BPM, one beat = 0.5 s = 15 frames.
- * 0-3 s wide busy shots, "Every December, / Miami fills up with art."
- * 3-7 s faces mid-conversation, a cut on every beat, "But some of the best things that week"
- * 7-10 s laughter and toasts, the sentence completes: "happen in conversation."
- * 10-13 s one slow toast, the line set as a wall label
- * 13-16 s the darkened last frame and the event label; 16-18 s the end card.
+ * Throwback video 2, "Some assets don't hang on walls", v2 motion. Copy is the doc's script, word for word.
+ * The idea acted out: it opens in a gallery with the evenings framed on the wall like artworks. The camera pushes
+ * into the centre frame and the people break out of it, full screen. Then it pulls back to the same frame, now empty,
+ * with a wall label: "Some assets don't hang on walls." 120 BPM, a beat is 15 frames.
+ *   0-84     the gallery wall, "Every December, / Miami fills up with art."
+ *   84-98    push into the centre frame
+ *   98-210   faces mid-conversation, a cut on every beat, "But some of the best / things that week"
+ *   210-300  laughter and toasts, whip cuts, "happen in conversation."
+ *   300-372  pull back out of the frame: it is empty; the wall label reads the line
+ *   372-480  the slow champagne pour, then the event details slam in over its last frame
+ *   480-600  the end card
  */
 const BEAT = 15;
 const t = (n: number) => n * BEAT;
-export const DURATION_SA = t(36) + 30;
+export const DURATION_SA = 600;
+const WALL = '#E9E7F1';
 const FACES = ['f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8'];
-const TOASTS = ['t1', 't2', 't3'];
 
-export const Film: React.FC<FilmProps> = (props) => (
-	<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background="#0B0D26">
-		<Footage name="river" from={0} dur={t(3)} />
-		<Footage name="wide" from={t(3)} dur={t(3)} />
-		{FACES.map((f, i) => (
-			<Footage key={f} name={f} from={t(6 + i)} dur={BEAT} />
-		))}
-		{TOASTS.map((f, i) => (
-			<Footage key={f} name={f} from={t(14 + 2 * i)} dur={t(2)} />
-		))}
-		<Footage name="toast" from={t(20)} dur={t(6)} />
-		<Freeze still="toast_last.jpg" from={t(26)} dur={t(6)} />
-		<Shade />
-		<WallLabel at={-12} exitAt={t(6) - 8} lines={[{text: 'Every December,', at: -12, style: 'title'}, {text: 'Miami fills up with art.', at: t(2)}]} />
-		<WallLabel
-			at={t(6)}
-			exitAt={t(20) - 8}
-			lines={[
-				{text: 'But some of the best things that week', at: t(6) + 2, style: 'title'},
-				{text: 'happen in conversation.', at: t(14)},
-			]}
-		/>
-		<WallLabel
-			at={t(20) + 2}
-			exitAt={t(26) - 8}
-			lines={[
-				{text: "Some assets don't hang on walls.", at: t(20) + 4, style: 'title'},
-				{text: 'Medium: advisors, capital, five years of conviction', at: t(21) + 6, style: 'italic'},
-			]}
-		/>
-		<WallLabel
-			at={t(26)}
-			exitAt={t(32) - 8}
-			lines={[
-				{text: 'ASSETLINK 5th Annual Art Basel Evening', at: t(26) + 2, style: 'title'},
-				{text: 'Thursday, Dec 3 · Seaspice, on the Miami River', at: t(27) + 4},
-			]}
-		/>
-		{FACES.map((f, i) => (
-			<Sfx key={f} name="tick-soft" at={t(6 + i)} volume={0.2} />
-		))}
-		<Sfx name="swish" at={t(14) - 2} volume={0.2} />
-		<Sfx name="chime" at={t(20) + 4} volume={0.22} />
-		<EndCard at={t(32)} end={DURATION_SA} />
-		<Grain opacity={0.06} />
-		<Music src="films/art-basel-throwback/music-sa.wav" volume={0.85} fadeOut={20} />
-	</FilmShell>
-);
+type Box = {w: number; h: number; cy: number; side: number; gap: number};
+const useBox = (): Box => {
+	const L = useLayout();
+	// The centre frame's opening has the screen's own aspect, so the push fills the screen exactly.
+	return L.pick<Box>({vertical: {w: 468, h: 832, cy: 1010, side: 420, gap: 150}, square: {w: 440, h: 440, cy: 600, side: 360, gap: 120}}, {w: 460, h: 600, cy: 700, side: 380, gap: 130});
+};
+
+/** One framed piece on the wall: a navy moulding, a white mat, and whatever hangs inside (or nothing). */
+const Framed: React.FC<{x: number; y: number; w: number; h: number; children?: React.ReactNode; empty?: number; over?: React.ReactNode}> = ({x, y, w, h, children, empty = 0, over}) => {
+	const {u} = useLayout();
+	const mat = 30 * u;
+	const moulding = 16 * u;
+	return (
+		<div style={{position: 'absolute', left: x - w / 2 - mat - moulding, top: y - h / 2 - mat - moulding, width: w + 2 * (mat + moulding), height: h + 2 * (mat + moulding), background: NAVY, padding: moulding, boxShadow: `0 ${26 * u}px ${60 * u}px rgba(21,26,56,0.35), 0 ${4 * u}px ${10 * u}px rgba(21,26,56,0.25)`}}>
+			<div style={{width: '100%', height: '100%', background: '#FBFBFD', padding: mat}}>
+				<div style={{position: 'relative', width: w, height: h, overflow: 'hidden', background: WALL, boxShadow: `inset 0 ${6 * u}px ${18 * u}px rgba(21,26,56,0.22)`}}>
+					<div style={{position: 'absolute', inset: 0, opacity: 1 - empty}}>{children}</div>
+					{over}
+				</div>
+			</div>
+		</div>
+	);
+};
+
+/** The gallery: three frames on a lit wall, a camera that trucks and pushes. */
+const Gallery: React.FC<{left: React.ReactNode; centre: React.ReactNode; right: React.ReactNode; camX: number; camScale: number; empty?: number; label?: React.ReactNode}> = ({left, centre, right, camX, camScale, empty = 0, label}) => {
+	const L = useLayout();
+	const u = L.u;
+	const box = useBox();
+	const cx = L.width / 2;
+	const cy = box.cy * u;
+	const sideW = box.side * u;
+	const sideH = sideW * 1.25;
+	const off = box.w * u / 2 + 46 * u + box.gap * u + sideW / 2 + 46 * u;
+	return (
+		<AbsoluteFill style={{background: WALL, overflow: 'hidden'}}>
+			<AbsoluteFill style={{transform: `translateX(${(camX * u).toFixed(2)}px) scale(${camScale.toFixed(4)})`, transformOrigin: `${cx}px ${cy}px`}}>
+				{/* Gallery lighting: a pool of light above each frame. */}
+				{[-off, 0, off].map((dx) => (
+					<div key={dx} style={{position: 'absolute', left: cx + dx - 520 * u, top: cy - 900 * u, width: 1040 * u, height: 1500 * u, background: 'radial-gradient(ellipse at 50% 40%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 60%)'}} />
+				))}
+				<Framed x={cx - off} y={cy} w={sideW} h={sideH}>
+					{left}
+				</Framed>
+				<Framed x={cx} y={cy} w={box.w * u} h={box.h * u} empty={empty} over={label}>
+					{centre}
+				</Framed>
+				<Framed x={cx + off} y={cy} w={sideW} h={sideH}>
+					{right}
+				</Framed>
+			</AbsoluteFill>
+		</AbsoluteFill>
+	);
+};
+
+/** A small museum label, hung where the artwork should be. */
+const WallCard: React.FC<{at: number}> = ({at}) => {
+	const frame = useCurrentFrame();
+	const L = useLayout();
+	const u = L.u;
+	const p = prog(frame, at, 14, ease.out);
+	const l2 = prog(frame, at + 16, 12, ease.out);
+	return (
+		<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+			<div style={{width: '88%', background: '#FFFFFF', padding: `${26 * u}px ${26 * u}px`, boxShadow: `0 ${10 * u}px ${24 * u}px rgba(21,26,56,0.18)`, opacity: p, transform: `translateY(${((1 - p) * 20 * u).toFixed(2)}px)`}}>
+				<div style={{width: 46 * u, height: 5 * u, background: PURPLE, marginBottom: 16 * u}} />
+				<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: L.pick({vertical: 44, square: 32}, 38) * u, lineHeight: 1.18, color: NAVY}}>Some assets don't hang on walls.</div>
+				<div style={{marginTop: 10 * u, fontFamily: theme.fonts.body, fontStyle: 'italic', fontSize: L.pick({vertical: 30, square: 22}, 26) * u, lineHeight: 1.3, color: 'rgba(21,26,56,0.7)', opacity: l2}}>Medium: advisors, capital, five years of conviction</div>
+			</div>
+		</AbsoluteFill>
+	);
+};
+
+/** Dark navy type painted on the wall. */
+const WallType: React.FC<{lines: {text: string; at: number}[]; exitAt: number}> = ({lines, exitAt}) => {
+	const frame = useCurrentFrame();
+	const L = useLayout();
+	const u = L.u;
+	const box = useBox();
+	const out = prog(frame, exitAt, 8, ease.in);
+	const size = L.pick({vertical: 82, square: 62}, 72);
+	void box;
+	return (
+		<AbsoluteFill style={{pointerEvents: 'none'}}>
+			<div style={{position: 'absolute', left: L.safe.left, right: L.safe.right, top: L.safe.top, display: 'flex', flexDirection: 'column', gap: 4 * u, opacity: 1 - out}}>
+				{lines.map((l) => {
+					const p = prog(frame, l.at - 2, 9, ease.out);
+					return (
+						<div key={l.text} style={{overflow: 'hidden'}}>
+							<div style={{fontFamily: theme.fonts.display, fontWeight: 800, fontSize: size * u, lineHeight: 1.04, letterSpacing: '-0.02em', color: NAVY, textTransform: 'uppercase', transform: `translateY(${((1 - p) * 105).toFixed(2)}%)`}}>{l.text}</div>
+						</div>
+					);
+				})}
+			</div>
+		</AbsoluteFill>
+	);
+};
+
+const Clip: React.FC<{name: string; from: number; dur: number}> = ({name, from, dur}) => <Shot name={name} from={from} dur={dur} zoom={[1.0, 1.06]} />;
+
+export const Film: React.FC<FilmProps> = (props) => {
+	const frame = useCurrentFrame();
+	const L = useLayout();
+	// Opening: truck slowly left to right across the wall, then push into the centre frame (84-98).
+	const truck = interpolate(frame, [0, 84], [90, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease.soft});
+	const push = prog(frame, 82, 16, ease.in);
+	const box = useBox();
+	const fill = Math.max(L.width / (box.w * L.u), L.height / (box.h * L.u)) * 1.04;
+	// Pull back (300-322) out of the frame, which empties (318-330).
+	const pull = prog(frame, 300, 22, ease.out);
+	const empty = prog(frame, 316, 14, ease.soft);
+	return (
+		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background={NIGHT}>
+			{frame < 99 ? (
+				<Gallery
+					left={<Clip name="river" from={0} dur={99} />}
+					centre={frame < 84 ? <Clip name="art" from={0} dur={84} /> : <Clip name="f1" from={84} dur={21} />}
+					right={<Clip name="crowd" from={0} dur={99} />}
+					camX={truck}
+					camScale={1 + (fill - 1) * push}
+				/>
+			) : null}
+			<WallType lines={[{text: 'Every December,', at: -6}, {text: 'Miami fills up', at: t(2)}, {text: 'with art.', at: t(3)}]} exitAt={78} />
+			<Sfx name="whoosh-long" at={78} volume={0.32} />
+
+			{/* Out of the frame: faces, a cut on every beat. */}
+			{frame >= 98 ? FACES.map((f, i) => (i === 0 ? <Clip key={f} name={f} from={84} dur={21} /> : <Clip key={f} name={f} from={105 + (i - 1) * BEAT} dur={BEAT} />)) : null}
+			{frame >= 98 && frame < 210 ? <Legible /> : null}
+			<Slam lines={[{text: 'But some of the best', at: 104}, {text: 'things that week', at: 120, key: true}]} exitAt={204} size={L.pick({vertical: 82, square: 66}, 74)} />
+			{FACES.slice(1).map((f, i) => (
+				<Sfx key={f} name="tick-soft" at={105 + i * BEAT} volume={0.22} />
+			))}
+
+			{/* Laughter and toasts, whip cuts. */}
+			<Shot name="t1" from={210} dur={30} whipOut />
+			<Shot name="t2" from={240} dur={30} whipIn whipOut />
+			<Shot name="t3" from={270} dur={30} whipIn />
+			{frame >= 210 && frame < 300 ? <Legible /> : null}
+			<Slam lines={[{text: 'happen in', at: 212}, {text: 'conversation.', at: 227, key: true}]} exitAt={292} size={L.pick({vertical: 110, square: 88}, 96)} />
+			<Sfx name="swish" at={236} volume={0.24} />
+			<Sfx name="swish" at={266} volume={0.24} />
+
+			{/* Back on the wall: the frame is empty, the people left it. */}
+			{frame >= 300 && frame < 372 ? (
+				<Gallery
+					left={<Clip name="river" from={300} dur={72} />}
+					centre={<Clip name="t3" from={270} dur={60} />}
+					right={<Clip name="crowd" from={300} dur={72} />}
+					camX={0}
+					camScale={fill - (fill - 1) * pull}
+					empty={empty}
+					label={frame >= 326 ? <WallCard at={328} /> : null}
+				/>
+			) : null}
+			<Sfx name="whoosh" at={298} volume={0.3} />
+			<Sfx name="chime" at={328} volume={0.24} />
+
+			{/* The champagne pour, then the event over its last frame. */}
+			<Shot name="toast" from={372} dur={94} zoom={[1.02, 1.1]} />
+			<Freeze still="toast_last.jpg" from={466} dur={14} dark={0.6} />
+			{frame >= 372 && frame < 480 ? <Legible strength={1.1} /> : null}
+			<Pop at={372} />
+			<Slam
+				lines={[
+					{text: 'ASSETLINK 5th Annual', at: 392},
+					{text: 'Art Basel Evening', at: 404, key: true},
+					{text: 'Thursday, Dec 3', at: 422},
+					{text: 'Seaspice, on the Miami River', at: 434},
+				]}
+				exitAt={474}
+				size={L.pick({vertical: 70, square: 56}, 62)}
+			/>
+
+			<EndCard at={480} end={DURATION_SA} />
+			<Grain opacity={0.06} />
+			<Music src="films/art-basel-throwback/music-sa2.wav" volume={0.9} fadeOut={20} />
+		</FilmShell>
+	);
+};

@@ -1,63 +1,112 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {FilmProps, FilmShell, Grain, Music, Sfx, useLayout} from '../../kit';
-import {EndCard, Footage, Freeze, Shade, WallLabel, YearFlip} from './shared';
-import {FONTS, GLYPHS, theme} from './theme';
+import {Knockout, Legible, NIGHT, Pop, Shot, Slam, Tag, Year} from './motion';
+import {EndCard} from './shared';
+import {FONTS, GLYPHS, LINING, MARK_GRADIENT, theme} from './theme';
 
 /*
- * Throwback video 1, "Four Decembers" (about 22 s + the end card), to the script in the Edition V promo doc.
- * 120 BPM, one bar = 2 s = 60 frames. Bar 0 open, bars 1-2 Edition I, 3-4 II, 5-6 III, 7-8 IV, 9-10 Edition V,
- * bar 11 the end card. The year flips forward on each edition, 2022 to 2026, and the last flip lands on this year.
+ * Throwback video 1, "Four Decembers", v2 motion. Copy is the script in the Edition V promo doc, word for word.
+ * 120 BPM: a beat is 15 frames, a bar 60. Each edition gets two bars:
+ *   beat 0  the year, huge, with that year's footage playing inside the digits (the last digit rolls on from the
+ *           previous year)
+ *   beat 2  the camera punches through the digits into the footage
+ *   beat 2+ the doc's line slams in, line by line, the key phrase on a purple bar
+ *   beat 5  a whip cut to the second shot
+ * Bar 0 is the opening card; bars 9-10 Edition V, the year in brand colour; bar 11 the end card.
  */
 const BAR = 60;
-const b = (n: number) => n * BAR;
+const BEAT = 15;
+const b = (n: number, beat = 0) => n * BAR + beat * BEAT;
 export const DURATION_4D = b(12) + 30;
 
-const EDITIONS = [
-	{a: 'e1a', b: 'e1b', title: 'Edition I · 2022', line: 'It started with one evening.'},
-	{a: 'e2a', b: 'e2b', title: 'Edition II · 2023', line: 'Then it became a tradition.'},
-	{a: 'e3a', b: 'e3b', title: 'Edition III · 2024', line: 'We rebuilt the company. We still came back.'},
-	{a: 'e4a', b: 'e4b', title: 'Edition IV · 2025', line: 'Same city. Same week. More friends in the room.'},
+type Ed = {numeral: string; a: string; bb: string; lines: [string, string]; key: 0 | 1};
+const EDS: Ed[] = [
+	{numeral: 'I', a: 'e1a', bb: 'e1b', lines: ['It started', 'with one evening.'], key: 1},
+	{numeral: 'II', a: 'e2a', bb: 'e2b', lines: ['Then it became', 'a tradition.'], key: 1},
+	{numeral: 'III', a: 'e3a', bb: 'e3b', lines: ['We rebuilt the company.', 'We still came back.'], key: 1},
+	{numeral: 'IV', a: 'e4a', bb: 'e4b', lines: ['Same city. Same week.', 'More friends in the room.'], key: 1},
 ];
 
 export const Film: React.FC<FilmProps> = (props) => {
 	const L = useLayout();
-	const yearSize = L.pick({vertical: 210, square: 150}, 180);
-	const yearTop = L.safe.top + L.pick({vertical: 20, square: 0}, 10) * L.u;
+	const u = L.u;
+	const yearSize = L.pick({vertical: 330, square: 300}, 320);
+	const slamSize = L.pick({vertical: 84, square: 70}, 78);
+	const tagTop = L.safe.top + L.pick({vertical: 10, square: 0}, 0) * u;
+	const allRolls = [b(3) - 6, b(5) - 6, b(7) - 6, b(9) - 6];
 	return (
-		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background="#0B0D26">
-			{/* Bar 0: a slow river shot and the opening label, already in place on frame 0. */}
-			<Footage name="river" from={0} dur={b(1) + 6} dim={0.15} />
-			{EDITIONS.map((e, i) => (
-				<React.Fragment key={e.title}>
-					<Footage name={e.a} from={b(1 + 2 * i)} dur={BAR} />
-					<Footage name={e.b} from={b(2 + 2 * i)} dur={BAR} />
-				</React.Fragment>
-			))}
-			{/* Edition V: freeze on the last frame of 2025 and darken. */}
-			<Freeze still="e4_freeze.jpg" from={b(9)} dur={b(2)} />
-			<Shade />
-			<WallLabel at={-12} exitAt={b(1) - 8} lines={[{text: 'ASSETLINK, Miami', at: -12, style: 'title'}, {text: 'One tradition, four Decembers', at: 8}]} />
-			{EDITIONS.map((e, i) => (
-				<WallLabel key={e.title} at={b(1 + 2 * i) + 2} exitAt={b(3 + 2 * i) - 8} lines={[{text: e.title, at: b(1 + 2 * i) + 4, style: 'title'}, {text: e.line, at: b(1 + 2 * i) + 16}]} />
-			))}
-			<WallLabel
-				at={b(9) + 8}
-				exitAt={b(11) - 8}
+		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background={NIGHT}>
+			<Shot name="river" from={0} dur={b(1)} zoom={[1.0, 1.08]} />
+			{/* Bar 0: "FOUR DECEMBERS" with the river inside the letters, on frame 0; it punches into the river on beat 2. */}
+			<Knockout at={0} punchAt={b(0, 2)} end={b(1)} footage={<Shot name="river" from={0} dur={b(1)} zoom={[1.0, 1.08]} />} origin="50% 52%">
+				<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: theme.fonts.display, fontWeight: 800, color: '#FFFFFF', textTransform: 'uppercase', lineHeight: 0.9, letterSpacing: '-0.03em', textAlign: 'center', paddingBottom: L.isVertical ? 120 * u : 0}}>
+					<span style={{fontSize: L.pick({vertical: 250, square: 190}, 220) * u}}>Four</span>
+					<span style={{fontSize: L.pick({vertical: 150, square: 116}, 130) * u}}>Decembers</span>
+				</div>
+			</Knockout>
+
+			<Legible strength={0.8} from={0} to={b(1)} />
+			<Slam lines={[{text: 'ASSETLINK, Miami', at: -6}, {text: 'One tradition,', at: b(0, 2) + 4}, {text: 'four Decembers', at: b(0, 3), key: true}]} exitAt={b(1) - 8} size={L.pick({vertical: 64, square: 52}, 58)} sfx={false} />
+
+			{EDS.map((e, i) => {
+				const s = b(1 + 2 * i);
+				const digitsBefore = [2, 3, 4, 5].slice(0, i + 1);
+				return (
+					<React.Fragment key={e.numeral}>
+						<Shot name={e.a} from={s - 6} dur={5 * BEAT + 6} whipOut zoom={[1.12, 1.2]} />
+						<Shot name={e.bb} from={s + 5 * BEAT} dur={3 * BEAT} whipIn zoom={[1.0, 1.08]} />
+						{/* The year with this edition's footage inside it, then the punch-through. */}
+						<Knockout at={s - 6} punchAt={s + 2 * BEAT - 10} end={s + 2 * BEAT + 2} footage={<Shot name={e.a} from={s - 6} dur={2 * BEAT + 8} zoom={[1.12, 1.2]} />}>
+							<Year digits={[2, 3, 4, 5]} rolls={allRolls.slice(0, i)} size={yearSize} />
+						</Knockout>
+						<Legible from={s - 6} to={s + 8 * BEAT} />
+						<Tag text={`Edition ${e.numeral} · ${2022 + i}`} at={s} exitAt={s + 8 * BEAT - 6} top={tagTop} />
+						<Slam
+							lines={[
+								{text: e.lines[0], at: s + 2 * BEAT + 4, key: e.key === 0},
+								{text: e.lines[1], at: s + 3 * BEAT + 4, key: e.key === 1},
+							]}
+							exitAt={s + 8 * BEAT - 8}
+							size={slamSize}
+						/>
+						<Pop at={s + 2 * BEAT + 1} />
+						<Sfx name="whoosh" at={s + 2 * BEAT - 6} volume={0.3} />
+						<Sfx name="swish" at={s + 5 * BEAT - 3} volume={0.25} />
+						{digitsBefore.length > 1 ? <Sfx name="tick" at={s - 4} volume={0.36} /> : null}
+					</React.Fragment>
+				);
+			})}
+
+			{/* Edition V: the year rolls to 2026 in the brand gradient and slams; the details stack under it. */}
+			<Knockout at={b(9) - 6} end={b(11)} footage={null} fill={`linear-gradient(100deg, ${MARK_GRADIENT[0]}, ${MARK_GRADIENT[1]})`}>
+				<div style={{transform: `translateY(${(L.isVertical ? -330 : -170) * u}px)`}}>
+					<Year digits={[2, 3, 4, 5, 6]} rolls={allRolls} size={yearSize} />
+				</div>
+			</Knockout>
+			<Tag text="Edition V · 2026" at={b(9) + 4} exitAt={b(11) - 6} top={tagTop} />
+			<Slam
 				lines={[
-					{text: 'Edition V · 2026', at: b(9) + 10, style: 'title'},
-					{text: 'Thursday, Dec 3 · 7–10 PM', at: b(9) + 26},
-					{text: 'Seaspice, on the Miami River', at: b(9) + 40},
+					{text: 'Thursday, Dec 3', at: b(9, 2)},
+					{text: '7–10 PM', at: b(9, 3)},
+					{text: 'Seaspice, on the', at: b(10, 0)},
+					{text: 'Miami River', at: b(10, 1), key: true},
 				]}
+				exitAt={b(11) - 8}
+				size={L.pick({vertical: 92, square: 66}, 80)}
+				bottom={L.safe.bottom + L.pick({vertical: 30, square: 20}, 30) * u}
 			/>
-			<YearFlip at={b(1) - 4} exitAt={b(11) - 8} digits={[2, 3, 4, 5, 6]} flips={[b(3) - 6, b(5) - 6, b(7) - 6, b(9) - 6]} size={yearSize} top={yearTop} />
-			{[1, 3, 5, 7].map((n) => (
-				<Sfx key={n} name="swish" at={b(n) - 3} volume={0.18} />
-			))}
-			<Sfx name="impact" at={b(9) - 2} volume={0.3} />
+			<Pop at={b(9) - 1} color="#7446FF" />
+			<Sfx name="impact" at={b(9) - 2} volume={0.36} />
+			<Sfx name="tick" at={b(9) - 4} volume={0.36} />
+
 			<EndCard at={b(11)} end={DURATION_4D} />
-			<Grain opacity={0.06} />
-			<Music src="films/art-basel-throwback/music-4d.wav" volume={0.85} fadeOut={20} />
+			<Grain opacity={0.07} />
+			<Music src="films/art-basel-throwback/music-4d2.wav" volume={0.9} fadeOut={20} />
 		</FilmShell>
 	);
 };
+
+// Keeps LINING referenced for future number-heavy cards.
+void LINING;
+void AbsoluteFill;
