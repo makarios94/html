@@ -28,7 +28,7 @@ export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: b
 	style,
 }) => {
 	const frame = useCurrentFrame();
-	if (frame < from - 1 || frame >= from + dur + (whipOut ? 5 : 0)) return null;
+	if (frame < from || frame >= from + dur + (whipOut ? 5 : 0)) return null;
 	const inP = whipIn ? prog(frame, from, 6, ease.out) : 1;
 	const outP = whipOut ? prog(frame, from + dur - 1, 6, ease.in) : 0;
 	const x = (1 - inP) * 55 - outP * 55;
@@ -71,7 +71,7 @@ export const Knockout: React.FC<{
 	fill?: string;
 }> = ({children, footage, at, punchAt, end, origin = '50% 50%', fill}) => {
 	const frame = useCurrentFrame();
-	if (frame < at - 1 || frame >= end) return null;
+	if (frame < at || frame >= end) return null;
 	const punch = punchAt !== undefined ? prog(frame, punchAt, 12, ease.in) : 0;
 	const drift = interpolate(frame, [at, punchAt ?? end], [1.0, 1.06], clamp);
 	const scale = drift * (1 + punch * 5.5);

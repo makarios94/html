@@ -54,10 +54,10 @@ export const Film: React.FC<FilmProps> = (props) => {
 				const digitsBefore = [2, 3, 4, 5].slice(0, i + 1);
 				return (
 					<React.Fragment key={e.numeral}>
-						<Shot name={e.a} from={s - 6} dur={5 * BEAT + 6} whipOut zoom={[1.12, 1.2]} />
+						<Shot name={e.a} from={s - 8} dur={5 * BEAT + 8} whipOut zoom={[1.12, 1.2]} />
 						<Shot name={e.bb} from={s + 5 * BEAT} dur={3 * BEAT} whipIn zoom={[1.0, 1.08]} />
 						{/* The year with this edition's footage inside it, then the punch-through. */}
-						<Knockout at={s - 6} punchAt={s + 2 * BEAT - 10} end={s + 2 * BEAT + 2} footage={<Shot name={e.a} from={s - 6} dur={2 * BEAT + 8} zoom={[1.12, 1.2]} />}>
+						<Knockout at={s - 6} punchAt={s + 2 * BEAT - 10} end={s + 2 * BEAT + 2} footage={<Shot name={e.a} from={s - 8} dur={2 * BEAT + 10} zoom={[1.12, 1.2]} />}>
 							<Year digits={[2, 3, 4, 5]} rolls={allRolls.slice(0, i)} size={yearSize} />
 						</Knockout>
 						<Legible from={s - 6} to={s + 8 * BEAT} />
