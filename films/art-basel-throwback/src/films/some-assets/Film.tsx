@@ -202,7 +202,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 					{text: 'ASSETLINK 5th Annual', at: 380, mode: 'track'},
 					{text: 'Art Basel Evening', at: 390, mode: 'stamp', key: true},
 				]}
-				exitAt={404}
+				exitAt={400}
 				size={L.pick({vertical: 84, square: 66}, 74)}
 				bottom={L.height * 0.42}
 			/>
@@ -210,8 +210,8 @@ export const Film: React.FC<FilmProps> = (props) => {
 				cy={0.5}
 				size={L.pick({vertical: 104, square: 92}, 100)}
 				items={[
-					{label: 'DATE', value: 'Thursday, Dec 3', at: 412, until: 436},
-					{label: 'TIME', value: '7–10 PM', at: 438, until: 460, sfx: 'thud'},
+					{label: 'DATE', value: 'Thursday, Dec 3', at: 418, until: 440},
+					{label: 'TIME', value: '7–10 PM', at: 442, until: 462, sfx: 'thud'},
 					{label: 'VENUE', value: 'Seaspice', sub: 'on the Miami River', at: 462, until: 486},
 				]}
 			/>
