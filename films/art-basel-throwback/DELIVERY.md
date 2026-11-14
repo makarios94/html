@@ -65,10 +65,11 @@ back to the same frame, now empty, and a museum label hangs where the art was: "
 - Guests on screen come from ASSETLINK's own event posts. Check you're happy for them to appear again, especially
   before any paid boost.
 
-## Stand-ins
+## Music and stand-ins
 
-1. **Music:** temp beds synthesized by `sound_kit.py` (Four Decembers "drive" in D, Some Assets "pulse" in F, both at 120 BPM). A
-   licensed track would lift them. Run `scripts/beat_grid.py` on it and the cuts re-time.
+1. **Music:** ElevenLabs Music v2.5, generated for these films (instrumental, 120 BPM): Four Decembers is celebratory house,
+   Some Assets is gallery-to-party nu-disco. Each is trimmed to its first downbeat so the cuts land on the bar. Both are
+   on the ElevenLabs canvas "ASSETLINK Edition V throwback music". Cost: 720 credits.
 2. **Type:** Raleway ExtraBold for the big type and Inter for the labels, the brand pack's provisional faces.
 
 ## Please confirm
