@@ -1,7 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {ease, FilmProps, FilmShell, Grain, Music, prog, Sfx, useLayout} from '../../kit';
-import {Legible, NIGHT, Pop, Shot, Slam} from '../four-decembers/motion';
+import {Kinetic} from '../four-decembers/kinetic';
+import {Legible, NIGHT, Pop, Shot} from '../four-decembers/motion';
 import {EndCard, Freeze} from '../four-decembers/shared';
 import {FONTS, GLYPHS, NAVY, PURPLE, theme} from '../four-decembers/theme';
 
@@ -79,18 +80,23 @@ const Gallery: React.FC<{left: React.ReactNode; centre: React.ReactNode; right: 
 	);
 };
 
-/** A small museum label, hung where the artwork should be. */
+const TITLE = "Some assets don't hang on walls.";
+
+/** A small museum label, hung where the artwork should be. Its line types itself on. */
 const WallCard: React.FC<{at: number}> = ({at}) => {
 	const frame = useCurrentFrame();
 	const L = useLayout();
 	const u = L.u;
 	const p = prog(frame, at, 14, ease.out);
-	const l2 = prog(frame, at + 16, 12, ease.out);
+	const l2 = prog(frame, at + 8 + TITLE.length * 1.3, 12, ease.out);
 	return (
 		<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
 			<div style={{width: '88%', background: '#FFFFFF', padding: `${26 * u}px ${26 * u}px`, boxShadow: `0 ${10 * u}px ${24 * u}px rgba(21,26,56,0.18)`, opacity: p, transform: `translateY(${((1 - p) * 20 * u).toFixed(2)}px)`}}>
 				<div style={{width: 46 * u, height: 5 * u, background: PURPLE, marginBottom: 16 * u}} />
-				<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: L.pick({vertical: 44, square: 32}, 38) * u, lineHeight: 1.18, color: NAVY}}>Some assets don't hang on walls.</div>
+				<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: L.pick({vertical: 44, square: 32}, 38) * u, lineHeight: 1.18, color: NAVY}}>
+					{TITLE.slice(0, Math.floor(interpolate(frame, [at + 6, at + 6 + TITLE.length * 1.3], [0, TITLE.length], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})))}
+					<span style={{display: 'inline-block', width: 4 * u, height: '0.9em', marginLeft: 3 * u, verticalAlign: '-0.1em', background: NAVY, opacity: frame < at + 6 + TITLE.length * 1.3 + 14 || Math.floor(frame / 8) % 2 === 0 ? 1 : 0}} />
+				</div>
 				<div style={{marginTop: 10 * u, fontFamily: theme.fonts.body, fontStyle: 'italic', fontSize: L.pick({vertical: 30, square: 22}, 26) * u, lineHeight: 1.3, color: 'rgba(21,26,56,0.7)', opacity: l2}}>Medium: advisors, capital, five years of conviction</div>
 			</div>
 		</AbsoluteFill>
@@ -146,13 +152,13 @@ export const Film: React.FC<FilmProps> = (props) => {
 					camScale={1 + (fill - 1) * push}
 				/>
 			) : null}
-			<WallType lines={[{text: 'Every December,', at: -6}, {text: 'Miami fills up', at: t(2)}, {text: 'with art.', at: t(3)}]} exitAt={78} />
+			<Kinetic seed="wall" color={NAVY} shadow={false} top={L.safe.top} size={L.pick({vertical: 82, square: 62}, 72)} lines={[{text: 'Every December,', at: -14, mode: 'rise'}, {text: 'Miami fills up', at: t(2), mode: 'rise'}, {text: 'with art.', at: t(3), mode: 'paint'}]} exitAt={70} />
 			<Sfx name="whoosh-long" at={78} volume={0.32} />
 
 			{/* Out of the frame: faces, a cut on every beat. */}
 			{frame >= 98 ? FACES.map((f, i) => (i === 0 ? <Clip key={f} name={f} from={84} dur={21} /> : <Clip key={f} name={f} from={105 + (i - 1) * BEAT} dur={BEAT} />)) : null}
 			{frame >= 98 && frame < 210 ? <Legible /> : null}
-			<Slam lines={[{text: 'But some of the best', at: 104}, {text: 'things that week', at: 120, key: true}]} exitAt={204} size={L.pick({vertical: 82, square: 66}, 74)} />
+			<Kinetic seed="best" lines={[{text: 'But some of the best', at: 104, mode: 'rise'}, {text: 'things that week', at: 120, mode: 'track', key: true}]} exitAt={196} size={L.pick({vertical: 82, square: 66}, 74)} />
 			{FACES.slice(1).map((f, i) => (
 				<Sfx key={f} name="tick-soft" at={105 + i * BEAT} volume={0.22} />
 			))}
@@ -162,7 +168,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 			<Shot name="t2" from={240} dur={30} whipIn whipOut />
 			<Shot name="t3" from={270} dur={30} whipIn />
 			{frame >= 210 && frame < 300 ? <Legible /> : null}
-			<Slam lines={[{text: 'happen in', at: 212}, {text: 'conversation.', at: 227, key: true}]} exitAt={292} size={L.pick({vertical: 110, square: 88}, 96)} />
+			<Kinetic seed="conv" lines={[{text: 'happen in', at: 212, mode: 'rise'}, {text: 'conversation.', at: 227, mode: 'chatter', key: true}]} exitAt={284} size={L.pick({vertical: 110, square: 88}, 96)} />
 			<Sfx name="swish" at={236} volume={0.24} />
 			<Sfx name="swish" at={266} volume={0.24} />
 
@@ -175,25 +181,30 @@ export const Film: React.FC<FilmProps> = (props) => {
 					camX={0}
 					camScale={fill - (fill - 1) * pull}
 					empty={empty}
-					label={frame >= 326 ? <WallCard at={328} /> : null}
+					label={frame >= 316 ? <WallCard at={318} /> : null}
 				/>
 			) : null}
 			<Sfx name="whoosh" at={298} volume={0.3} />
-			<Sfx name="chime" at={328} volume={0.24} />
+			<Sfx name="chime" at={318} volume={0.22} />
+			{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
+				<Sfx key={`ty${i}`} name={(['type-1', 'type-2', 'type-3', 'type-4'] as const)[i % 4]} at={325 + i * 4} volume={0.18} />
+			))}
 
 			{/* The champagne pour, then the event over its last frame. */}
 			<Shot name="toast" from={372} dur={94} zoom={[1.02, 1.1]} />
 			<Freeze still="toast_last.jpg" from={466} dur={14} dark={0.6} />
 			{frame >= 372 && frame < 480 ? <Legible strength={1.1} /> : null}
 			<Pop at={372} />
-			<Slam
+			<Kinetic
+				seed="event"
 				lines={[
-					{text: 'ASSETLINK 5th Annual', at: 392},
-					{text: 'Art Basel Evening', at: 404, key: true},
-					{text: 'Thursday, Dec 3', at: 422},
-					{text: 'Seaspice, on the Miami River', at: 434},
+					{text: 'ASSETLINK 5th Annual', at: 392, mode: 'track'},
+					{text: 'Art Basel Evening', at: 404, mode: 'stamp', key: true},
+					{text: 'Thursday, Dec 3', at: 422, mode: 'rise'},
+					{text: 'Seaspice, on the', at: 434, mode: 'rise'},
+					{text: 'Miami River', at: 442, mode: 'wave'},
 				]}
-				exitAt={474}
+				exitAt={466}
 				size={L.pick({vertical: 70, square: 56}, 62)}
 			/>
 

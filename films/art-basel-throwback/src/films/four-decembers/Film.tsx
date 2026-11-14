@@ -1,7 +1,8 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {FilmProps, FilmShell, Grain, Music, Sfx, useLayout} from '../../kit';
-import {Knockout, Legible, NIGHT, Pop, Shot, Slam, Tag, Year} from './motion';
+import {Kinetic, Mode} from './kinetic';
+import {Knockout, Legible, NIGHT, Pop, Shot, Tag, Year} from './motion';
 import {EndCard} from './shared';
 import {FONTS, GLYPHS, LINING, MARK_GRADIENT, theme} from './theme';
 
@@ -20,12 +21,14 @@ const BEAT = 15;
 const b = (n: number, beat = 0) => n * BAR + beat * BEAT;
 export const DURATION_4D = b(12) + 30;
 
-type Ed = {numeral: string; a: string; bb: string; lines: [string, string]; key: 0 | 1};
+/** Each line: its text, its entrance, the beat it lands on (from the punch-through) and whether it carries the bar. */
+type EdLine = {text: string; mode: Mode; beat: number; key?: boolean};
+type Ed = {numeral: string; a: string; bb: string; lines: EdLine[]};
 const EDS: Ed[] = [
-	{numeral: 'I', a: 'e1a', bb: 'e1b', lines: ['It started', 'with one evening.'], key: 1},
-	{numeral: 'II', a: 'e2a', bb: 'e2b', lines: ['Then it became', 'a tradition.'], key: 1},
-	{numeral: 'III', a: 'e3a', bb: 'e3b', lines: ['We rebuilt the company.', 'We still came back.'], key: 1},
-	{numeral: 'IV', a: 'e4a', bb: 'e4b', lines: ['Same city. Same week.', 'More friends in the room.'], key: 1},
+	{numeral: 'I', a: 'e1a', bb: 'e1b', lines: [{text: 'It started', mode: 'rise', beat: 0}, {text: 'with one', mode: 'rise', beat: 1}, {text: 'evening.', mode: 'type', beat: 1.6, key: true}]},
+	{numeral: 'II', a: 'e2a', bb: 'e2b', lines: [{text: 'Then it became', mode: 'rise', beat: 0}, {text: 'a tradition.', mode: 'stamp', beat: 1, key: true}]},
+	{numeral: 'III', a: 'e3a', bb: 'e3b', lines: [{text: 'We rebuilt', mode: 'stack', beat: 0}, {text: 'the company.', mode: 'stack', beat: 0.7}, {text: 'We still', mode: 'rise', beat: 2}, {text: 'came back.', mode: 'rewind', beat: 2.5, key: true}]},
+	{numeral: 'IV', a: 'e4a', bb: 'e4b', lines: [{text: 'Same city.', mode: 'rise', beat: 0}, {text: 'Same week.', mode: 'rise', beat: 0.6}, {text: 'More friends', mode: 'echo', beat: 2, key: true}, {text: 'in the room.', mode: 'echo', beat: 2.5}]},
 ];
 
 export const Film: React.FC<FilmProps> = (props) => {
@@ -47,7 +50,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 			</Knockout>
 
 			<Legible strength={0.8} from={0} to={b(1)} />
-			<Slam lines={[{text: 'ASSETLINK, Miami', at: -6}, {text: 'One tradition,', at: b(0, 2) + 4}, {text: 'four Decembers', at: b(0, 3), key: true}]} exitAt={b(1) - 8} size={L.pick({vertical: 64, square: 52}, 58)} sfx={false} />
+			<Kinetic seed="open" lines={[{text: 'ASSETLINK, Miami', at: -16, mode: 'track'}, {text: 'One tradition,', at: b(0, 2) + 4, mode: 'rise'}, {text: 'four Decembers', at: b(0, 3), mode: 'stamp', key: true}]} exitAt={b(1) - 12} size={L.pick({vertical: 64, square: 52}, 58)} />
 
 			{EDS.map((e, i) => {
 				const s = b(1 + 2 * i);
@@ -62,14 +65,12 @@ export const Film: React.FC<FilmProps> = (props) => {
 						</Knockout>
 						<Legible from={s - 6} to={s + 8 * BEAT} />
 						<Tag text={`Edition ${e.numeral} · ${2022 + i}`} at={s} exitAt={s + 8 * BEAT - 6} top={tagTop} />
-						<Slam
-							lines={[
-								{text: e.lines[0], at: s + 2 * BEAT + 4, key: e.key === 0},
-								{text: e.lines[1], at: s + 3 * BEAT + 4, key: e.key === 1},
-							]}
-							exitAt={s + 8 * BEAT - 8}
+						<Kinetic
+							seed={e.numeral}
+							lines={e.lines.map((ln) => ({text: ln.text, mode: ln.mode, key: ln.key, at: Math.round(s + 2 * BEAT + 4 + ln.beat * BEAT)}))}
+							exitAt={s + 8 * BEAT - 14}
 							size={slamSize}
-						/>
+							/>
 						<Pop at={s + 2 * BEAT + 1} />
 						<Sfx name="whoosh" at={s + 2 * BEAT - 6} volume={0.3} />
 						<Sfx name="swish" at={s + 5 * BEAT - 3} volume={0.25} />
@@ -85,14 +86,15 @@ export const Film: React.FC<FilmProps> = (props) => {
 				</div>
 			</Knockout>
 			<Tag text="Edition V · 2026" at={b(9) + 4} exitAt={b(11) - 6} top={tagTop} />
-			<Slam
+			<Kinetic
+				seed="v"
 				lines={[
-					{text: 'Thursday, Dec 3', at: b(9, 2)},
-					{text: '7–10 PM', at: b(9, 3)},
-					{text: 'Seaspice, on the', at: b(10, 0)},
-					{text: 'Miami River', at: b(10, 1), key: true},
+					{text: 'Thursday, Dec 3', at: b(9, 2), mode: 'track'},
+					{text: '7–10 PM', at: b(9, 3), mode: 'stamp'},
+					{text: 'Seaspice, on the', at: b(10, 0), mode: 'rise'},
+					{text: 'Miami River', at: b(10, 1), mode: 'wave', key: true},
 				]}
-				exitAt={b(11) - 8}
+				exitAt={b(11) - 14}
 				size={L.pick({vertical: 92, square: 66}, 80)}
 				bottom={L.safe.bottom + L.pick({vertical: 30, square: 20}, 30) * u}
 			/>
