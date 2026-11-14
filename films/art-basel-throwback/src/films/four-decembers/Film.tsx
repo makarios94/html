@@ -18,7 +18,9 @@ import {FONTS, GLYPHS, LINING, MARK_GRADIENT, theme} from './theme';
  */
 const BAR = 60;
 const BEAT = 15;
-const b = (n: number, beat = 0) => n * BAR + beat * BEAT;
+/** The opening card runs 3 s longer than one bar: every later bar starts OPEN_EXTRA frames later. */
+const OPEN_EXTRA = 90;
+const b = (n: number, beat = 0) => n * BAR + beat * BEAT + (n >= 1 ? OPEN_EXTRA : 0);
 export const DURATION_4D = b(12) + 30;
 
 /** Each line: its text, its entrance, the beat it lands on (from the punch-through) and whether it carries the bar. */
@@ -40,9 +42,9 @@ export const Film: React.FC<FilmProps> = (props) => {
 	const allRolls = [b(3) - 6, b(5) - 6, b(7) - 6, b(9) - 6];
 	return (
 		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background={NIGHT}>
-			<Shot name="river" from={0} dur={b(1)} zoom={[1.0, 1.08]} />
-			{/* Bar 0: "FOUR DECEMBERS" with the river inside the letters, on frame 0; it punches into the river on beat 2. */}
-			<Knockout at={0} punchAt={b(0, 2)} end={b(1)} footage={<Shot name="river" from={0} dur={b(1)} zoom={[1.0, 1.08]} />} origin="50% 52%">
+			<Shot name="river_long" from={0} dur={b(1)} zoom={[1.0, 1.1]} />
+			{/* Opening card (5 s): "FOUR DECEMBERS" with the river inside the letters, on frame 0; it punches into the river at 3 s, on the downbeat. */}
+			<Knockout at={0} punchAt={OPEN_EXTRA} end={b(1)} footage={<Shot name="river_long" from={0} dur={b(1)} zoom={[1.0, 1.1]} />} origin="50% 52%">
 				<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: theme.fonts.display, fontWeight: 800, color: '#FFFFFF', textTransform: 'uppercase', lineHeight: 0.9, letterSpacing: '-0.03em', textAlign: 'center', paddingBottom: L.isVertical ? 120 * u : 0}}>
 					<span style={{fontSize: L.pick({vertical: 250, square: 190}, 220) * u}}>Four</span>
 					<span style={{fontSize: L.pick({vertical: 150, square: 116}, 130) * u}}>Decembers</span>
@@ -50,7 +52,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 			</Knockout>
 
 			<Legible strength={0.8} from={0} to={b(1)} />
-			<Kinetic seed="open" lines={[{text: 'ASSETLINK, Miami', at: -16, mode: 'track'}, {text: 'One tradition,', at: b(0, 2) + 4, mode: 'rise'}, {text: 'four Decembers', at: b(0, 3), mode: 'stamp', key: true}]} exitAt={b(1) - 12} size={L.pick({vertical: 64, square: 52}, 58)} />
+			<Kinetic seed="open" lines={[{text: 'ASSETLINK, Miami', at: -16, mode: 'track'}, {text: 'One tradition,', at: 34, mode: 'rise'}, {text: 'four Decembers', at: 60, mode: 'stamp', key: true}]} exitAt={b(1) - 12} size={L.pick({vertical: 64, square: 52}, 58)} />
 
 			{EDS.map((e, i) => {
 				const s = b(1 + 2 * i);
@@ -101,7 +103,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 
 			<TicketCTA at={b(11)} end={DURATION_4D} />
 			<Grain opacity={0.07} />
-			<Music src="films/art-basel-throwback/music-4d-el.wav" volume={0.9} fadeOut={20} trimBefore={14} />
+			<Music src="films/art-basel-throwback/music-4d-el-ext.wav" volume={0.9} fadeOut={20} />
 		</FilmShell>
 	);
 };
