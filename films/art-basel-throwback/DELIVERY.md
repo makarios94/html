@@ -14,7 +14,7 @@ This replaces v01 (flyer only) and v02 (four-year montage), which are in git his
 | `some_assets_9x16_v01.mp4`, `some_assets_1x1_v01.mp4` | Throwback video 2, Fri Nov 21 |
 | `four_decembers_cover_*.png`, `some_assets_cover_*.png` | Thumbnails (the opening label) |
 
-All 1080 wide, 30 fps, H.264, about -14.8 LUFS. Four Decembers runs 25 s, Some Assets 20 s (each script length
+All 1080 wide, 30 fps, H.264, about -14.8 LUFS. Four Decembers runs 28 s, Some Assets 20 s (each script length
 plus the 2-second end card hold).
 
 ## Video 1: "Four Decembers" (motion v2)
