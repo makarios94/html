@@ -1,9 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {ease, FilmProps, FilmShell, Grain, Music, prog, Sfx, useLayout} from '../../kit';
+import {InfoBeats, TicketCTA} from '../four-decembers/cta';
 import {Kinetic} from '../four-decembers/kinetic';
 import {Legible, NIGHT, Pop, Shot} from '../four-decembers/motion';
-import {EndCard, Freeze} from '../four-decembers/shared';
+import {Freeze} from '../four-decembers/shared';
 import {FONTS, GLYPHS, NAVY, PURPLE, theme} from '../four-decembers/theme';
 
 /*
@@ -192,23 +193,30 @@ export const Film: React.FC<FilmProps> = (props) => {
 
 			{/* The champagne pour, then the event over its last frame. */}
 			<Shot name="toast" from={372} dur={94} zoom={[1.02, 1.1]} />
-			<Freeze still="toast_last.jpg" from={466} dur={14} dark={0.6} />
-			{frame >= 372 && frame < 480 ? <Legible strength={1.1} /> : null}
+			<Freeze still="toast_last.jpg" from={466} dur={28} dark={0.62} />
+			{frame >= 372 && frame < 494 ? <Legible strength={1.2} /> : null}
 			<Pop at={372} />
 			<Kinetic
 				seed="event"
 				lines={[
-					{text: 'ASSETLINK 5th Annual', at: 392, mode: 'track'},
-					{text: 'Art Basel Evening', at: 404, mode: 'stamp', key: true},
-					{text: 'Thursday, Dec 3', at: 422, mode: 'rise'},
-					{text: 'Seaspice, on the', at: 434, mode: 'rise'},
-					{text: 'Miami River', at: 442, mode: 'wave'},
+					{text: 'ASSETLINK 5th Annual', at: 380, mode: 'track'},
+					{text: 'Art Basel Evening', at: 390, mode: 'stamp', key: true},
 				]}
-				exitAt={466}
-				size={L.pick({vertical: 70, square: 56}, 62)}
+				exitAt={404}
+				size={L.pick({vertical: 84, square: 66}, 74)}
+				bottom={L.height * 0.42}
+			/>
+			<InfoBeats
+				cy={0.5}
+				size={L.pick({vertical: 104, square: 92}, 100)}
+				items={[
+					{label: 'DATE', value: 'Thursday, Dec 3', at: 412, until: 436},
+					{label: 'TIME', value: '7–10 PM', at: 438, until: 460, sfx: 'thud'},
+					{label: 'VENUE', value: 'Seaspice', sub: 'on the Miami River', at: 462, until: 486},
+				]}
 			/>
 
-			<EndCard at={480} end={DURATION_SA} />
+			<TicketCTA at={492} end={DURATION_SA} />
 			<Grain opacity={0.06} />
 			<Music src="films/art-basel-throwback/music-sa-el.wav" volume={0.9} fadeOut={20} trimBefore={74} />
 		</FilmShell>

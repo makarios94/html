@@ -51,7 +51,12 @@ back to the same frame, now empty, and a museum label hangs where the art was: "
 | 12.4-16 s | ASSETLINK 5th Annual / Art Basel Evening / Thursday, Dec 3 / Seaspice, on the Miami River | Slow-motion champagne pour |
 | 16-20 s | End card | |
 
-**End card for both:** ASSETLINK logo / Free to attend / Registration closes Dec 2 / Save your spot (link in bio).
+**End card for both (the CTA):** an Edition V admission ticket (ASSETLINK, Miami / Edition V / 5th Annual Art Basel
+Evening / ADMIT ONE) flips in and is stamped FREE TO ATTEND; "Registration closes Dec 2" follows; then a
+"Save your spot now" button rises, a cursor taps it (ripple and click), a shine sweeps across and a ring keeps pulsing.
+
+**Event details:** date, time and venue each get their own beat and card (DATE: Thursday, Dec 3 / TIME: 7–10 PM /
+VENUE: Seaspice, on the Miami River), one replacing the next.
 
 ## Footage choices
 

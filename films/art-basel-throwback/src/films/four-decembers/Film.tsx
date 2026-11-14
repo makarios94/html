@@ -1,9 +1,9 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {FilmProps, FilmShell, Grain, Music, Sfx, useLayout} from '../../kit';
+import {InfoBeats, TicketCTA} from './cta';
 import {Kinetic, Mode} from './kinetic';
 import {Knockout, Legible, NIGHT, Pop, Shot, Tag, Year} from './motion';
-import {EndCard} from './shared';
 import {FONTS, GLYPHS, LINING, MARK_GRADIENT, theme} from './theme';
 
 /*
@@ -86,23 +86,20 @@ export const Film: React.FC<FilmProps> = (props) => {
 				</div>
 			</Knockout>
 			<Tag text="Edition V · 2026" at={b(9) + 4} exitAt={b(11) - 6} top={tagTop} />
-			<Kinetic
-				seed="v"
-				lines={[
-					{text: 'Thursday, Dec 3', at: b(9, 2), mode: 'track'},
-					{text: '7–10 PM', at: b(9, 3), mode: 'stamp'},
-					{text: 'Seaspice, on the', at: b(10, 0), mode: 'rise'},
-					{text: 'Miami River', at: b(10, 1), mode: 'wave', key: true},
+			<InfoBeats
+				cy={L.pick({vertical: 0.6, square: 0.68}, 0.64)}
+				size={L.pick({vertical: 104, square: 92}, 100)}
+				items={[
+					{label: 'DATE', value: 'Thursday, Dec 3', at: b(9) + 12, until: b(9) + 44},
+					{label: 'TIME', value: '7–10 PM', at: b(9) + 46, until: b(9) + 76, sfx: 'thud'},
+					{label: 'VENUE', value: 'Seaspice', sub: 'on the Miami River', at: b(9) + 78, until: b(11) - 8},
 				]}
-				exitAt={b(11) - 14}
-				size={L.pick({vertical: 92, square: 66}, 80)}
-				bottom={L.safe.bottom + L.pick({vertical: 30, square: 20}, 30) * u}
 			/>
 			<Pop at={b(9) - 1} color="#7446FF" />
 			<Sfx name="impact" at={b(9) - 2} volume={0.36} />
 			<Sfx name="tick" at={b(9) - 4} volume={0.36} />
 
-			<EndCard at={b(11)} end={DURATION_4D} />
+			<TicketCTA at={b(11)} end={DURATION_4D} />
 			<Grain opacity={0.07} />
 			<Music src="films/art-basel-throwback/music-4d-el.wav" volume={0.9} fadeOut={20} trimBefore={14} />
 		</FilmShell>
