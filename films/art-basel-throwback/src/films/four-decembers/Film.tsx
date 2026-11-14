@@ -104,7 +104,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 
 			<EndCard at={b(11)} end={DURATION_4D} />
 			<Grain opacity={0.07} />
-			<Music src="films/art-basel-throwback/music-4d2.wav" volume={0.9} fadeOut={20} />
+			<Music src="films/art-basel-throwback/music-4d-el.wav" volume={0.9} fadeOut={20} trimBefore={14} />
 		</FilmShell>
 	);
 };
