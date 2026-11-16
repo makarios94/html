@@ -45,6 +45,18 @@ Copy and captions stay clear, truthful and direct. Say only what AssetLink does 
 
 Every piece of content, captions and design alike, follows one path: (1) **the pain**, a plain headline in the buyer's words that says exactly what the post is about; (2) **why it hurts**, the cost in time, missed advisors or lost deals; (3) **AssetLink solves it**, naming AssetLink and the specific live capability that fixes this pain (results only, never how); (4) **what changes** for the buyer; (5) **a clear next step**: on LinkedIn posts only, a short call to action ("Book a demo," "Get started" or "Talk to sales"). No calls to action on webinar or newsletter pieces; the user adds those [DECISION, Oct 20, 2026]. Never stop at the pain. Tips, how-tos, data posts and webinar announcements also end with how AssetLink helps.
 
+**Use with StoryBrand (SB7) [DECISION, Nov 16, 2026]:** every piece mixes the five-step path above with Donald Miller's SB7, using whichever step fits the piece. The buyer's team is the hero, not AssetLink. AssetLink is the guide: it shows it understands the problem (empathy) and gives a simple plan (e.g. filter, get alerts, tag results). Two SB7 steps the five-step path tends to miss, and every piece needs at least one of: **the stakes** (what goes wrong without it: calling the wrong names, getting there too late, data nobody uses) and **the success** (what the team's day looks like after). The call to action is still LinkedIn only. Authority stays within the guardrails: no customer names, no sources or methods, no overclaims. Map:
+
+| SB7 | Five-step path |
+|---|---|
+| Hero with a problem | 1. The pain (buyer's words) |
+| Stakes (failure) | 2. Why it hurts |
+| Guide with empathy and a plan | 3. AssetLink solves it (live capability) |
+| Success | 4. What changes |
+| Call to action | 5. Next step (LinkedIn only) |
+
+SB7 is internal working method. Don't name it on leadership pages.
+
 **Design briefs (updated Oct 27, 2026):** keep them very simple so they build easily in Canva: one page where possible, a white block for the problem and a solid brand-color block for AssetLink, text only (no icons, mockups or photos), two fonts, three colors, logo bottom left, button bottom right. Earlier guidance: clear, not clever. No abstract metaphors (scales, dartboards, arrows). Pain panels or slides in muted tones; the **last slide or panel is always the AssetLink frame**: logo, one line on what AssetLink does for this pain, a product-style mockup of that result, "Know who, why and when." and a button-style call to action.
 
 ## Audience weighting (by use case)
