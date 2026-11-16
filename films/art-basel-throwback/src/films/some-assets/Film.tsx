@@ -15,7 +15,7 @@ import {FONTS, GLYPHS, NAVY, PURPLE, theme} from '../four-decembers/theme';
  * Paced to sit like "Four Decembers": every line gets its bar, every cut its two beats.
  *   0-156    the gallery wall, "Every December, / Miami fills up / with art.", then the push into the centre frame
  *   154-360  faces mid-conversation, a cut every two beats, "But some of the best / things that week"
- *   360-480  laughter and toasts, whip cuts, "happen in conversation."
+ *   360-480  laughter and toasts, whip cuts, "happen in conversations."
  *   480-660  pull back out of the frame: it is empty; the wall label types the line, the camera leans in to read it
  *   660-834  the slow champagne pour, the event title, then date, time and venue one at a time
  *   836-940  the end card
@@ -173,7 +173,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 			<Shot name="t2" from={400} dur={40} whipIn whipOut />
 			<Shot name="t3" from={440} dur={40} whipIn rate={0.75} />
 			{frame >= 360 && frame < 480 ? <Legible /> : null}
-			<Kinetic seed="conv" lines={[{text: 'happen in', at: 366, mode: 'rise'}, {text: 'conversation.', at: 392, mode: 'chatter', key: true}]} exitAt={462} size={L.pick({vertical: 110, square: 88}, 96)} />
+			<Kinetic seed="conv" lines={[{text: 'happen in', at: 366, mode: 'rise'}, {text: 'conversations.', at: 392, mode: 'chatter', key: true}]} exitAt={462} size={L.pick({vertical: 98, square: 80}, 88)} />
 			<Sfx name="swish" at={396} volume={0.24} />
 			<Sfx name="swish" at={436} volume={0.24} />
 
