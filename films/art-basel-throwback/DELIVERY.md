@@ -87,16 +87,16 @@ VENUE: Seaspice, on the Miami River), one replacing the next.
 ## Post copy (from the doc)
 
 **Video 1:** "Four Decembers in Miami. The fifth is next month. Join us for our 5th Annual Art Basel Evening,
-Thursday, Dec 3, 7–10 PM, at Seaspice on the Miami River. Free to attend. Registration closes Dec 2. Save your spot:
+Thursday, Dec 3, 7–10 PM, at Seaspice on the Miami River. Registration closes Dec 2. Save your spot now:
 [link]"
 
 **Video 2:** "Art Week is about what hangs on the walls. Our evening is about who's in the room. Five years of
-advisors, firm leaders, investors and friends. Join us Thursday, Dec 3, 7–10 PM, at Seaspice on the Miami River. Free
-to attend. Registration closes Dec 2. Save your spot: [link]"
+advisors, firm leaders, investors and friends. Join us Thursday, Dec 3, 7–10 PM, at Seaspice on the Miami River. Registration
+closes Dec 2. Save your spot now: [link]"
 
 **Alt text, video 1:** Footage from four ASSETLINK Art Basel evenings in Miami, one year at a time, with a large year
 flipping from 2022 to 2026 and a museum-style label for each edition. It ends on "Edition V, 2026, Thursday, Dec 3,
-7 to 10 PM, Seaspice, on the Miami River" and an end card: Free to attend, registration closes Dec 2, save your spot.
+7 to 10 PM, Seaspice, on the Miami River" and an end card: an Art Basel Evening admission ticket, registration closes Dec 2, save your spot now.
 
 **Alt text, video 2:** Quick cuts of guests talking, laughing and toasting at past ASSETLINK Art Basel evenings, with
 labels reading "Every December, Miami fills up with art. But some of the best things that week happen in
