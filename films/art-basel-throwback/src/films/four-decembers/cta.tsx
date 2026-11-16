@@ -10,7 +10,7 @@ import {LINING, MARK_GRADIENT, NAVY, PURPLE, theme} from './theme';
  * InfoBeats: date, time and venue each get their own beat and their own card: a small purple label (DATE, TIME,
  * VENUE) over one big value, centred, which replaces the one before it. Nothing is stacked or crowded.
  *
- * TicketCTA: the end card. An Edition V admission ticket flips in and gets stamped FREE TO ATTEND, the deadline
+ * TicketCTA: the end card. An Art Basel Evening admission ticket flips in and a foil shine crosses it, the deadline
  * follows, then a big "Save your spot now" button rises; a cursor taps it (ripple and click), a shine sweeps across
  * it, and a ring keeps pulsing until the last frame.
  */
@@ -89,6 +89,24 @@ export const InfoBeats: React.FC<{items: Info[]; cy?: number; size: number}> = (
 	);
 };
 
+/** "5th Annual Art Basel Evening" under the 2026 year: letters pull together from wide tracking. */
+export const EventLine: React.FC<{at: number; exitAt: number; top: number}> = ({at, exitAt, top}) => {
+	const frame = useCurrentFrame();
+	const L = useLayout();
+	const u = L.u;
+	if (frame < at - 1 || frame > exitAt + 10) return null;
+	const p = prog(frame, at, 16, ease.out);
+	const out = prog(frame, exitAt, 9, ease.in);
+	return (
+		<div style={{position: 'absolute', left: 0, right: 0, top, textAlign: 'center', opacity: p * (1 - out), filter: p < 1 ? `blur(${((1 - p) * 8).toFixed(1)}px)` : undefined, transform: `translateY(${(-out * 40 * u).toFixed(1)}px)`}}>
+			<span style={{fontFamily: theme.fonts.display, fontWeight: 800, fontSize: L.pick({vertical: 46, square: 40}, 42) * u, letterSpacing: `${(0.5 * (1 - p) + 0.12).toFixed(3)}em`, color: '#FFFFFF', textTransform: 'uppercase', ...LINING}}>
+				5th Annual Art Basel Evening
+			</span>
+			<Sfx name="whoosh" at={at} volume={0.22} />
+		</div>
+	);
+};
+
 /** A simple pointer cursor. */
 const Cursor: React.FC<{size: number}> = ({size}) => (
 	<svg width={size} height={size * 1.3} viewBox="0 0 20 26">
@@ -105,10 +123,9 @@ export const TicketCTA: React.FC<{at: number; end: number}> = ({at, end}) => {
 	const bgIn = prog(frame, at - 8, 10, ease.out);
 	const logo = prog(frame, at, 14, ease.out);
 	const ticket = prog(frame, at + 4, 14, ease.out);
-	const stampAt = at + 18;
-	const stampP = prog(frame, stampAt, 6, ease.in);
-	const stampSettle = interpolate(frame, [stampAt + 6, stampAt + 9, stampAt + 13], [1, 0.95, 1], clamp);
-	const shake = frame >= stampAt + 5 && frame < stampAt + 10 ? Math.sin((frame - stampAt) * 3.2) * 6 * (1 - (frame - stampAt - 5) / 5) : 0;
+	const foilAt = at + 16;
+	const foil = prog(frame, foilAt, 16, ease.inOut);
+	const shake = 0;
 	const close = prog(frame, at + 28, 10, ease.out);
 	const btnAt = at + 34;
 	const btn = prog(frame, btnAt, 12, ease.out);
@@ -140,38 +157,17 @@ export const TicketCTA: React.FC<{at: number; end: number}> = ({at, end}) => {
 				<div style={{position: 'absolute', left: (L.width - W) / 2, top: L.height * ticketTop - H / 2, width: W, height: H, perspective: 1400 * u}}>
 					<div style={{position: 'relative', width: '100%', height: '100%', transform: `rotateX(${((1 - ticket) * -80).toFixed(2)}deg) translateY(${((1 - ticket) * 60 * u).toFixed(1)}px)`, transformOrigin: '50% 0%', opacity: ticket > 0 ? 1 : 0, display: 'flex', filter: `drop-shadow(0 ${24 * u}px ${40 * u}px rgba(0,0,0,0.45))`}}>
 						<div style={{flex: 1, background: '#FBFBFD', borderRadius: `${18 * u}px 0 0 ${18 * u}px`, padding: `${28 * u}px ${36 * u}px`, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 6 * u}}>
-							<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: H * 0.085, letterSpacing: '0.24em', color: PURPLE}}>ASSETLINK, MIAMI</div>
-							<div style={{fontFamily: theme.fonts.display, fontWeight: 800, fontSize: H * 0.3, lineHeight: 1, letterSpacing: '-0.02em', color: NAVY, textTransform: 'uppercase'}}>Edition V</div>
-							<div style={{fontFamily: theme.fonts.body, fontWeight: 600, fontSize: H * 0.085, color: 'rgba(21,26,56,0.7)'}}>5th Annual Art Basel Evening</div>
+							<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: H * 0.08, letterSpacing: '0.24em', color: PURPLE}}>ASSETLINK, MIAMI · EDITION V</div>
+							<div style={{fontFamily: theme.fonts.display, fontWeight: 800, fontSize: H * 0.23, lineHeight: 1, letterSpacing: '-0.02em', color: NAVY, textTransform: 'uppercase', whiteSpace: 'nowrap'}}>Art Basel Evening</div>
+							<div style={{fontFamily: theme.fonts.body, fontWeight: 600, fontSize: H * 0.08, color: 'rgba(21,26,56,0.7)', letterSpacing: '0.04em'}}>The 5th Annual · Thursday, Dec 3</div>
 						</div>
 						<div style={{width: 3 * u, backgroundImage: `linear-gradient(${NAVY} 50%, transparent 50%)`, backgroundSize: `100% ${14 * u}px`, opacity: 0.35, background: undefined}} />
 						<div style={{width: H * 0.62, background: GRAD, borderRadius: `0 ${18 * u}px ${18 * u}px 0`, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
 							<div style={{transform: 'rotate(-90deg)', whiteSpace: 'nowrap', fontFamily: theme.fonts.body, fontWeight: 800, fontSize: H * 0.1, letterSpacing: '0.26em', color: '#FFFFFF'}}>ADMIT ONE</div>
 						</div>
-						{/* The stamp */}
-						<div
-							style={{
-								position: 'absolute',
-								right: H * 0.62 - H * 0.3,
-								top: H * 0.5,
-								transform: `rotate(-12deg) scale(${(stampP < 1 ? 2.6 - 1.6 * stampP : stampSettle).toFixed(4)})`,
-								opacity: stampP > 0 ? Math.min(1, stampP * 2) : 0,
-								border: `${6 * u}px solid #FF5A7A`,
-								borderRadius: 12 * u,
-								padding: `${10 * u}px ${18 * u}px`,
-								color: '#FF5A7A',
-								fontFamily: theme.fonts.display,
-								fontWeight: 800,
-								fontSize: H * 0.2,
-								lineHeight: 1,
-								textAlign: 'center',
-								textTransform: 'uppercase',
-								letterSpacing: '0.04em',
-								background: 'rgba(251,251,253,0.72)',
-							}}
-						>
-							Free
-							<div style={{fontSize: H * 0.075, letterSpacing: '0.16em', marginTop: 6 * u}}>to attend</div>
+						{/* A foil shine sweeps across the ticket once it lands. */}
+						<div style={{position: 'absolute', inset: 0, borderRadius: 18 * u, overflow: 'hidden', pointerEvents: 'none'}}>
+							<div style={{position: 'absolute', top: '-20%', bottom: '-20%', width: '22%', left: `${(-30 + foil * 150).toFixed(1)}%`, background: 'linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 45%, rgba(186,170,255,0.5) 55%, rgba(255,255,255,0) 100%)', transform: 'skewX(-20deg)', mixBlendMode: 'screen', opacity: foil > 0 && foil < 1 ? 1 : 0}} />
 						</div>
 					</div>
 				</div>
@@ -210,7 +206,7 @@ export const TicketCTA: React.FC<{at: number; end: number}> = ({at, end}) => {
 				</div>
 			</AbsoluteFill>
 			<Sfx name="card" at={at + 4} volume={0.28} />
-			<Sfx name="impact" at={stampAt + 5} volume={0.36} />
+			<Sfx name="sparkle" at={foilAt + 2} volume={0.26} />
 			<Sfx name="pop" at={btnAt + 2} volume={0.24} />
 			<Sfx name="click" at={tapAt} volume={0.4} />
 			<Sfx name="sparkle" at={tapAt + 6} volume={0.26} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {FilmProps, FilmShell, Grain, Music, Sfx, useLayout} from '../../kit';
-import {InfoBeats, TicketCTA} from './cta';
+import {EventLine, InfoBeats, TicketCTA} from './cta';
 import {Kinetic, Mode} from './kinetic';
 import {Knockout, Legible, NIGHT, Pop, Shot, Tag, Year} from './motion';
 import {FONTS, GLYPHS, LINING, MARK_GRADIENT, theme} from './theme';
@@ -52,7 +52,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 			</Knockout>
 
 			<Legible strength={0.8} from={0} to={b(1)} />
-			<Kinetic seed="open" lines={[{text: 'ASSETLINK, Miami', at: -16, mode: 'track'}, {text: 'One tradition,', at: 34, mode: 'rise'}, {text: 'four Decembers', at: 60, mode: 'stamp', key: true}]} exitAt={b(1) - 12} size={L.pick({vertical: 64, square: 52}, 58)} />
+			<Kinetic seed="open" lines={[{text: 'ASSETLINK, Miami', at: -16, mode: 'track'}, {text: 'Art Basel Evening', at: 14, mode: 'rise'}, {text: 'One tradition,', at: 38, mode: 'rise'}, {text: 'four Decembers', at: 60, mode: 'stamp', key: true}]} exitAt={b(1) - 12} size={L.pick({vertical: 64, square: 52}, 58)} />
 
 			{EDS.map((e, i) => {
 				const s = b(1 + 2 * i);
@@ -66,7 +66,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 							<Year digits={[2, 3, 4, 5]} rolls={allRolls.slice(0, i)} size={yearSize} />
 						</Knockout>
 						<Legible from={s - 6} to={s + 8 * BEAT} />
-						<Tag text={`Edition ${e.numeral} · ${2022 + i}`} at={s} exitAt={s + 8 * BEAT - 6} top={tagTop} />
+						<Tag text={`Art Basel · Edition ${e.numeral} · ${2022 + i}`} at={s} exitAt={s + 8 * BEAT - 6} top={tagTop} />
 						<Kinetic
 							seed={e.numeral}
 							lines={e.lines.map((ln) => ({text: ln.text, mode: ln.mode, key: ln.key, at: Math.round(s + 2 * BEAT + 4 + ln.beat * BEAT)}))}
@@ -87,7 +87,8 @@ export const Film: React.FC<FilmProps> = (props) => {
 					<Year digits={[2, 3, 4, 5, 6]} rolls={allRolls} size={yearSize} />
 				</div>
 			</Knockout>
-			<Tag text="Edition V · 2026" at={b(9) + 4} exitAt={b(11) - 6} top={tagTop} />
+			<EventLine at={b(9) + 6} exitAt={b(11) - 8} top={L.height / 2 + (L.isVertical ? -330 + 175 : -170 + 160) * u} />
+			<Tag text="Art Basel · Edition V · 2026" at={b(9) + 4} exitAt={b(11) - 6} top={tagTop} />
 			<InfoBeats
 				cy={L.pick({vertical: 0.6, square: 0.68}, 0.64)}
 				size={L.pick({vertical: 104, square: 92}, 100)}

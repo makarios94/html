@@ -26,7 +26,7 @@ odometer from one edition to the next, and 2026 lands in the brand gradient with
 
 | Time | On screen (from the doc) | Footage |
 |---|---|---|
-| 0-2 s | FOUR DECEMBERS (river inside the letters) / ASSETLINK, Miami / One tradition, four Decembers | River aerial |
+| 0-5 s | FOUR DECEMBERS (river inside the letters) / ASSETLINK, Miami / Art Basel Evening / One tradition, four Decembers | River aerial |
 | 2-6 s | 2022 → It started / with one evening. | 2022: arrivals, then the room |
 | 6-10 s | 2023 → Then it became / a tradition. | 2023: the rooftop crowd, then the talk under the ASSETLINK screen |
 | 10-14 s | 2024 → We rebuilt the company. / We still came back. | 2024: guests on the terrace |
@@ -34,7 +34,7 @@ odometer from one edition to the next, and 2026 lands in the brand gradient with
 | 18-22 s | 2026 (brand gradient) / Thursday, Dec 3 / 7–10 PM / Seaspice, on the Miami River | None |
 | 22-25 s | End card | |
 
-A purple "Edition I · 2022" stamp tags each section.
+A purple "Art Basel · Edition I · 2022" tag marks each section, and 2026 lands with "5th Annual Art Basel Evening" under it.
 
 ## Video 2: "Some assets don't hang on walls" (motion v2)
 
@@ -51,9 +51,10 @@ back to the same frame, now empty, and a museum label hangs where the art was: "
 | 12.4-16 s | ASSETLINK 5th Annual / Art Basel Evening / Thursday, Dec 3 / Seaspice, on the Miami River | Slow-motion champagne pour |
 | 16-20 s | End card | |
 
-**End card for both (the CTA):** an Edition V admission ticket (ASSETLINK, Miami / Edition V / 5th Annual Art Basel
-Evening / ADMIT ONE) flips in and is stamped FREE TO ATTEND; "Registration closes Dec 2" follows; then a
+**End card for both (the CTA):** an admission ticket (ASSETLINK, Miami · Edition V / ART BASEL EVENING / The 5th Annual ·
+Thursday, Dec 3 / ADMIT ONE) flips in and a foil shine crosses it; "Registration closes Dec 2" follows; then a
 "Save your spot now" button rises, a cursor taps it (ripple and click), a shine sweeps across and a ring keeps pulsing.
+"Free to attend" is left off on purpose (client direction, Nov 16): it read as cheap.
 
 **Event details:** date, time and venue each get their own beat and card (DATE: Thursday, Dec 3 / TIME: 7–10 PM /
 VENUE: Seaspice, on the Miami River), one replacing the next.
