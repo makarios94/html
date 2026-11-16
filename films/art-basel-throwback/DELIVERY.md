@@ -14,7 +14,7 @@ This replaces v01 (flyer only) and v02 (four-year montage), which are in git his
 | `some_assets_9x16_v01.mp4`, `some_assets_1x1_v01.mp4` | Throwback video 2, Fri Nov 21 |
 | `four_decembers_cover_*.png`, `some_assets_cover_*.png` | Thumbnails (the opening label) |
 
-All 1080 wide, 30 fps, H.264, about -14.8 LUFS. Four Decembers runs 28 s, Some Assets 20 s (each script length
+All 1080 wide, 30 fps, H.264, about -14.8 LUFS. Four Decembers runs 28 s, Some Assets 31 s (each script length
 plus the 2-second end card hold).
 
 ## Video 1: "Four Decembers" (motion v2)
@@ -46,12 +46,15 @@ back to the same frame, now empty, and a museum label hangs where the art was: "
 
 | Time | On screen (from the doc) | Footage |
 |---|---|---|
-| 0-3 s | EVERY DECEMBER, / MIAMI FILLS UP / WITH ART. (painted on the wall) | Three framed pieces: the river, a painting on an easel (2022), a 2024 crowd |
-| 3-7 s | But some of the best / things that week | Push through the frame into faces mid-conversation, a cut on every beat |
-| 7-10 s | happen in / conversation. | Laughter and toasts, whip cuts |
-| 10-12.4 s | The empty frame and its label: Some assets don't hang on walls. / Medium: advisors, capital, five years of conviction | Pull back out to the gallery wall |
-| 12.4-16 s | ASSETLINK 5th Annual / Art Basel Evening / Thursday, Dec 3 / Seaspice, on the Miami River | Slow-motion champagne pour |
-| 16-20 s | End card | |
+| 0-5 s | EVERY DECEMBER, / MIAMI FILLS UP / WITH ART. (painted on the wall, a line per bar) | Three framed pieces: the river, a painting on an easel (2022), a 2024 crowd, in slow motion |
+| 5-12 s | But some of the best / things that week | Push through the frame into faces mid-conversation, a cut every two beats |
+| 12-16 s | happen in / conversation. | Laughter and toasts, whip cuts |
+| 16-22 s | The empty frame and its label, typed slowly: Some assets don't hang on walls. / Medium: advisors, capital, five years of conviction | Pull back to the gallery wall, then the camera leans in to read the label |
+| 22-28 s | ASSETLINK 5th Annual / Art Basel Evening, then Thursday, Dec 3 / 7–10 PM / Seaspice, on the Miami River, one at a time | Slow-motion champagne pour |
+| 28-31 s | End card | |
+
+Some Assets was re-paced (v4) to sit like Four Decembers: the score is extended by repeating six bars on a bar line
+(`music-sa-el-ext.wav`), and every section has roughly twice the time it had.
 
 **End card for both (the CTA):** an admission ticket (ASSETLINK, Miami · Edition V / ART BASEL EVENING / The 5th Annual ·
 Thursday, Dec 3 / ADMIT ONE) flips in and a foil shine crosses it; "Registration closes Dec 2" follows; then a

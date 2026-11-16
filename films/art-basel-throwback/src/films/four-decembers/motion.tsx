@@ -18,7 +18,7 @@ export const NIGHT = '#0B0D26';
  * Event footage. whipIn / whipOut: a 5-frame horizontal whip (translate plus blur) into or out of the shot.
  * Renders only inside its window so stacked shots never cover each other.
  */
-export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: boolean; whipOut?: boolean; zoom?: [number, number]; grade?: string; style?: React.CSSProperties; fit?: boolean}> = ({
+export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: boolean; whipOut?: boolean; zoom?: [number, number]; grade?: string; style?: React.CSSProperties; fit?: boolean; rate?: number}> = ({
 	name,
 	from,
 	dur,
@@ -28,6 +28,7 @@ export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: b
 	grade = 'none',
 	style,
 	fit = true,
+	rate = 1,
 }) => {
 	const frame = useCurrentFrame();
 	const L = useLayout();
@@ -50,7 +51,7 @@ export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: b
 		return (
 			<AbsoluteFill style={{overflow: 'hidden', ...style}}>
 				<Sequence from={from} layout="none">
-					<OffthreadVideo src={src} muted style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: motion, filter: filt}} />
+					<OffthreadVideo src={src} muted playbackRate={rate} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: motion, filter: filt}} />
 				</Sequence>
 			</AbsoluteFill>
 		);
@@ -62,12 +63,12 @@ export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: b
 	return (
 		<AbsoluteFill style={{overflow: 'hidden', background: '#0B0D26', ...style}}>
 			<Sequence from={from} layout="none">
-				<OffthreadVideo src={src} muted style={{position: 'absolute', inset: '-6%', width: '112%', height: '112%', objectFit: 'cover', transform: motion, filter: `blur(${(36 * L.u).toFixed(1)}px) brightness(0.55) saturate(1.2)`}} />
+				<OffthreadVideo src={src} muted playbackRate={rate} style={{position: 'absolute', inset: '-6%', width: '112%', height: '112%', objectFit: 'cover', transform: motion, filter: `blur(${(36 * L.u).toFixed(1)}px) brightness(0.55) saturate(1.2)`}} />
 			</Sequence>
 			<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
 				<div style={{width: bw, height: bh, flex: 'none', transform: motion, filter: filt, WebkitMaskImage: mask, maskImage: mask}}>
 					<Sequence from={from} layout="none">
-						<OffthreadVideo src={src} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+						<OffthreadVideo src={src} muted playbackRate={rate} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
 					</Sequence>
 				</div>
 			</AbsoluteFill>
