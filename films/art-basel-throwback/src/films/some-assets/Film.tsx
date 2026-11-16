@@ -195,6 +195,8 @@ export const Film: React.FC<FilmProps> = (props) => {
 			<Shot name="toast" from={372} dur={94} zoom={[1.02, 1.1]} />
 			<Freeze still="toast_last.jpg" from={466} dur={28} dark={0.62} />
 			{frame >= 372 && frame < 494 ? <Legible strength={1.2} /> : null}
+			{/* A darker wash once the event details start, so the DATE and TIME cards read over the bright pour. */}
+			{frame >= 400 && frame < 494 ? <AbsoluteFill style={{background: NIGHT, opacity: interpolate(frame, [400, 414, 462, 470], [0, 0.52, 0.52, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}} /> : null}
 			<Pop at={372} />
 			<Kinetic
 				seed="event"

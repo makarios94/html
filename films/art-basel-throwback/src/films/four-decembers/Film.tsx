@@ -46,7 +46,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 	const u = L.u;
 	const yearSize = L.pick({vertical: 330, square: 300}, 320);
 	const slamSize = L.pick({vertical: 84, square: 70}, 78);
-	const tagTop = L.safe.top + L.pick({vertical: 10, square: 0}, 0) * u;
+	const tagTop = L.safe.top + L.pick({vertical: 10, square: 26}, 0) * u;
 	const allRolls = [b(3) - 6, b(5) - 6, b(7) - 6, b(9) - 6];
 	return (
 		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background={NIGHT}>
