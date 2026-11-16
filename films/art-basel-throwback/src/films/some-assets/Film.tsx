@@ -153,7 +153,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 					camScale={1 + (fill - 1) * push}
 				/>
 			) : null}
-			<Kinetic seed="wall" color={NAVY} shadow={false} top={L.safe.top} size={L.pick({vertical: 82, square: 62}, 72)} lines={[{text: 'Every December,', at: -14, mode: 'rise'}, {text: 'Miami fills up', at: t(2), mode: 'rise'}, {text: 'with art.', at: t(3), mode: 'paint'}]} exitAt={70} />
+			<Kinetic seed="wall" color={NAVY} shadow={false} top={L.safe.top + L.pick({vertical: 0, square: 30}, 0) * L.u} size={L.pick({vertical: 82, square: 62}, 72)} lines={[{text: 'Every December,', at: -14, mode: 'rise'}, {text: 'Miami fills up', at: t(2), mode: 'rise'}, {text: 'with art.', at: t(3), mode: 'paint'}]} exitAt={70} />
 			<Sfx name="whoosh-long" at={78} volume={0.32} />
 
 			{/* Out of the frame: faces, a cut on every beat. */}
