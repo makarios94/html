@@ -90,16 +90,14 @@ const WallCard: React.FC<{at: number}> = ({at}) => {
 	const L = useLayout();
 	const u = L.u;
 	const p = prog(frame, at, 18, ease.out);
-	const l2 = prog(frame, at + 18 + TITLE.length * TYPE_RATE, 16, ease.out);
 	return (
 		<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-			<div style={{width: '88%', background: '#FFFFFF', padding: `${26 * u}px ${26 * u}px`, boxShadow: `0 ${10 * u}px ${24 * u}px rgba(21,26,56,0.18)`, opacity: p, transform: `translateY(${((1 - p) * 20 * u).toFixed(2)}px)`}}>
+			<div style={{width: '88%', background: '#FFFFFF', padding: `${32 * u}px ${30 * u}px`, boxShadow: `0 ${10 * u}px ${24 * u}px rgba(21,26,56,0.18)`, opacity: p, transform: `translateY(${((1 - p) * 20 * u).toFixed(2)}px)`}}>
 				<div style={{width: 46 * u, height: 5 * u, background: PURPLE, marginBottom: 16 * u}} />
-				<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: L.pick({vertical: 50, square: 36}, 42) * u, lineHeight: 1.16, color: NAVY}}>
+				<div style={{fontFamily: theme.fonts.body, fontWeight: 700, fontSize: L.pick({vertical: 60, square: 44}, 52) * u, lineHeight: 1.12, color: NAVY}}>
 					{TITLE.slice(0, Math.floor(interpolate(frame, [at + 10, at + 10 + TITLE.length * TYPE_RATE], [0, TITLE.length], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})))}
 					<span style={{display: 'inline-block', width: 4 * u, height: '0.9em', marginLeft: 3 * u, verticalAlign: '-0.1em', background: NAVY, opacity: frame < at + 10 + TITLE.length * TYPE_RATE + 14 || Math.floor(frame / 8) % 2 === 0 ? 1 : 0}} />
 				</div>
-				<div style={{marginTop: 10 * u, fontFamily: theme.fonts.body, fontStyle: 'italic', fontSize: L.pick({vertical: 32, square: 24}, 28) * u, lineHeight: 1.3, color: 'rgba(21,26,56,0.7)', opacity: l2}}>Medium: advisors, capital, five years of conviction</div>
 			</div>
 		</AbsoluteFill>
 	);

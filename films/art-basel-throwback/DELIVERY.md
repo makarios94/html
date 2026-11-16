@@ -49,7 +49,7 @@ back to the same frame, now empty, and a museum label hangs where the art was: "
 | 0-5 s | EVERY DECEMBER, / MIAMI FILLS UP / WITH ART. (painted on the wall, a line per bar) | Three framed pieces: the river, a painting on an easel (2022), a 2024 crowd, in slow motion |
 | 5-12 s | But some of the best / things that week | Push through the frame into faces mid-conversation, a cut every two beats |
 | 12-16 s | happen in / conversations. | Laughter and toasts, whip cuts |
-| 16-22 s | The empty frame and its label, typed slowly: Some assets don't hang on walls. / Medium: advisors, capital, five years of conviction | Pull back to the gallery wall, then the camera leans in to read the label |
+| 16-22 s | The empty frame and its label, typed slowly: Some assets don't hang on walls. | Pull back to the gallery wall, then the camera leans in to read the label |
 | 22-28 s | ASSETLINK 5th Annual / Art Basel Evening, then Thursday, Dec 3 / 7–10 PM / Seaspice, on the Miami River, one at a time | Slow-motion champagne pour |
 | 28-31 s | End card | |
 
