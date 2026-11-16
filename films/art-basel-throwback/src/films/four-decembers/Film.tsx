@@ -1,9 +1,10 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
-import {FilmProps, FilmShell, Grain, Music, Sfx, useLayout} from '../../kit';
+import {AbsoluteFill, useCurrentFrame} from 'remotion';
+import {ease, FilmProps, FilmShell, Grain, Music, prog, Sfx, useLayout} from '../../kit';
 import {EventLine, InfoBeats, TicketCTA} from './cta';
 import {Kinetic, Mode} from './kinetic';
 import {Knockout, Legible, NIGHT, Pop, Shot, Tag, Year} from './motion';
+import {Opener} from './opener';
 import {FONTS, GLYPHS, LINING, MARK_GRADIENT, theme} from './theme';
 
 /*
@@ -33,6 +34,13 @@ const EDS: Ed[] = [
 	{numeral: 'IV', a: 'e4a', bb: 'e4b', lines: [{text: 'Same city.', mode: 'rise', beat: 0}, {text: 'Same week.', mode: 'rise', beat: 0.6}, {text: 'More friends', mode: 'echo', beat: 2, key: true}, {text: 'in the room.', mode: 'echo', beat: 2.5}]},
 ];
 
+/** The title lands from slightly larger and settles, so the cut on the downbeat has weight. */
+const TitleIn: React.FC<{at: number; children: React.ReactNode}> = ({at, children}) => {
+	const frame = useCurrentFrame();
+	const p = prog(frame, at, 9, ease.out);
+	return <div style={{transform: `scale(${(1.12 - 0.12 * p).toFixed(4)})`, filter: `blur(${((1 - p) * 8).toFixed(1)}px)`}}>{children}</div>;
+};
+
 export const Film: React.FC<FilmProps> = (props) => {
 	const L = useLayout();
 	const u = L.u;
@@ -42,17 +50,21 @@ export const Film: React.FC<FilmProps> = (props) => {
 	const allRolls = [b(3) - 6, b(5) - 6, b(7) - 6, b(9) - 6];
 	return (
 		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background={NIGHT}>
-			<Shot name="river_long" from={0} dur={b(1)} zoom={[1.0, 1.1]} />
-			{/* Opening card (5 s): "FOUR DECEMBERS" with the river inside the letters, on frame 0; it punches into the river at 3 s, on the downbeat. */}
-			<Knockout at={0} punchAt={OPEN_EXTRA} end={b(1)} footage={<Shot name="river_long" from={0} dur={b(1)} zoom={[1.0, 1.1]} />} origin="50% 52%">
-				<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: theme.fonts.display, fontWeight: 800, color: '#FFFFFF', textTransform: 'uppercase', lineHeight: 0.9, letterSpacing: '-0.03em', textAlign: 'center', paddingBottom: L.isVertical ? 120 * u : 0}}>
-					<span style={{fontSize: L.pick({vertical: 250, square: 190}, 220) * u}}>Four</span>
-					<span style={{fontSize: L.pick({vertical: 150, square: 116}, 130) * u}}>Decembers</span>
-				</div>
+			{/* Opening: two cards over the river (ASSETLINK, Miami / Art Basel / Evening, then One tradition,), then
+			    FOUR DECEMBERS cuts in on the downbeat with the river inside the letters and punches through into it. */}
+			<Shot name="river_long" from={0} dur={b(1)} zoom={[1.0, 1.12]} />
+			<Opener titleAt={OPEN_EXTRA} />
+			<Knockout at={OPEN_EXTRA} punchAt={b(1) - 18} end={b(1)} footage={<Shot name="river_long" from={0} dur={b(1)} zoom={[1.0, 1.12]} fit={false} />} origin="50% 52%">
+				<TitleIn at={OPEN_EXTRA}>
+					<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: theme.fonts.display, fontWeight: 800, color: '#FFFFFF', textTransform: 'uppercase', lineHeight: 0.9, letterSpacing: '-0.03em', textAlign: 'center'}}>
+						<span style={{fontSize: L.pick({vertical: 250, square: 190}, 220) * u}}>Four</span>
+						<span style={{fontSize: L.pick({vertical: 150, square: 116}, 130) * u}}>Decembers</span>
+					</div>
+				</TitleIn>
 			</Knockout>
-
-			<Legible strength={0.8} from={0} to={b(1)} />
-			<Kinetic seed="open" lines={[{text: 'ASSETLINK, Miami', at: -16, mode: 'track'}, {text: 'Art Basel Evening', at: 14, mode: 'rise'}, {text: 'One tradition,', at: 38, mode: 'rise'}, {text: 'four Decembers', at: 60, mode: 'stamp', key: true}]} exitAt={b(1) - 12} size={L.pick({vertical: 64, square: 52}, 58)} />
+			<Pop at={OPEN_EXTRA} />
+			<Sfx name="impact" at={OPEN_EXTRA - 1} volume={0.34} />
+			<Sfx name="whoosh" at={b(1) - 22} volume={0.3} />
 
 			{EDS.map((e, i) => {
 				const s = b(1 + 2 * i);
@@ -62,7 +74,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 						<Shot name={e.a} from={s - 8} dur={5 * BEAT + 8} whipOut zoom={[1.12, 1.2]} />
 						<Shot name={e.bb} from={s + 5 * BEAT} dur={3 * BEAT} whipIn zoom={[1.0, 1.08]} />
 						{/* The year with this edition's footage inside it, then the punch-through. */}
-						<Knockout at={s - 6} punchAt={s + 2 * BEAT - 10} end={s + 2 * BEAT + 2} footage={<Shot name={e.a} from={s - 8} dur={2 * BEAT + 10} zoom={[1.12, 1.2]} />}>
+						<Knockout at={s - 6} punchAt={s + 2 * BEAT - 10} end={s + 2 * BEAT + 2} footage={<Shot name={e.a} from={s - 8} dur={2 * BEAT + 10} zoom={[1.12, 1.2]} fit={false} />}>
 							<Year digits={[2, 3, 4, 5]} rolls={allRolls.slice(0, i)} size={yearSize} />
 						</Knockout>
 						<Legible from={s - 6} to={s + 8 * BEAT} />

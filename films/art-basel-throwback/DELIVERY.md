@@ -1,4 +1,4 @@
-# Edition V throwback videos: delivery note (v3, motion v2)
+# Edition V throwback videos: delivery note (v4)
 
 Built to the script in the Claude doc "ASSETLINK x Miami Art Week 2026, Event Promo Strategy" (Content plan tab,
 section "Throwback motion videos"). Two music-led videos cut from the Edition I to IV recap footage, in the wall-label
@@ -26,7 +26,9 @@ odometer from one edition to the next, and 2026 lands in the brand gradient with
 
 | Time | On screen (from the doc) | Footage |
 |---|---|---|
-| 0-5 s | FOUR DECEMBERS (river inside the letters) / ASSETLINK, Miami / Art Basel Evening / One tradition, four Decembers | River aerial |
+| 0-1.5 s | ASSETLINK, Miami / Art Basel / *Evening* (one card, the camera then flies through it) | River aerial |
+| 1.5-3 s | One tradition, (rises out of the depth, then parts sideways) | River aerial |
+| 3-5 s | FOUR DECEMBERS cuts in on the downbeat with the river inside the letters, then punches through | River aerial |
 | 2-6 s | 2022 → It started / with one evening. | 2022: arrivals, then the room |
 | 6-10 s | 2023 → Then it became / a tradition. | 2023: the rooftop crowd, then the talk under the ASSETLINK screen |
 | 10-14 s | 2024 → We rebuilt the company. / We still came back. | 2024: guests on the terrace |
@@ -67,7 +69,11 @@ VENUE: Seaspice, on the Miami River), one replacing the next.
 - The 2023 rooftop shot shows the old DFD Partners logo on the stage screen. It is company history, so I kept it.
   Say if you want it swapped.
 - The 2023 stage clip is a re-shared story. I cropped out the sharer's handle and the @dfdpartners tag.
-- The 2025 reel came in at 640x316, so its shots are the softest. The original export would sharpen them.
+- Footage pass (v4): every clip was denoised, upscaled 2x (Lanczos), sharpened and colour-matched to the night
+  palette (`c2hd/`, made from `c2/`). Framing never magnifies a source more than 2.2x: when a wide shot can't fill
+  the tall frame cleanly, it plays sharp across the middle over a blurred, darkened copy of itself instead of being
+  blown up.
+- The 2025 reel came in at 640x316, so its shots are still the softest. The original export would sharpen them most.
 - Guests on screen come from ASSETLINK's own event posts. Check you're happy for them to appear again, especially
   before any paid boost.
 
@@ -105,6 +111,6 @@ conversation. Some assets don't hang on walls." It ends on the event details and
 ## Change it
 
 Source: `src/films/four-decembers/` (with `shared.tsx`, the wall label, year flip and end card) and
-`src/films/some-assets/`. Clips: `public/films/art-basel-throwback/c2/`. From the repo root:
+`src/films/some-assets/`. Clips: `public/films/art-basel-throwback/c2hd/` (enhanced from `c2/`). From the repo root:
 `python3 .claude/skills/motion-designer/scripts/finish.py finals films/art-basel-throwback FourDecembers films/art-basel-throwback/final --aspects 9x16,1x1 --stems music,sfx --lead music`
 (and the same with `SomeAssets`).

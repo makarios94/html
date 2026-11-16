@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill, interpolate, OffthreadVideo, Sequence, useCurrentFrame} from 'remotion';
 import {ease, prog, Sfx, useLayout} from '../../kit';
 import {asset} from './shared';
+import {CLIP_DIMS} from './clipdims';
 import {LINING, PURPLE, theme} from './theme';
 
 /*
@@ -17,32 +18,59 @@ export const NIGHT = '#0B0D26';
  * Event footage. whipIn / whipOut: a 5-frame horizontal whip (translate plus blur) into or out of the shot.
  * Renders only inside its window so stacked shots never cover each other.
  */
-export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: boolean; whipOut?: boolean; zoom?: [number, number]; grade?: string; style?: React.CSSProperties}> = ({
+export const Shot: React.FC<{name: string; from: number; dur: number; whipIn?: boolean; whipOut?: boolean; zoom?: [number, number]; grade?: string; style?: React.CSSProperties; fit?: boolean}> = ({
 	name,
 	from,
 	dur,
 	whipIn = false,
 	whipOut = false,
-	zoom = [1.04, 1.12],
-	grade = 'brightness(1.06) contrast(1.08) saturate(1.08)',
+	zoom = [1.03, 1.08],
+	grade = 'none',
 	style,
+	fit = true,
 }) => {
 	const frame = useCurrentFrame();
+	const L = useLayout();
 	if (frame < from || frame >= from + dur + (whipOut ? 5 : 0)) return null;
 	const inP = whipIn ? prog(frame, from, 6, ease.out) : 1;
 	const outP = whipOut ? prog(frame, from + dur - 1, 6, ease.in) : 0;
 	const x = (1 - inP) * 55 - outP * 55;
 	const blur = (1 - inP) * 26 + outP * 26;
 	const s = interpolate(frame, [from, from + dur], zoom, clamp);
+	const src = asset(`c2hd/${name}.mp4`);
+	const motion = `translateX(${x.toFixed(2)}%) scale(${s.toFixed(4)})`;
+	const filt = `${grade === 'none' ? '' : grade + ' '}blur(${blur.toFixed(1)}px)`;
+	// Never magnify the source more than MAX_MAG: when filling the frame would, show it sharp in a band over a
+	// blurred, darkened copy of itself instead of blowing it up.
+	const MAX_MAG = 2.2;
+	const dims = CLIP_DIMS[name];
+	const cover = dims ? Math.max(L.width / dims[0], L.height / dims[1]) : 1;
+	const band = fit && dims && cover > MAX_MAG;
+	if (!band) {
+		return (
+			<AbsoluteFill style={{overflow: 'hidden', ...style}}>
+				<Sequence from={from} layout="none">
+					<OffthreadVideo src={src} muted style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: motion, filter: filt}} />
+				</Sequence>
+			</AbsoluteFill>
+		);
+	}
+	const mag = Math.max(L.width / dims[0], MAX_MAG);
+	const bw = dims[0] * mag;
+	const bh = dims[1] * mag;
+	const mask = 'linear-gradient(to bottom, transparent 0%, #000 9%, #000 91%, transparent 100%)';
 	return (
-		<AbsoluteFill style={{overflow: 'hidden', ...style}}>
+		<AbsoluteFill style={{overflow: 'hidden', background: '#0B0D26', ...style}}>
 			<Sequence from={from} layout="none">
-				<OffthreadVideo
-					src={asset(`c2/${name}.mp4`)}
-					muted
-					style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `translateX(${x.toFixed(2)}%) scale(${s.toFixed(4)})`, filter: `${grade} blur(${blur.toFixed(1)}px)`}}
-				/>
+				<OffthreadVideo src={src} muted style={{position: 'absolute', inset: '-6%', width: '112%', height: '112%', objectFit: 'cover', transform: motion, filter: `blur(${(36 * L.u).toFixed(1)}px) brightness(0.55) saturate(1.2)`}} />
 			</Sequence>
+			<AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+				<div style={{width: bw, height: bh, flex: 'none', transform: motion, filter: filt, WebkitMaskImage: mask, maskImage: mask}}>
+					<Sequence from={from} layout="none">
+						<OffthreadVideo src={src} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+					</Sequence>
+				</div>
+			</AbsoluteFill>
 		</AbsoluteFill>
 	);
 };

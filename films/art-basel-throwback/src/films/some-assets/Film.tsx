@@ -129,7 +129,7 @@ const WallType: React.FC<{lines: {text: string; at: number}[]; exitAt: number}> 
 	);
 };
 
-const Clip: React.FC<{name: string; from: number; dur: number}> = ({name, from, dur}) => <Shot name={name} from={from} dur={dur} zoom={[1.0, 1.06]} />;
+const Clip: React.FC<{name: string; from: number; dur: number; fit?: boolean}> = ({name, from, dur, fit = true}) => <Shot name={name} from={from} dur={dur} zoom={[1.0, 1.06]} fit={fit} />;
 
 export const Film: React.FC<FilmProps> = (props) => {
 	const frame = useCurrentFrame();
@@ -146,9 +146,9 @@ export const Film: React.FC<FilmProps> = (props) => {
 		<FilmShell theme={theme} fonts={FONTS} glyphs={GLYPHS} props={props} background={NIGHT}>
 			{frame < 99 ? (
 				<Gallery
-					left={<Clip name="river" from={0} dur={99} />}
-					centre={frame < 84 ? <Clip name="art" from={0} dur={84} /> : <Clip name="f1" from={84} dur={21} />}
-					right={<Clip name="crowd" from={0} dur={99} />}
+					left={<Clip name="river" from={0} dur={99} fit={false} />}
+					centre={frame < 84 ? <Clip name="art" from={0} dur={84} fit={false} /> : <Clip name="f1" from={84} dur={21} fit={false} />}
+					right={<Clip name="crowd" from={0} dur={99} fit={false} />}
 					camX={truck}
 					camScale={1 + (fill - 1) * push}
 				/>
@@ -176,9 +176,9 @@ export const Film: React.FC<FilmProps> = (props) => {
 			{/* Back on the wall: the frame is empty, the people left it. */}
 			{frame >= 300 && frame < 372 ? (
 				<Gallery
-					left={<Clip name="river" from={300} dur={72} />}
-					centre={<Clip name="t3" from={270} dur={60} />}
-					right={<Clip name="crowd" from={300} dur={72} />}
+					left={<Clip name="river" from={300} dur={72} fit={false} />}
+					centre={<Clip name="t3" from={270} dur={60} fit={false} />}
+					right={<Clip name="crowd" from={300} dur={72} fit={false} />}
 					camX={0}
 					camScale={fill - (fill - 1) * pull}
 					empty={empty}

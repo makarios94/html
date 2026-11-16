@@ -22,9 +22,9 @@ export const Footage: React.FC<{name: string; from: number; dur: number; dim?: n
 		<AbsoluteFill style={{overflow: 'hidden', background: '#0B0D26'}}>
 			<Sequence from={from} layout="none">
 				<OffthreadVideo
-					src={asset(`c2/${name}.mp4`)}
+					src={asset(`c2hd/${name}.mp4`)}
 					muted
-					style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${s.toFixed(4)})`, filter: 'brightness(1.06) contrast(1.05)'}}
+					style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${s.toFixed(4)})`}}
 				/>
 			</Sequence>
 			{dim ? <AbsoluteFill style={{background: `rgba(11,13,38,${dim})`}} /> : null}
