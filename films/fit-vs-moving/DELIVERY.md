@@ -7,12 +7,12 @@ carousel's, slide for slide. The film acts each slide out with the product idea,
 
 | File | Use |
 |---|---|
-| `fitvsmoving_4x5_v01.mp4` | LinkedIn and Instagram feed (recommended for LinkedIn) |
-| `fitvsmoving_1x1_v01.mp4` | LinkedIn feed, square |
-| `fitvsmoving_9x16_v01.mp4` | Reels, Stories, Shorts |
-| `fitvsmoving_cover_*.png` | Thumbnails: the list with "aren't moving." landed |
+| `fit_vs_moving_4x5_v01.mp4` | LinkedIn and Instagram feed (recommended for LinkedIn) |
+| `fit_vs_moving_1x1_v01.mp4` | LinkedIn feed, square |
+| `fit_vs_moving_9x16_v01.mp4` | Reels, Stories, Shorts |
+| `fit_vs_moving_cover_*.png` | Thumbnails: the list with "aren't moving." landed |
 
-All 1080 wide, 30 fps, H.264, mastered to -14 LUFS.
+All 1080 wide, 30 fps, H.264, mastered to about -16 LUFS (the first half of the score is quiet by design; the limiter holds the peaks).
 
 ## The film
 

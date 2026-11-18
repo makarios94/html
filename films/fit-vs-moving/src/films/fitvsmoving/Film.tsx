@@ -517,14 +517,14 @@ export const Film: React.FC<FilmProps> = (props) => {
 					<Headline
 						top={box.headTop}
 						size={box.headSize}
-						exitAt={418}
+						exitAt={448}
 						lines={[
 							{text: 'Alerts about', at: S2 + 4},
 							{text: 'advisors who move,', at: S2 + 14},
 							{text: "but don't fit.", at: S2 + 24, accentFrom: 1, accentAt: 358},
 						]}
 					/>
-					<AlertStack at={[268, 283, 298, 313, 328]} flagAt={360} exitAt={414} />
+					<AlertStack at={[268, 283, 298, 313, 328]} flagAt={360} exitAt={444} />
 				</AbsoluteFill>
 			) : null}
 			{[268, 283, 298, 313, 328].map((t) => (
@@ -536,7 +536,7 @@ export const Film: React.FC<FilmProps> = (props) => {
 
 			{/* 3. AssetLink shows both: the same list, now with why they fit and who may be moving. */}
 			{frame >= S3 && frame < S4 ? (
-				<AbsoluteFill>
+				<AbsoluteFill style={{transform: `scale(${interpolate(frame, [S3, S4], [1, 1.045], clamp).toFixed(4)})`, transformOrigin: '50% 70%'}}>
 					<Bars bars={BRICKS} fill={`linear-gradient(90deg, #010105, ${INDIGO})`} at={S3 - 6} stagger={2} />
 					<Headline
 						top={box.headTop}
