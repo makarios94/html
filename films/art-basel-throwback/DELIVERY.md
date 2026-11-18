@@ -31,7 +31,7 @@ odometer from one edition to the next, and 2026 lands in the brand gradient with
 | 3-5 s | FOUR DECEMBERS cuts in on the downbeat with the river inside the letters, then punches through | River aerial |
 | 2-6 s | 2022 → It started / with one evening. | 2022: arrivals, then the room |
 | 6-10 s | 2023 → Then it became / a tradition. | 2023: the rooftop crowd, then the talk under the ASSETLINK screen |
-| 10-14 s | 2024 → We rebuilt the company. / We still came back. | 2024: guests on the terrace |
+| 10-14 s | 2024 → A new chapter. / Still in Miami. | 2024: guests on the terrace |
 | 14-18 s | 2025 → Same city. Same week. / More friends in the room. | 2025: the widest crowd, then a toast |
 | 18-22 s | 2026 (brand gradient) / Thursday, Dec 3 / 7–10 PM / Seaspice, on the Miami River | None |
 | 22-25 s | End card | |
@@ -90,7 +90,7 @@ VENUE: Seaspice, on the Miami River), one replacing the next.
 ## Please confirm
 
 - **The year lines.** The doc says the year-by-year lines are placeholders to swap for what actually happened each
-  year. The videos use them as written; "We rebuilt the company" (2024) matches Devon's post.
+  year. The videos use them as written; 2024 now reads "A new chapter. / Still in Miami." (client direction, Nov 18: "We rebuilt the company" read too strong).
 - **The registration link.** The end card says "link in bio". Make sure the form is in the bio before Nov 14.
 
 ## Post copy (from the doc)
