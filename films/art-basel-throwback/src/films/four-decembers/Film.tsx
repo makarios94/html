@@ -30,7 +30,7 @@ type Ed = {numeral: string; a: string; bb: string; lines: EdLine[]};
 const EDS: Ed[] = [
 	{numeral: 'I', a: 'e1a', bb: 'e1b', lines: [{text: 'It started', mode: 'rise', beat: 0}, {text: 'with one', mode: 'rise', beat: 1}, {text: 'evening.', mode: 'type', beat: 1.6, key: true}]},
 	{numeral: 'II', a: 'e2a', bb: 'e2b', lines: [{text: 'Then it became', mode: 'rise', beat: 0}, {text: 'a tradition.', mode: 'stamp', beat: 1, key: true}]},
-	{numeral: 'III', a: 'e3a', bb: 'e3b', lines: [{text: 'A new chapter.', mode: 'stack', beat: 0}, {text: 'Still in Miami.', mode: 'wave', beat: 2, key: true}]},
+	{numeral: 'III', a: 'e3a', bb: 'e3b', lines: [{text: 'A new chapter.', mode: 'stack', beat: 0}, {text: 'Same evening.', mode: 'stamp', beat: 2, key: true}]},
 	{numeral: 'IV', a: 'e4a', bb: 'e4b', lines: [{text: 'Same city.', mode: 'rise', beat: 0}, {text: 'Same week.', mode: 'rise', beat: 0.6}, {text: 'More friends', mode: 'echo', beat: 2, key: true}, {text: 'in the room.', mode: 'echo', beat: 2.5}]},
 ];
 
