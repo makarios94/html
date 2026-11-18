@@ -18,4 +18,4 @@ export const B = beatGrid(beats as Beats, FPS);
  */
 export const BARS = 8;
 /** One extra second for the last chord to ring under the end card. */
-export const DURATION = 780;
+export const DURATION = 898;
