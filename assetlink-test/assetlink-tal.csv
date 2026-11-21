@@ -1,0 +1,31 @@
+account,segment,cluster,fit_0_50,intent_0_30,relationship_0_20,score_100,tier,why_trigger_hypothesis,status
+Hamilton Lane,Alts manager,Alts-to-wealth,46,24,0,70,1,Evergreen funds sold through advisors; needs to find advisors who allocate to alts,unverified: research before outreach
+StepStone Group (Private Wealth),Alts manager,Alts-to-wealth,45,23,0,68,1,Growing private-wealth evergreen lineup; advisor targeting by alts usage,unverified: research before outreach
+Ariel Investments,Traditional,Diverse-owned / mission fit,44,16,6,66,1,Founder story (diversity in asset management) aligns; warm-path potential,unverified: research before outreach
+Blue Owl,Alts manager,Alts-to-wealth,42,22,0,64,1,Large wealth-channel push for private credit/real estate,unverified: research before outreach
+Pacer ETFs,ETF issuer,ETF issuers,45,18,0,63,1,Advisor-sold ETFs; needs advisor discovery at scale,unverified: research before outreach
+KKR (Private Wealth),Alts manager,Alts-to-wealth,40,22,0,62,1,"K-series vehicles for HNW; mature data stack likely, so longer cycle",unverified: research before outreach
+Calamos Investments,Traditional + alts,Mid-size active,44,18,0,62,1,"Wholesaler-led intermediary distribution, interval/alt products",unverified: research before outreach
+Apollo (Global Wealth),Alts manager,Alts-to-wealth,40,21,0,61,1,Wealth distribution build-out; enterprise procurement,unverified: research before outreach
+Simplify Asset Management,ETF issuer,ETF issuers,43,17,0,60,1,Fast-growing issuer; small distribution team,unverified: research before outreach
+Global X ETFs,ETF issuer,ETF issuers,42,17,0,59,2,Thematic ETF lineup sold to advisors,unverified: research before outreach
+Amplify ETFs,ETF issuer,ETF issuers,43,16,0,59,2,"Lean team, thematic/income ETFs",unverified: research before outreach
+Virtus Investment Partners,Traditional,Mid-size active,43,15,0,58,2,Multi-boutique; wholesaler productivity focus,unverified: research before outreach
+Brown Capital Management,Traditional,Diverse-owned / mission fit,40,12,6,58,2,Mission alignment; small team needs wholesaler leverage,unverified: research before outreach
+Thornburg Investment Management,Traditional,Mid-size active,42,14,0,56,2,Intermediary-focused active manager,unverified: research before outreach
+Victory Capital,Traditional,Mid-size active,41,15,0,56,2,Acquisitive; integrating distribution after deals,unverified: research before outreach
+VanEck,ETF issuer,ETF issuers,40,16,0,56,2,Advisor channel + thematic/crypto ETFs,unverified: research before outreach
+WisdomTree,ETF issuer,ETF issuers,40,15,0,55,2,Model portfolios and advisor solutions,unverified: research before outreach
+Mariner,RIA aggregator,RIA recruiting,37,16,0,53,2,Active advisor recruiting and acquisitions,unverified: research before outreach
+Dynasty Financial Partners,RIA platform,RIA recruiting,38,15,0,53,2,Recruits breakaway advisors onto platform,unverified: research before outreach
+Sanctuary Wealth,RIA platform,RIA recruiting,38,15,0,53,2,Breakaway-advisor platform,unverified: research before outreach
+Focus Financial Partners,RIA aggregator,RIA recruiting,36,16,0,52,2,Recruiting/M&A of advisors: fits patented recruiting use case,unverified: research before outreach
+Wealth Enhancement Group,RIA aggregator,RIA recruiting,37,15,0,52,2,Serial acquirer; needs advisor movement signals,unverified: research before outreach
+Federated Hermes,Traditional,Mid-size active,38,13,0,51,2,Broad intermediary sales force,unverified: research before outreach
+Janus Henderson,Traditional,Mid-size active,36,14,0,50,2,"US intermediary turnaround, ETF growth",unverified: research before outreach
+Steward Partners,RIA platform,RIA recruiting,36,14,0,50,2,Breakaway recruiting model,unverified: research before outreach
+Hightower,RIA aggregator,RIA recruiting,35,14,0,49,3,Recruits breakaway teams,unverified: research before outreach
+Farther,Digital RIA,RIA recruiting,34,15,0,49,3,"Tech-forward, recruiting advisors",unverified: research before outreach
+ETF Central-adjacent issuers (via ETF Central audience),ETF issuer,ETF issuers,30,10,8,48,3,"Devon Drew appeared on ETF Central podcast (Mar 2026): warm content path, not one account",unverified: research before outreach
+CAPTRUST,RIA aggregator,RIA recruiting,34,14,0,48,3,Acquisitive RIA,unverified: research before outreach
+Creative Planning,RIA,RIA recruiting,33,14,0,47,3,Large RIA growing via acquisitions,unverified: research before outreach
